@@ -1,0 +1,785 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.6.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-21 03:00+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Test <test@test.com>\n"
+"Language-Team: Tercan Keskin <info@tercan.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Türkçe\n"
+"X-Poedit-Country: Türkiye\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: archives.php:10
+#: index.php:24
+#@ lightword
+msgid "Continue reading"
+msgstr "Okumaya devam et"
+
+#: archives.php:61
+#: archives.php:71
+#: index.php:33
+#: page.php:17
+#: single-page-template.php:72
+#: single.php:49
+#@ lightword
+msgid "Not Found"
+msgstr "Bulunamadı"
+
+#: archives.php:61
+#: archives.php:72
+#: index.php:34
+#: page.php:18
+#: single-page-template.php:73
+#: single.php:50
+#@ lightword
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Üzgünüz ama aradığınız şey burada değil."
+
+#: comments.php:6
+#: legacy.comments.php:8
+#@ lightword
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için lütfen şifre girin."
+
+#: comments.php:15
+#: index.php:24
+#: legacy.comments.php:12
+#@ lightword
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: comments.php:16
+#@ lightword
+msgid "Trackbacks"
+msgstr "Geri izlemeler"
+
+#: comments.php:17
+#: legacy.comments.php:13
+#@ lightword
+msgid "( subscribe to comments on this post )"
+msgstr "(bu yazının yorumlarına abone ol)"
+
+#: comments.php:30
+#@ lightword
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Eski Yorumlar"
+
+#: comments.php:31
+#@ lightword
+msgid "Newer Comments &raquo;"
+msgstr "Yeni Yorumlar &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:47
+#@ lightword
+msgid "No comments yet."
+msgstr "Yorum yapılmadı."
+
+#: comments.php:41
+#: legacy.comments.php:91
+#@ lightword
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Üzgünüz, yorum formu şu anda kapalı."
+
+#: comments.php:53
+#: legacy.comments.php:81
+#@ lightword
+msgid "Submit"
+msgstr "Gönder"
+
+#: comments.php:59
+#, fuzzy
+msgid "Cancel reply"
+msgstr "( Vazgeç )"
+
+#: comments.php:69
+#@ lightword
+msgid "No trackbacks yet."
+msgstr "Geri izleme yok."
+
+#: comments.php:70
+#@ lightword
+msgid "Trackbacks are disabled."
+msgstr "Geri izlemeler devre dışı bırakıldı."
+
+#: footer.php:7
+#, fuzzy, php-format, php-format
+#@ lightword
+msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
+msgstr ""
+
+#: footer.php:13
+#@ lightword
+msgid "Go to top"
+msgstr "En başa dön"
+
+#: functions.php:16
+#, fuzzy
+#@ lightword
+msgid "Layout settings"
+msgstr "Cufon ayarları"
+
+#: functions.php:18
+#: functions.php:19
+#@ lightword
+msgid "Original"
+msgstr ""
+
+#: functions.php:18
+#@ lightword
+msgid "Wider"
+msgstr ""
+
+#: functions.php:23
+#, fuzzy
+#@ lightword
+msgid "Cuf&oacute;n settings"
+msgstr "Cufon ayarları"
+
+#: functions.php:24
+#@ lightword
+msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
+msgstr ""
+
+#: functions.php:26
+#: functions.php:27
+#: functions.php:117
+#: functions.php:118
+#@ lightword
+msgid "Enabled"
+msgstr "Aktif edildi."
+
+#: functions.php:26
+#: functions.php:57
+#: functions.php:58
+#: functions.php:117
+#@ lightword
+msgid "Disabled"
+msgstr "Devre dışı bırakıldı"
+
+#: functions.php:26
+#@ lightword
+msgid "Extra"
+msgstr "Ekstra"
+
+#: functions.php:26
+msgid "CSS3 Font-face (lightweight)"
+msgstr ""
+
+#: functions.php:36
+#@ lightword
+msgid "Disable comments on pages"
+msgstr "Sayfalar için yorumları kapat"
+
+#: functions.php:37
+#@ lightword
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Eğer sayfalarda yorumları devre dışı bırakmak istiyorsanız bu kutuyu işaretleyin."
+
+#: functions.php:42
+#@ lightword
+msgid "Custom image header"
+msgstr ""
+
+#: functions.php:43
+#, fuzzy
+#@ lightword
+msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
+msgstr "Eğer sayfa üstünde (logo olarak) Cufon metin yerine resim kullanmak istiyorsanız bu kutuyu işaretleyin.<br/>Resim adresi: <code>lightword/images/header-image.png</code> / Maksimum genişlik: <code>796px</code>"
+
+#: functions.php:48
+#@ lightword
+msgid "Header image height in pixels"
+msgstr "Header resim yüksekliği (pixel)"
+
+#: functions.php:54
+#@ lightword
+msgid "About author feature"
+msgstr "Yazar özellikleri hakkında"
+
+#: functions.php:55
+#, fuzzy
+#@ lightword
+msgid "Add information about post author"
+msgstr "Yazının altına yazar bilgisini ekle"
+
+#: functions.php:57
+#@ lightword
+msgid "Main page"
+msgstr ""
+
+#: functions.php:57
+#@ lightword
+msgid "Single page"
+msgstr ""
+
+#: functions.php:57
+#@ lightword
+msgid "Both"
+msgstr ""
+
+#: functions.php:61
+#@ lightword
+msgid "Enjoy this post feature"
+msgstr "Bu yazıyı beğen"
+
+#: functions.php:62
+#@ lightword
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Eğer <em>Bu yazıyı beğen</em> özelliğini istiyorsanız bu kutuyu işaretleyin"
+
+#: functions.php:67
+#@ lightword
+msgid "Show categories on front menu"
+msgstr "Kategorileri ana menüde göster"
+
+#: functions.php:68
+#@ lightword
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Eğer sayfanın üst çubuğunda sayfaların yerine kategorileri görüntülemek isterseniz bu kutuyu işaretleyin."
+
+#: functions.php:73
+#@ lightword
+msgid "Exclude pages from front menu"
+msgstr "Kategorileri ana menüden çıkar"
+
+#: functions.php:74
+#@ lightword
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:79
+#@ lightword
+msgid "Exclude categories from front menu"
+msgstr "Kategorileri ana menüden çıkar"
+
+#: functions.php:80
+#@ lightword
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:85
+#@ lightword
+msgid "Remove home button"
+msgstr "Anasayfa butonunu kaldır"
+
+#: functions.php:86
+#@ lightword
+msgid "Remove home button from front menu"
+msgstr "Anasayfa butonunu ana menüden kaldır"
+
+#: functions.php:91
+#@ lightword
+msgid "Remove search box"
+msgstr "Arama kutusunu kaldır"
+
+#: functions.php:92
+#@ lightword
+msgid "Remove search box and expand space for front menu"
+msgstr "Arama kutusunu ana menüden kaldır ve alanı genişlet"
+
+#: functions.php:97
+#@ lightword
+msgid "Remove tags from posts"
+msgstr "Yazılardan etiketleri kaldır"
+
+#: functions.php:98
+#@ lightword
+msgid "Show only categories in post footer"
+msgstr "Yazıların altında sadece kategorileri göster"
+
+#: functions.php:103
+#@ lightword
+msgid "Remove RSS badge"
+msgstr "RSS rozetini kaldır"
+
+#: functions.php:104
+#@ lightword
+msgid "Remove RSS badge from blog header"
+msgstr "Blog başlığından RSS rozetini kaldır"
+
+#: functions.php:109
+#@ lightword
+msgid "Google Custom Search Engine"
+msgstr ""
+
+#: functions.php:110
+#@ lightword
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+
+#: functions.php:115
+#@ lightword
+msgid "Sidebox settings"
+msgstr "Yan kutu ayarları"
+
+#: functions.php:117
+#@ lightword
+msgid "Show only date"
+msgstr "Sadece tarihi göster"
+
+#: functions.php:117
+#@ lightword
+msgid "Show only in posts"
+msgstr "Sadece yazılarda göster"
+
+#: functions.php:117
+#@ lightword
+msgid "Last two options together"
+msgstr "Son iki seçenekle birlikte"
+
+#: functions.php:122
+#, fuzzy
+#@ lightword
+msgid "Sidebar settings"
+msgstr "Yan kutu ayarları"
+
+#: functions.php:124
+#@ lightword
+msgid "Two sidebars option is available on Wider layout only"
+msgstr ""
+
+#: functions.php:125
+#: functions.php:126
+#@ lightword
+msgid "One sidebar"
+msgstr ""
+
+#: functions.php:125
+#@ lightword
+msgid "Two sidebars"
+msgstr ""
+
+#: functions.php:129
+#@ lightword
+msgid "Custom CSS"
+msgstr ""
+
+#: functions.php:130
+#@ lightword
+msgid "Put your custom css code here"
+msgstr ""
+
+#: functions.php:135
+#@ lightword
+msgid "AdSense"
+msgstr ""
+
+#: functions.php:136
+#@ lightword
+msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
+msgstr ""
+
+#: functions.php:141
+#@ lightword
+msgid "Additional header content"
+msgstr ""
+
+#: functions.php:142
+#@ lightword
+msgid "Additional header content, including scripts, etc"
+msgstr ""
+
+#: functions.php:147
+#@ lightword
+msgid "Additional footer content"
+msgstr ""
+
+#: functions.php:148
+#@ lightword
+msgid "Additional footer content for Google Analytics or any other service"
+msgstr ""
+
+#: functions.php:184
+#: functions.php:196
+#@ lightword
+msgid "LightWord Settings"
+msgstr "LightWord Ayarları"
+
+#: functions.php:191
+#@ lightword
+msgid "settings saved"
+msgstr "ayarlar kaydedildi"
+
+#: functions.php:192
+#@ lightword
+msgid "settings reset"
+msgstr "ayarları sıfırla"
+
+#: functions.php:200
+#@ lightword
+msgid "Support the developer"
+msgstr "Geliştiriciyi destekle"
+
+#: functions.php:212
+#: functions.php:282
+#@ lightword
+msgid "Save changes"
+msgstr "Değişiklikleri kaydet"
+
+#: functions.php:217
+#@ lightword
+msgid "General settings"
+msgstr "Genel Ayarlar"
+
+#: functions.php:288
+#@ lightword
+msgid "Search for help"
+msgstr "Yardım için ara"
+
+#: functions.php:288
+#@ lightword
+msgid "or"
+msgstr "veya"
+
+#: functions.php:328
+#, fuzzy
+#@ lightword
+msgid "What is Cuf&oacute;n?"
+msgstr "Cufon nedir?"
+
+#: functions.php:328
+#, fuzzy
+#@ lightword
+msgid "website"
+msgstr "Website"
+
+#: functions.php:330
+#@ lightword
+msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
+msgstr ""
+
+#: functions.php:331
+#@ lightword
+msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
+msgstr ""
+
+#: functions.php:332
+#@ lightword
+msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
+msgstr ""
+
+#: functions.php:335
+#@ lightword
+msgid "Click here to reset all settings"
+msgstr "Tüm ayarları sıfırlamak için tıklayın"
+
+#: functions.php:554
+msgid "Search"
+msgstr "Arama"
+
+#: functions.php:570
+#: functions.php:581
+#@ lightword
+msgid "Off"
+msgstr "Kapalı"
+
+#: functions.php:628
+#, fuzzy
+#@ lightword
+msgid "Posted on"
+msgstr "Yazar"
+
+#: functions.php:628
+#, fuzzy
+#@ lightword
+msgid "F j, Y"
+msgstr "d F Y"
+
+#: functions.php:645
+#@ lightword
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Lütfen tarayıcınızın referer ayarlarını açın, eğer reklamcıysanız toz olun!"
+
+#: alternatives/sidebar_v2.php:48
+#: functions.php:666
+#: sidebar-child.php:33
+#: sidebar.php:34
+#@ lightword
+msgid "Syndicate this site using RSS"
+msgstr "Bu siteyi RSS kullanarak paylaş"
+
+#: functions.php:666
+#@ lightword
+msgid "Subscribe via RSS"
+msgstr "RSS Aboneliği"
+
+#: functions.php:701
+#@ lightword
+msgid "F jS, Y - H:i"
+msgstr "d F Y, H:i"
+
+#: functions.php:703
+#@ lightword
+msgid "( REPLY )"
+msgstr "( CEVAPLA )"
+
+#: functions.php:704
+#: legacy.comments.php:33
+#@ lightword
+msgid "Your comment is awaiting moderation."
+msgstr "Yorumunuz denetim için bekliyor."
+
+#: functions.php:773
+#: functions.php:778
+#, fuzzy
+#@ lightword
+msgid "LightWord Navigation Bar"
+msgstr "LightWord Ayarları"
+
+#: header.php:38
+#: single-page-template.php:43
+#@ lightword
+msgid "Home"
+msgstr "Anasayfa"
+
+#: index.php:14
+#, fuzzy
+#@ lightword
+msgid "Posted by"
+msgstr "Yazar"
+
+#: index.php:20
+#: page.php:11
+#: single-page-template.php:66
+#: single.php:14
+#@ lightword
+msgid "PAGES"
+msgstr ""
+
+#: index.php:23
+#: single.php:31
+#@ lightword
+msgid "Filed under:"
+msgstr "Kategori:"
+
+#: index.php:23
+#: single.php:31
+#@ lightword
+msgid "Tagged as:"
+msgstr "Etiketler:"
+
+#: index.php:24
+#@ lightword
+msgid "1 Comment"
+msgstr "1 yorum"
+
+#: index.php:24
+#: single.php:32
+#@ lightword
+msgid "Comments Off"
+msgstr "Yorumlar kapalı"
+
+#: index.php:24
+#@ lightword
+msgid "No Comments"
+msgstr "Yorum yok"
+
+#: index.php:24
+#@ lightword
+msgid "Read more about"
+msgstr "Hakkında daha fazla bilgi"
+
+#: index.php:43
+#@ lightword
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Yeni Yazılar"
+
+#: index.php:44
+#@ lightword
+msgid "Older Entries &raquo;"
+msgstr "Eski yazılar &raquo;"
+
+#: legacy.comments.php:26
+#@ lightword
+msgid "F jS, Y"
+msgstr "d F Y"
+
+#: legacy.comments.php:26
+#@ lightword
+msgid "edit this comment"
+msgstr "bu yorumu düzenle"
+
+#: legacy.comments.php:52
+#: single.php:32
+#@ lightword
+msgid "Leave a comment"
+msgstr "Yorum gönder."
+
+#: legacy.comments.php:55
+#, php-format
+#@ lightword
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Yorum yapabilmeniz için <a href=\"%s\">giriş</a> yapmalısınız."
+
+#: legacy.comments.php:62
+#, php-format
+#@ lightword
+msgid "Logged in as %s."
+msgstr "%s olarak giriş yaptınız."
+
+#: legacy.comments.php:62
+#@ lightword
+msgid "Log out of this account"
+msgstr "Hesaptan çıkış yap"
+
+#: legacy.comments.php:62
+#@ lightword
+msgid "Log out &raquo;"
+msgstr "Çıkış &raquo;"
+
+#: legacy.comments.php:67
+#@ lightword
+msgid "Name"
+msgstr "İsim"
+
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+#@ lightword
+msgid "(required)"
+msgstr "(zorunlu)"
+
+#: legacy.comments.php:70
+#@ lightword
+msgid "Mail (will not be published)"
+msgstr "E-posta (yayınlanmaz)"
+
+#: legacy.comments.php:73
+#@ lightword
+msgid "Website"
+msgstr "Website"
+
+#: legacy.comments.php:77
+#, php-format
+#@ lightword
+msgid "You can use these tags: %s"
+msgstr "Bu etiketleri kullanabilirsiniz: %s"
+
+#: page.php:7
+#: single-page-template.php:62
+#@ lightword
+msgid "Edit this page"
+msgstr "Bu sayfayı düzenle"
+
+#: alternatives/sidebar_v2.php:9
+#: sidebar-child.php:9
+#: sidebar.php:10
+#@ lightword
+msgid "Pages"
+msgstr "Sayfalar"
+
+#: alternatives/sidebar_v2.php:14
+#: sidebar-child.php:14
+#: sidebar.php:15
+#@ lightword
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: alternatives/sidebar_v2.php:34
+#: sidebar-child.php:19
+#: sidebar.php:20
+#@ lightword
+msgid "Blogroll"
+msgstr "Bağlantılar"
+
+#: alternatives/sidebar_v2.php:39
+#: sidebar-child.php:24
+#: sidebar.php:25
+#@ lightword
+msgid "Archive"
+msgstr "Arşiv"
+
+#: alternatives/sidebar_v2.php:44
+#: sidebar-child.php:29
+#: sidebar.php:30
+#@ lightword
+msgid "Meta"
+msgstr "Meta"
+
+#: alternatives/sidebar_v2.php:48
+#: sidebar-child.php:33
+#: sidebar.php:34
+#@ lightword
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: alternatives/sidebar_v2.php:49
+#: sidebar-child.php:34
+#: sidebar.php:35
+#@ lightword
+msgid "The latest comments to all posts in RSS"
+msgstr "Tüm gönderilerin son yorumlar için RSS "
+
+#: alternatives/sidebar_v2.php:49
+#: sidebar-child.php:34
+#: sidebar.php:35
+#@ lightword
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Yorumlar <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: single.php:8
+#@ lightword
+msgid "Edit this post"
+msgstr "Bu yazıyı düzenle"
+
+#: single.php:18
+#@ lightword
+msgid "Enjoy this article?"
+msgstr "Bu yazıyı beğendiniz mi?"
+
+#: single.php:19
+#@ lightword
+msgid "Consider subscribing to our rss feed!"
+msgstr "RSS Kaynağımıza abone olun!"
+
+#: single.php:26
+#@ lightword
+msgid "About"
+msgstr "Hakkında"
+
+#: single.php:26
+#@ lightword
+msgid "No description. Please complete your profile."
+msgstr "Açıklama yok. Lütfen profilinizi tamamlayın."
+
+#: footer.php:9
+#@ lightword
+msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
+msgstr "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> translated by <a href=\"http://www.enuygun.com/\" target=\"_blank\">Enuygun</a>  and <a href=\"http://www.1000-spiele.de/\" target=\"_blank\">Online Spiele</a>"
+
+#: functions.php:228
+#: functions.php:236
+#: functions.php:244
+#: functions.php:252
+#: functions.php:260
+#: functions.php:268
+#: functions.php:275
+#@ lightword
+msgid "name"
+msgstr ""
+
+#: functions.php:230
+#: functions.php:238
+#: functions.php:246
+#: functions.php:262
+#: functions.php:270
+#: functions.php:277
+#@ lightword
+msgid "desc"
+msgstr ""
+
+#: functions.php:245
+#@ lightword
+msgid "id"
+msgstr ""
+

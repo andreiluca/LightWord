@@ -1,0 +1,776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.9.9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-21 02:59+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: nGeeks.com <contacto@ngeeks.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: archives.php:10
+#: index.php:24
+#@ lightword
+msgid "Continue reading"
+msgstr "Continúa leyendo"
+
+#: archives.php:61
+#: archives.php:71
+#: index.php:33
+#: page.php:17
+#: single-page-template.php:72
+#: single.php:49
+#@ lightword
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: archives.php:61
+#: archives.php:72
+#: index.php:34
+#: page.php:18
+#: single-page-template.php:73
+#: single.php:50
+#@ lightword
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Lo sentimos, pero estás buscando algo que no está aquí."
+
+#: comments.php:6
+#: legacy.comments.php:8
+#@ lightword
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Esta entrada está protegida con contraseña. Introduce la contraseña para ver los comentarios."
+
+#: comments.php:15
+#: index.php:24
+#: legacy.comments.php:12
+#@ lightword
+msgid "Comments"
+msgstr "Comentarios"
+
+#: comments.php:16
+#@ lightword
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: comments.php:17
+#: legacy.comments.php:13
+#@ lightword
+msgid "( subscribe to comments on this post )"
+msgstr "( suscribirse a los comentarios de esta entrada )"
+
+#: comments.php:30
+#@ lightword
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Comentarios anteriores"
+
+#: comments.php:31
+#@ lightword
+msgid "Newer Comments &raquo;"
+msgstr "Comentarios más recientes &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:47
+#@ lightword
+msgid "No comments yet."
+msgstr "Aún no hay comentarios."
+
+#: comments.php:41
+#: legacy.comments.php:91
+#@ lightword
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Lo sentimos, los comentarios están cerrados por ahora."
+
+#: comments.php:53
+#: legacy.comments.php:81
+#@ lightword
+msgid "Submit"
+msgstr "Enviar"
+
+#: comments.php:59
+#, fuzzy
+msgid "Cancel reply"
+msgstr "( Cancelar )"
+
+#: comments.php:69
+#@ lightword
+msgid "No trackbacks yet."
+msgstr "Aún no hay trackbacks."
+
+#: comments.php:70
+#@ lightword
+msgid "Trackbacks are disabled."
+msgstr "Trackbacks deshabilitados."
+
+#: footer.php:7
+#, php-format
+#@ lightword
+msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
+msgstr "Copyright %s %s %s &middot; Creado con %s <br/>"
+
+#: footer.php:13
+#@ lightword
+msgid "Go to top"
+msgstr "Arriba"
+
+#: functions.php:16
+#@ lightword
+msgid "Layout settings"
+msgstr "Opciones de diseño"
+
+#: functions.php:18
+#: functions.php:19
+#@ lightword
+msgid "Original"
+msgstr "Original"
+
+#: functions.php:18
+#@ lightword
+msgid "Wider"
+msgstr "Ancho"
+
+#: functions.php:23
+#@ lightword
+msgid "Cuf&oacute;n settings"
+msgstr "Opciones de <em>Cufón</em>"
+
+#: functions.php:24
+#@ lightword
+msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
+msgstr "Muestra algunos textos en tu blog usando <em>Cufón</em>&sup1; (título del blog, descripción, títulos de entradas, títulos de páginas, etc.).<br /><br />Selecciona la opción \"Extra\"&sup2; (o \"Deshabilitado\") para que se muestren los acentos y caracteres especiales (<strong>importante para idioma español</strong>)."
+
+#: functions.php:26
+#: functions.php:27
+#: functions.php:117
+#: functions.php:118
+#@ lightword
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: functions.php:26
+#: functions.php:57
+#: functions.php:58
+#: functions.php:117
+#@ lightword
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+#: functions.php:26
+#@ lightword
+msgid "Extra"
+msgstr "Extra"
+
+#: functions.php:26
+msgid "CSS3 Font-face (lightweight)"
+msgstr ""
+
+#: functions.php:36
+#@ lightword
+msgid "Disable comments on pages"
+msgstr "Deshabilitar comentarios en las páginas"
+
+#: functions.php:37
+#@ lightword
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Marca esta casilla si quieres DESHABILITAR LOS COMENTARIOS en las páginas"
+
+#: functions.php:42
+#@ lightword
+msgid "Custom image header"
+msgstr "Cabecera con imagen personalizada"
+
+#: functions.php:43
+#, fuzzy
+#@ lightword
+msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
+msgstr "Marca esta casilla si quieres MOSTRAR UNA IMAGEN en lugar de texto <em>Cufón</em> en la cabecera.<br/>Ubicación de la imagen: <code>lightword/images/header-image.png</code> / Ancho máximo: <code>796px</code>"
+
+#: functions.php:48
+#@ lightword
+msgid "Header image height in pixels"
+msgstr "Altura de la imagen de cabecera en píxeles"
+
+#: functions.php:54
+#@ lightword
+msgid "About author feature"
+msgstr "Función \"Acerca del autor\""
+
+#: functions.php:55
+#@ lightword
+msgid "Add information about post author"
+msgstr "Agrega información sobre el autor de la entrada"
+
+#: functions.php:57
+#@ lightword
+msgid "Main page"
+msgstr "Página principal"
+
+#: functions.php:57
+#@ lightword
+msgid "Single page"
+msgstr "Página individual"
+
+#: functions.php:57
+#@ lightword
+msgid "Both"
+msgstr "Ambas"
+
+#: functions.php:61
+#@ lightword
+msgid "Enjoy this post feature"
+msgstr "Función \"Me gusta esta entrada\""
+
+#: functions.php:62
+#@ lightword
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Marca esta casilla si quieres ACTIVAR la función <em>Me gusta esta entrada</em>"
+
+#: functions.php:67
+#@ lightword
+msgid "Show categories on front menu"
+msgstr "Mostrar categorías en el menú superior"
+
+#: functions.php:68
+#@ lightword
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Marca esta casilla si quieres MOSTRAR CATEGORÍAS en lugar de páginas en el menú superior"
+
+#: functions.php:73
+#@ lightword
+msgid "Exclude pages from front menu"
+msgstr "Excluir páginas del menú superior"
+
+#: functions.php:74
+#@ lightword
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr "Escribe las ID de las páginas en la caja de arriba. Ejemplo: <code>5,19,24</code>"
+
+#: functions.php:79
+#@ lightword
+msgid "Exclude categories from front menu"
+msgstr "Excluir categorías del menú superior"
+
+#: functions.php:80
+#@ lightword
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr "Escribe las ID de las categorías en la caja de arriba. Ejemplo: <code>5,19,24</code>"
+
+#: functions.php:85
+#@ lightword
+msgid "Remove home button"
+msgstr "Quitar botón \"Inicio\""
+
+#: functions.php:86
+#@ lightword
+msgid "Remove home button from front menu"
+msgstr "Quitar el botón \"Inicio\" del menú superior"
+
+#: functions.php:91
+#@ lightword
+msgid "Remove search box"
+msgstr "Quitar cuadro de búsqueda"
+
+#: functions.php:92
+#@ lightword
+msgid "Remove search box and expand space for front menu"
+msgstr "Quitar el cuadro de búsqueda y ampliar el espacio para el menú superior"
+
+#: functions.php:97
+#@ lightword
+msgid "Remove tags from posts"
+msgstr "Quitar etiquetas de los posts"
+
+#: functions.php:98
+#@ lightword
+msgid "Show only categories in post footer"
+msgstr "Mostrar sólo las categorías en el pie de las entradas"
+
+#: functions.php:103
+#@ lightword
+msgid "Remove RSS badge"
+msgstr "Quitar icono RSS"
+
+#: functions.php:104
+#@ lightword
+msgid "Remove RSS badge from blog header"
+msgstr "Quitar el icono RSS de la cabecera del blog"
+
+#: functions.php:109
+#@ lightword
+msgid "Google Custom Search Engine"
+msgstr "Motor de búsqueda personalizado de Google"
+
+#: functions.php:110
+#@ lightword
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Encuentra <code>name=\"cx\"</code> en el <strong>código del cuadro de búsqueda</strong> de Google CSE (Motor de búsqueda personalizado de Google), y escribe el <code>valor</code> aquí."
+
+#: functions.php:115
+#@ lightword
+msgid "Sidebox settings"
+msgstr "Opciones de la caja lateral"
+
+#: functions.php:117
+#@ lightword
+msgid "Show only date"
+msgstr "Mostrar sólo la fecha"
+
+#: functions.php:117
+#@ lightword
+msgid "Show only in posts"
+msgstr "Mostrar sólo en las entradas"
+
+#: functions.php:117
+#@ lightword
+msgid "Last two options together"
+msgstr "Las dos últimas opciones"
+
+#: functions.php:122
+#@ lightword
+msgid "Sidebar settings"
+msgstr "Opciones de barra lateral"
+
+#: functions.php:124
+#@ lightword
+msgid "Two sidebars option is available on Wider layout only"
+msgstr "La opción de dos barras laterales sólo está disponible en el diseño \"Ancho\""
+
+#: functions.php:125
+#: functions.php:126
+#@ lightword
+msgid "One sidebar"
+msgstr "Una barra lateral"
+
+#: functions.php:125
+#@ lightword
+msgid "Two sidebars"
+msgstr "Dos barras laterales"
+
+#: functions.php:129
+#@ lightword
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: functions.php:130
+#@ lightword
+msgid "Put your custom css code here"
+msgstr "Escribe tu código CSS personalizado aquí"
+
+#: functions.php:135
+#@ lightword
+msgid "AdSense"
+msgstr "AdSense"
+
+#: functions.php:136
+#@ lightword
+msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
+msgstr ""
+
+#: functions.php:141
+#@ lightword
+msgid "Additional header content"
+msgstr ""
+
+#: functions.php:142
+#@ lightword
+msgid "Additional header content, including scripts, etc"
+msgstr ""
+
+#: functions.php:147
+#@ lightword
+msgid "Additional footer content"
+msgstr ""
+
+#: functions.php:148
+#@ lightword
+msgid "Additional footer content for Google Analytics or any other service"
+msgstr ""
+
+#: functions.php:184
+#: functions.php:196
+#@ lightword
+msgid "LightWord Settings"
+msgstr "Opciones de LightWord"
+
+#: functions.php:191
+#@ lightword
+msgid "settings saved"
+msgstr "- Opciones guardadas"
+
+#: functions.php:192
+#@ lightword
+msgid "settings reset"
+msgstr "- Opciones restablecidas"
+
+#: functions.php:200
+#@ lightword
+msgid "Support the developer"
+msgstr "Apoya al desarrollador"
+
+#: functions.php:212
+#: functions.php:282
+#@ lightword
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: functions.php:217
+#@ lightword
+msgid "General settings"
+msgstr "Opciones generales"
+
+#: functions.php:288
+#@ lightword
+msgid "Search for help"
+msgstr "Buscar ayuda"
+
+#: functions.php:288
+#@ lightword
+msgid "or"
+msgstr "o"
+
+#: functions.php:328
+#@ lightword
+msgid "What is Cuf&oacute;n?"
+msgstr "¿Qué es <em>Cufón</em>?"
+
+#: functions.php:328
+#@ lightword
+msgid "website"
+msgstr "sitio web"
+
+#: functions.php:330
+#@ lightword
+msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
+msgstr "&sup1;Cufón es una tecnología de reemplazo de texto dinámico mediante JavaScript, como sIFR pero sin usar Flash, sólo JavaScript."
+
+#: functions.php:331
+#@ lightword
+msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
+msgstr "&sup2;Cufón Extra contiene (<strong>archivo .js de ~300kb</strong>): mayúsculas, minúsculas, números, puntuación, \"Basic Latin\", \"Latin-1 Supplement\", \"Latin Extended-A\", alfabeto cirílico, alfabeto ruso, griego y copto; <strong>útil para algunos acentos y caracteres especiales</strong>."
+
+#: functions.php:332
+#@ lightword
+msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
+msgstr "Los caracteres coreanos no están soportados (más de 11.000 glifos es demasiado: archivo enorme -> carga lenta)."
+
+#: functions.php:335
+#@ lightword
+msgid "Click here to reset all settings"
+msgstr "Click aquí para restablecer todas las opciones"
+
+#: functions.php:554
+msgid "Search"
+msgstr "Buscar"
+
+#: functions.php:570
+#: functions.php:581
+#@ lightword
+msgid "Off"
+msgstr "Off"
+
+#: functions.php:628
+#@ lightword
+msgid "Posted on"
+msgstr "Publicado:"
+
+#: functions.php:628
+#@ lightword
+msgid "F j, Y"
+msgstr "j F, Y"
+
+#: functions.php:645
+#@ lightword
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Por favor habilita los referrers en tu navegador, o, si eres un spammer, ¡lárgate de aquí!"
+
+#: alternatives/sidebar_v2.php:48
+#: functions.php:666
+#: sidebar-child.php:33
+#: sidebar.php:34
+#@ lightword
+msgid "Syndicate this site using RSS"
+msgstr "Sigue este sitio usando RSS"
+
+#: functions.php:666
+#@ lightword
+msgid "Subscribe via RSS"
+msgstr "Suscríbete vía RSS"
+
+#: functions.php:701
+#@ lightword
+msgid "F jS, Y - H:i"
+msgstr "j F, Y - H:i"
+
+#: functions.php:703
+#@ lightword
+msgid "( REPLY )"
+msgstr "( RESPONDER )"
+
+#: functions.php:704
+#: legacy.comments.php:33
+#@ lightword
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está en espera de aprobación."
+
+#: functions.php:773
+#: functions.php:778
+#, fuzzy
+#@ lightword
+msgid "LightWord Navigation Bar"
+msgstr "Opciones de LightWord"
+
+#: header.php:38
+#: single-page-template.php:43
+#@ lightword
+msgid "Home"
+msgstr "Inicio"
+
+#: index.php:14
+#@ lightword
+msgid "Posted by"
+msgstr "Publicado por"
+
+#: index.php:20
+#: page.php:11
+#: single-page-template.php:66
+#: single.php:14
+#@ lightword
+msgid "PAGES"
+msgstr "PÁGINAS"
+
+#: index.php:23
+#: single.php:31
+#@ lightword
+msgid "Filed under:"
+msgstr "Archivado en:"
+
+#: index.php:23
+#: single.php:31
+#@ lightword
+msgid "Tagged as:"
+msgstr "Etiquetado con:"
+
+#: index.php:24
+#@ lightword
+msgid "1 Comment"
+msgstr "1 Comentario"
+
+#: index.php:24
+#: single.php:32
+#@ lightword
+msgid "Comments Off"
+msgstr "Comentarios desactivados"
+
+#: index.php:24
+#@ lightword
+msgid "No Comments"
+msgstr "No hay comentarios"
+
+#: index.php:24
+#@ lightword
+msgid "Read more about"
+msgstr "Leer más"
+
+#: index.php:43
+#@ lightword
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Entradas más recientes"
+
+#: index.php:44
+#@ lightword
+msgid "Older Entries &raquo;"
+msgstr "Entradas anteriores &raquo;"
+
+#: legacy.comments.php:26
+#@ lightword
+msgid "F jS, Y"
+msgstr "j F, Y"
+
+#: legacy.comments.php:26
+#@ lightword
+msgid "edit this comment"
+msgstr "edita este comentario"
+
+#: legacy.comments.php:52
+#: single.php:32
+#@ lightword
+msgid "Leave a comment"
+msgstr "Deja un comentario"
+
+#: legacy.comments.php:55
+#, php-format
+#@ lightword
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Debes <a href=\"%s\">iniciar sesión</a> para dejar un comentario."
+
+#: legacy.comments.php:62
+#, php-format
+#@ lightword
+msgid "Logged in as %s."
+msgstr "Sesión iniciada como %s."
+
+#: legacy.comments.php:62
+#@ lightword
+msgid "Log out of this account"
+msgstr "Salir de esta cuenta"
+
+#: legacy.comments.php:62
+#@ lightword
+msgid "Log out &raquo;"
+msgstr "Cerrar sesión &raquo;"
+
+#: legacy.comments.php:67
+#@ lightword
+msgid "Name"
+msgstr "Nombre"
+
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+#@ lightword
+msgid "(required)"
+msgstr "(requerido)"
+
+#: legacy.comments.php:70
+#@ lightword
+msgid "Mail (will not be published)"
+msgstr "E-mail (no será publicado)"
+
+#: legacy.comments.php:73
+#@ lightword
+msgid "Website"
+msgstr "Sitio web"
+
+#: legacy.comments.php:77
+#, php-format
+#@ lightword
+msgid "You can use these tags: %s"
+msgstr "Puedes utilizar estas etiquetas: %s"
+
+#: page.php:7
+#: single-page-template.php:62
+#@ lightword
+msgid "Edit this page"
+msgstr "Editar esta página"
+
+#: alternatives/sidebar_v2.php:9
+#: sidebar-child.php:9
+#: sidebar.php:10
+#@ lightword
+msgid "Pages"
+msgstr "Páginas"
+
+#: alternatives/sidebar_v2.php:14
+#: sidebar-child.php:14
+#: sidebar.php:15
+#@ lightword
+msgid "Categories"
+msgstr "Categorías"
+
+#: alternatives/sidebar_v2.php:34
+#: sidebar-child.php:19
+#: sidebar.php:20
+#@ lightword
+msgid "Blogroll"
+msgstr "Enlaces"
+
+#: alternatives/sidebar_v2.php:39
+#: sidebar-child.php:24
+#: sidebar.php:25
+#@ lightword
+msgid "Archive"
+msgstr "Archivo"
+
+#: alternatives/sidebar_v2.php:44
+#: sidebar-child.php:29
+#: sidebar.php:30
+#@ lightword
+msgid "Meta"
+msgstr "Meta"
+
+#: alternatives/sidebar_v2.php:48
+#: sidebar-child.php:33
+#: sidebar.php:34
+#@ lightword
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: alternatives/sidebar_v2.php:49
+#: sidebar-child.php:34
+#: sidebar.php:35
+#@ lightword
+msgid "The latest comments to all posts in RSS"
+msgstr "Los últimos comentarios de todas las entradas en RSS"
+
+#: alternatives/sidebar_v2.php:49
+#: sidebar-child.php:34
+#: sidebar.php:35
+#@ lightword
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Comentarios <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: single.php:8
+#@ lightword
+msgid "Edit this post"
+msgstr "Editar esta entrada"
+
+#: single.php:18
+#@ lightword
+msgid "Enjoy this article?"
+msgstr "¿Te gustó este artículo?"
+
+#: single.php:19
+#@ lightword
+msgid "Consider subscribing to our rss feed!"
+msgstr "¡Suscríbete a nuestro feed RSS!"
+
+#: single.php:26
+#@ lightword
+msgid "About"
+msgstr "Acerca de"
+
+#: single.php:26
+#@ lightword
+msgid "No description. Please complete your profile."
+msgstr "Sin descripción. Por favor completa tu perfil."
+
+#: footer.php:9
+#@ lightword
+msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
+msgstr "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> translated by <a href=\"http://www.seguros.org.es/\" target=\"_blank\">Seguros</a> and <a href=\"http://www.1000-spiele.de/\" target=\"_blank\">Online Spiele</a>"
+
+#: functions.php:228
+#: functions.php:236
+#: functions.php:244
+#: functions.php:252
+#: functions.php:260
+#: functions.php:268
+#: functions.php:275
+#@ lightword
+msgid "name"
+msgstr ""
+
+#: functions.php:230
+#: functions.php:238
+#: functions.php:246
+#: functions.php:262
+#: functions.php:270
+#: functions.php:277
+#@ lightword
+msgid "desc"
+msgstr ""
+
+#: functions.php:245
+#@ lightword
+msgid "id"
+msgstr ""
+
