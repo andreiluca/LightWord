@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-21 02:58+0200\n"
+"POT-Creation-Date: 2010-10-14 17:47+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -17,36 +17,34 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: archives.php:10
-#: index.php:24
+#: index.php:23
 msgid "Continue reading"
 msgstr ""
 
 #: archives.php:61
 #: archives.php:71
-#: index.php:33
+#: index.php:32
 #: page.php:17
-#: single-page-template.php:72
-#: single.php:49
+#: single-page-template.php:76
+#: single.php:48
 msgid "Not Found"
 msgstr ""
 
 #: archives.php:61
 #: archives.php:72
-#: index.php:34
+#: index.php:33
 #: page.php:18
-#: single-page-template.php:73
-#: single.php:50
+#: single-page-template.php:77
+#: single.php:49
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr ""
 
 #: comments.php:6
-#: legacy.comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
 #: comments.php:15
-#: index.php:24
-#: legacy.comments.php:12
+#: index.php:23
 msgid "Comments"
 msgstr ""
 
@@ -55,7 +53,6 @@ msgid "Trackbacks"
 msgstr ""
 
 #: comments.php:17
-#: legacy.comments.php:13
 msgid "( subscribe to comments on this post )"
 msgstr ""
 
@@ -68,17 +65,15 @@ msgid "Newer Comments &raquo;"
 msgstr ""
 
 #: comments.php:39
-#: legacy.comments.php:47
 msgid "No comments yet."
 msgstr ""
 
 #: comments.php:41
-#: legacy.comments.php:91
 msgid "Sorry, the comment form is closed at this time."
 msgstr ""
 
 #: comments.php:53
-#: legacy.comments.php:81
+#: comments.php:92
 msgid "Submit"
 msgstr ""
 
@@ -86,11 +81,55 @@ msgstr ""
 msgid "Cancel reply"
 msgstr ""
 
-#: comments.php:69
+#: comments.php:65
+#: single.php:31
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:68
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:73
+#, php-format
+msgid "Logged in as %s."
+msgstr ""
+
+#: comments.php:73
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:73
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:82
+msgid "Name"
+msgstr ""
+
+#: comments.php:82
+#: comments.php:85
+msgid "(required)"
+msgstr ""
+
+#: comments.php:85
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:88
+msgid "Website"
+msgstr ""
+
+#: comments.php:92
+msgid "( Cancel )"
+msgstr ""
+
+#: comments.php:105
 msgid "No trackbacks yet."
 msgstr ""
 
-#: comments.php:70
+#: comments.php:106
 msgid "Trackbacks are disabled."
 msgstr ""
 
@@ -100,338 +139,344 @@ msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
 msgstr ""
 
 #: footer.php:9
-msgid "<a href=\"http://www.lightword-theme.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
+msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
 msgstr ""
 
 #: footer.php:13
 msgid "Go to top"
 msgstr ""
 
-#: functions.php:16
+#: functions.php:18
 msgid "Layout settings"
 msgstr ""
 
-#: functions.php:18
-#: functions.php:19
+#: functions.php:20
+#: functions.php:21
 msgid "Original"
 msgstr ""
 
-#: functions.php:18
+#: functions.php:20
 msgid "Wider"
 msgstr ""
 
-#: functions.php:23
+#: functions.php:25
 msgid "Cuf&oacute;n settings"
 msgstr ""
 
-#: functions.php:24
+#: functions.php:26
 msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
 msgstr ""
 
-#: functions.php:26
-#: functions.php:27
-#: functions.php:117
-#: functions.php:118
+#: functions.php:28
+#: functions.php:29
+#: functions.php:53
+#: functions.php:133
+#: functions.php:134
 msgid "Enabled"
 msgstr ""
 
-#: functions.php:26
-#: functions.php:57
-#: functions.php:58
-#: functions.php:117
+#: functions.php:28
+#: functions.php:53
+#: functions.php:54
+#: functions.php:73
+#: functions.php:74
+#: functions.php:133
 msgid "Disabled"
 msgstr ""
 
-#: functions.php:26
+#: functions.php:28
 msgid "Extra"
 msgstr ""
 
-#: functions.php:26
+#: functions.php:28
 msgid "CSS3 Font-face (lightweight)"
 msgstr ""
 
-#: functions.php:36
+#: functions.php:38
 msgid "Disable comments on pages"
 msgstr ""
 
-#: functions.php:37
+#: functions.php:39
 msgid "Check this box if you would like to DISABLE COMMENTS on pages"
 msgstr ""
 
-#: functions.php:42
+#: functions.php:51
 msgid "Custom image header"
 msgstr ""
 
-#: functions.php:43
-msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
+#: functions.php:53
+msgid "Use Wordpress Custom Header"
 msgstr ""
 
-#: functions.php:48
+#: functions.php:58
 msgid "Header image height in pixels"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:64
+msgid "Header image width in pixels"
+msgstr ""
+
+#: functions.php:70
 msgid "About author feature"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:71
 msgid "Add information about post author"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:73
 msgid "Main page"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:73
 msgid "Single page"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:73
 msgid "Both"
 msgstr ""
 
-#: functions.php:61
+#: functions.php:77
 msgid "Enjoy this post feature"
 msgstr ""
 
-#: functions.php:62
+#: functions.php:78
 msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
 msgstr ""
 
-#: functions.php:67
+#: functions.php:83
 msgid "Show categories on front menu"
 msgstr ""
 
-#: functions.php:68
+#: functions.php:84
 msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
 msgstr ""
 
-#: functions.php:73
+#: functions.php:89
 msgid "Exclude pages from front menu"
 msgstr ""
 
-#: functions.php:74
+#: functions.php:90
 msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:95
 msgid "Exclude categories from front menu"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:96
 msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:101
 msgid "Remove home button"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:102
 msgid "Remove home button from front menu"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:107
 msgid "Remove search box"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:108
 msgid "Remove search box and expand space for front menu"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:113
 msgid "Remove tags from posts"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:114
 msgid "Show only categories in post footer"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:119
 msgid "Remove RSS badge"
 msgstr ""
 
-#: functions.php:104
+#: functions.php:120
 msgid "Remove RSS badge from blog header"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:125
 msgid "Google Custom Search Engine"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:126
 msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
 msgstr ""
 
-#: functions.php:115
+#: functions.php:131
 msgid "Sidebox settings"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:133
 msgid "Show only date"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:133
 msgid "Show only in posts"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:133
 msgid "Last two options together"
 msgstr ""
 
-#: functions.php:122
+#: functions.php:138
 msgid "Sidebar settings"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:140
 msgid "Two sidebars option is available on Wider layout only"
 msgstr ""
 
-#: functions.php:125
-#: functions.php:126
+#: functions.php:141
+#: functions.php:142
 msgid "One sidebar"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:141
 msgid "Two sidebars"
 msgstr ""
 
-#: functions.php:129
+#: functions.php:145
 msgid "Custom CSS"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:146
 msgid "Put your custom css code here"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:151
 msgid "AdSense"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:152
 msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
 msgstr ""
 
-#: functions.php:141
+#: functions.php:157
 msgid "Additional header content"
 msgstr ""
 
-#: functions.php:142
+#: functions.php:158
 msgid "Additional header content, including scripts, etc"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:163
 msgid "Additional footer content"
 msgstr ""
 
-#: functions.php:148
+#: functions.php:164
 msgid "Additional footer content for Google Analytics or any other service"
 msgstr ""
 
-#: functions.php:184
-#: functions.php:196
+#: functions.php:200
+#: functions.php:212
 msgid "LightWord Settings"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:207
 msgid "settings saved"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:208
 msgid "settings reset"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:216
 msgid "Support the developer"
 msgstr ""
 
-#: functions.php:212
-#: functions.php:282
+#: functions.php:228
+#: functions.php:306
 msgid "Save changes"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:233
 msgid "General settings"
 msgstr ""
 
-#: functions.php:288
+#: functions.php:312
 msgid "Search for help"
 msgstr ""
 
-#: functions.php:288
+#: functions.php:312
 msgid "or"
 msgstr ""
 
-#: functions.php:328
+#: functions.php:352
 msgid "What is Cuf&oacute;n?"
 msgstr ""
 
-#: functions.php:328
+#: functions.php:352
 msgid "website"
 msgstr ""
 
-#: functions.php:330
+#: functions.php:354
 msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
 msgstr ""
 
-#: functions.php:331
+#: functions.php:355
 msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
 msgstr ""
 
-#: functions.php:332
+#: functions.php:356
 msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
 msgstr ""
 
-#: functions.php:335
+#: functions.php:359
 msgid "Click here to reset all settings"
 msgstr ""
 
-#: functions.php:554
+#: functions.php:588
 msgid "Search"
 msgstr ""
 
-#: functions.php:570
-#: functions.php:581
+#: functions.php:604
+#: functions.php:615
 msgid "Off"
 msgstr ""
 
-#: functions.php:628
+#: functions.php:662
 msgid "Posted on"
 msgstr ""
 
-#: functions.php:628
+#: functions.php:662
 msgid "F j, Y"
 msgstr ""
 
-#: functions.php:645
+#: functions.php:679
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
 msgstr ""
 
-#: functions.php:666
+#: functions.php:700
 #: sidebar-child.php:33
 #: sidebar.php:34
 #: alternatives/sidebar_v2.php:48
 msgid "Syndicate this site using RSS"
 msgstr ""
 
-#: functions.php:666
+#: functions.php:700
 msgid "Subscribe via RSS"
 msgstr ""
 
-#: functions.php:701
+#: functions.php:735
 msgid "F jS, Y - H:i"
 msgstr ""
 
-#: functions.php:703
+#: functions.php:737
 msgid "( REPLY )"
 msgstr ""
 
-#: functions.php:704
-#: legacy.comments.php:33
+#: functions.php:738
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: functions.php:773
-#: functions.php:778
+#: functions.php:807
+#: functions.php:812
 msgid "LightWord Navigation Bar"
 msgstr ""
 
@@ -440,107 +485,55 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: index.php:14
+#: index.php:13
+#: single.php:25
 msgid "Posted by"
 msgstr ""
 
-#: index.php:20
+#: index.php:19
 #: page.php:11
-#: single-page-template.php:66
+#: single-page-template.php:70
 #: single.php:14
 msgid "PAGES"
 msgstr ""
 
-#: index.php:23
-#: single.php:31
+#: index.php:22
+#: single.php:30
 msgid "Filed under:"
 msgstr ""
 
-#: index.php:23
-#: single.php:31
+#: index.php:22
+#: single.php:30
 msgid "Tagged as:"
 msgstr ""
 
-#: index.php:24
+#: index.php:23
 msgid "1 Comment"
 msgstr ""
 
-#: index.php:24
-#: single.php:32
+#: index.php:23
+#: single.php:31
 msgid "Comments Off"
 msgstr ""
 
-#: index.php:24
+#: index.php:23
 msgid "No Comments"
 msgstr ""
 
-#: index.php:24
+#: index.php:23
 msgid "Read more about"
 msgstr ""
 
-#: index.php:43
+#: index.php:42
 msgid "&laquo; Newer Entries"
 msgstr ""
 
-#: index.php:44
+#: index.php:43
 msgid "Older Entries &raquo;"
 msgstr ""
 
-#: legacy.comments.php:26
-msgid "F jS, Y"
-msgstr ""
-
-#: legacy.comments.php:26
-msgid "edit this comment"
-msgstr ""
-
-#: legacy.comments.php:52
-#: single.php:32
-msgid "Leave a comment"
-msgstr ""
-
-#: legacy.comments.php:55
-#, php-format
-msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
-
-#: legacy.comments.php:62
-#, php-format
-msgid "Logged in as %s."
-msgstr ""
-
-#: legacy.comments.php:62
-msgid "Log out of this account"
-msgstr ""
-
-#: legacy.comments.php:62
-msgid "Log out &raquo;"
-msgstr ""
-
-#: legacy.comments.php:67
-msgid "Name"
-msgstr ""
-
-#: legacy.comments.php:67
-#: legacy.comments.php:70
-msgid "(required)"
-msgstr ""
-
-#: legacy.comments.php:70
-msgid "Mail (will not be published)"
-msgstr ""
-
-#: legacy.comments.php:73
-msgid "Website"
-msgstr ""
-
-#: legacy.comments.php:77
-#, php-format
-msgid "You can use these tags: %s"
-msgstr ""
-
 #: page.php:7
-#: single-page-template.php:62
+#: single-page-template.php:66
 msgid "Edit this page"
 msgstr ""
 
@@ -602,13 +595,5 @@ msgstr ""
 
 #: single.php:19
 msgid "Consider subscribing to our rss feed!"
-msgstr ""
-
-#: single.php:26
-msgid "About"
-msgstr ""
-
-#: single.php:26
-msgid "No description. Please complete your profile."
 msgstr ""
 

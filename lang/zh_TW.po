@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-21 03:00+0200\n"
+"POT-Creation-Date: 2010-10-14 17:48+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -13,87 +13,81 @@ msgstr ""
 "X-Poedit-Language: Chinese\n"
 "X-Poedit-Country: TAIWAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
+# @ lightword
 #: archives.php:10
-#: index.php:24
-#@ lightword
+#: index.php:23
 msgid "Continue reading"
 msgstr "繼續閱讀"
 
+# @ lightword
 #: archives.php:61
 #: archives.php:71
-#: index.php:33
+#: index.php:32
 #: page.php:17
-#: single-page-template.php:72
-#: single.php:49
-#@ lightword
+#: single-page-template.php:76
+#: single.php:48
 msgid "Not Found"
 msgstr "沒有發現任何事物!!"
 
+# @ lightword
 #: archives.php:61
 #: archives.php:72
-#: index.php:34
+#: index.php:33
 #: page.php:18
-#: single-page-template.php:73
-#: single.php:50
-#@ lightword
+#: single-page-template.php:77
+#: single.php:49
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "抱歉!! 您要找的我們未能在網站裡找到。"
 
+# @ lightword
 #: comments.php:6
-#: legacy.comments.php:8
-#@ lightword
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "這篇文章需要密碼觀看，請輸入密碼。"
 
+# @ lightword
 #: comments.php:15
-#: index.php:24
-#: legacy.comments.php:12
-#@ lightword
+#: index.php:23
 msgid "Comments"
 msgstr "回覆"
 
+# @ lightword
 #: comments.php:16
-#@ lightword
 msgid "Trackbacks"
 msgstr "引用"
 
+# @ lightword
 #: comments.php:17
-#: legacy.comments.php:13
-#@ lightword
 msgid "( subscribe to comments on this post )"
 msgstr "( 訂閱此篇文章的回覆 )"
 
+# @ lightword
 #: comments.php:30
-#@ lightword
 msgid "&laquo; Older Comments"
 msgstr "&laquo; 較舊的回覆"
 
+# @ lightword
 #: comments.php:31
-#@ lightword
 msgid "Newer Comments &raquo;"
 msgstr "較新的回覆 &raquo;"
 
+# @ lightword
 #: comments.php:39
-#: legacy.comments.php:47
-#@ lightword
 msgid "No comments yet."
 msgstr "還沒有回覆。"
 
+# @ lightword
 #: comments.php:41
-#: legacy.comments.php:91
-#@ lightword
 msgid "Sorry, the comment form is closed at this time."
 msgstr "抱歉，回覆功能已被關閉。"
 
+# @ lightword
 #: comments.php:53
-#: legacy.comments.php:81
-#@ lightword
+#: comments.php:92
 msgid "Submit"
 msgstr "送出"
 
@@ -102,681 +96,654 @@ msgstr "送出"
 msgid "Cancel reply"
 msgstr "( 取消 )"
 
-#: comments.php:69
-#@ lightword
-msgid "No trackbacks yet."
-msgstr "目前沒有人引用這篇文章。"
-
-#: comments.php:70
-#@ lightword
-msgid "Trackbacks are disabled."
-msgstr "引用功能被關閉。"
-
-#: footer.php:7
-#, fuzzy, php-format, php-format
-#@ lightword
-msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
-msgstr ""
-
-#: footer.php:13
-#@ lightword
-msgid "Go to top"
-msgstr "Go to top"
-
-#: functions.php:16
-#@ lightword
-msgid "Layout settings"
-msgstr "版面設定"
-
-#: functions.php:18
-#: functions.php:19
-#@ lightword
-msgid "Original"
-msgstr "原始的"
-
-#: functions.php:18
-#@ lightword
-msgid "Wider"
-msgstr "更寬"
-
-#: functions.php:23
-#, fuzzy
-#@ lightword
-msgid "Cuf&oacute;n settings"
-msgstr "Cufon 設定"
-
-#: functions.php:24
-#@ lightword
-msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
-msgstr ""
-
-#: functions.php:26
-#: functions.php:27
-#: functions.php:117
-#: functions.php:118
-#@ lightword
-msgid "Enabled"
-msgstr "啟用"
-
-#: functions.php:26
-#: functions.php:57
-#: functions.php:58
-#: functions.php:117
-#@ lightword
-msgid "Disabled"
-msgstr "關閉"
-
-#: functions.php:26
-#@ lightword
-msgid "Extra"
-msgstr "額外的"
-
-#: functions.php:26
-msgid "CSS3 Font-face (lightweight)"
-msgstr ""
-
-#: functions.php:36
-#@ lightword
-msgid "Disable comments on pages"
-msgstr "關閉\"回覆功能\""
-
-#: functions.php:37
-#@ lightword
-msgid "Check this box if you would like to DISABLE COMMENTS on pages"
-msgstr "如果您想 \"關閉\"文章的回覆功能 ，請勾選這個選項。"
-
-#: functions.php:42
-#@ lightword
-msgid "Custom image header"
-msgstr "自訂標題的影像"
-
-#: functions.php:43
-#, fuzzy
-#@ lightword
-msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
-msgstr "如果您想在標題處\"顯示影像\"而不是 Cufon 文字，請勾選這個選項。<br/>影像位置： <code>lightword/images/header-image.png</code> / 最大寬度： <code>796px</code>"
-
-#: functions.php:48
-#@ lightword
-msgid "Header image height in pixels"
-msgstr "標題影像的高度 (px單位)"
-
-#: functions.php:54
-#@ lightword
-msgid "About author feature"
-msgstr "\"關於作者\"功能"
-
-#: functions.php:55
-#, fuzzy
-#@ lightword
-msgid "Add information about post author"
-msgstr "在文章的底部加入\"關於作者\"的資料。"
-
-#: functions.php:57
-#@ lightword
-msgid "Main page"
-msgstr ""
-
-#: functions.php:57
-#@ lightword
-msgid "Single page"
-msgstr ""
-
-#: functions.php:57
-#@ lightword
-msgid "Both"
-msgstr ""
-
-#: functions.php:61
-#@ lightword
-msgid "Enjoy this post feature"
-msgstr "\"喜歡這篇文章\"功能"
-
-#: functions.php:62
-#@ lightword
-msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr "如果您想\"啟用\"<em>喜歡這篇文章</em>的功能，請勾選此選項。"
-
-#: functions.php:67
-#@ lightword
-msgid "Show categories on front menu"
-msgstr "在您的網頁顯示分類"
-
-#: functions.php:68
-#@ lightword
-msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
-msgstr "如果您想在網頁選單顯示\"分類\"而不是\"頁面\"，請勾選這個選項。"
-
-#: functions.php:73
-#@ lightword
-msgid "Exclude pages from front menu"
-msgstr "在網頁選單裡防止文章被顯示"
-
-#: functions.php:74
-#@ lightword
-msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
-msgstr "輸入您想防止的文章編號。 例如：<code>5,19,24</code>"
-
-#: functions.php:79
-#@ lightword
-msgid "Exclude categories from front menu"
-msgstr "在網頁選單裡防止分類被顯示"
-
-#: functions.php:80
-#@ lightword
-msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
-msgstr "輸入您想防止的分類編號。 例如：<code>5,19,24</code>"
-
-#: functions.php:85
-#@ lightword
-msgid "Remove home button"
-msgstr "移除\"首頁\"按鈕。"
-
-#: functions.php:86
-#@ lightword
-msgid "Remove home button from front menu"
-msgstr "在您的網頁選單移除\"首頁\"按鈕。"
-
-#: functions.php:91
-#@ lightword
-msgid "Remove search box"
-msgstr "移除\"搜尋列\""
-
-#: functions.php:92
-#@ lightword
-msgid "Remove search box and expand space for front menu"
-msgstr "移除您的\"搜尋列\"並拓寬您的網頁選單。"
-
-#: functions.php:97
-#@ lightword
-msgid "Remove tags from posts"
-msgstr "在您的文章移除\"標籤\""
-
-#: functions.php:98
-#@ lightword
-msgid "Show only categories in post footer"
-msgstr "只顯示\"分類\"在您文章的底部"
-
-#: functions.php:103
-#@ lightword
-msgid "Remove RSS badge"
-msgstr "移除RSS識別"
-
-#: functions.php:104
-#@ lightword
-msgid "Remove RSS badge from blog header"
-msgstr "將您網頁上面的RSS識別移除"
-
-#: functions.php:109
-#@ lightword
-msgid "Google Custom Search Engine"
-msgstr ""
-
-#: functions.php:110
-#@ lightword
-msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
-msgstr "在Google CSE裡的<strong>Search box code</strong>找到 <code>name=\"cx\"</code> ， 然後將 <code>value</code> 填入."
-
-#: functions.php:115
-#@ lightword
-msgid "Sidebox settings"
-msgstr "日期方塊設定"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only date"
-msgstr "只顯示日期"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only in posts"
-msgstr "只在文章裡顯示"
-
-#: functions.php:117
-#@ lightword
-msgid "Last two options together"
-msgstr "選擇最後兩個選項"
-
-#: functions.php:122
-#@ lightword
-msgid "Sidebar settings"
-msgstr "側邊攔設定"
-
-#: functions.php:124
-#@ lightword
-msgid "Two sidebars option is available on Wider layout only"
-msgstr "在 Wider 版面才能使用兩個側邊攔"
-
-#: functions.php:125
-#: functions.php:126
-#@ lightword
-msgid "One sidebar"
-msgstr "一條側邊攔"
-
-#: functions.php:125
-#@ lightword
-msgid "Two sidebars"
-msgstr "兩條側邊攔"
-
-#: functions.php:129
-#@ lightword
-msgid "Custom CSS"
-msgstr "自訂CSS語法"
-
-#: functions.php:130
-#@ lightword
-msgid "Put your custom css code here"
-msgstr "請將您的CSS語法填入這裡"
-
-#: functions.php:135
-#@ lightword
-msgid "AdSense"
-msgstr "AdSense"
-
-#: functions.php:136
-#, fuzzy
-#@ lightword
-msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
-msgstr "將您的 AdSense 代碼複製並填入這裡。"
-
-#: functions.php:141
-#@ lightword
-msgid "Additional header content"
-msgstr ""
-
-#: functions.php:142
-#@ lightword
-msgid "Additional header content, including scripts, etc"
-msgstr ""
-
-#: functions.php:147
-#@ lightword
-msgid "Additional footer content"
-msgstr ""
-
-#: functions.php:148
-#@ lightword
-msgid "Additional footer content for Google Analytics or any other service"
-msgstr ""
-
-#: functions.php:184
-#: functions.php:196
-#@ lightword
-msgid "LightWord Settings"
-msgstr "LightWord 設定"
-
-#: functions.php:191
-#@ lightword
-msgid "settings saved"
-msgstr "儲存設定"
-
-#: functions.php:192
-#@ lightword
-msgid "settings reset"
-msgstr "重置設定"
-
-#: functions.php:200
-#@ lightword
-msgid "Support the developer"
-msgstr "協助開發者"
-
-#: functions.php:212
-#: functions.php:282
-#@ lightword
-msgid "Save changes"
-msgstr "儲存改變"
-
-#: functions.php:217
-#@ lightword
-msgid "General settings"
-msgstr "一般設定"
-
-#: functions.php:288
-#@ lightword
-msgid "Search for help"
-msgstr "尋求幫忙"
-
-#: functions.php:288
-#@ lightword
-msgid "or"
-msgstr "或"
-
-#: functions.php:328
-#, fuzzy
-#@ lightword
-msgid "What is Cuf&oacute;n?"
-msgstr "什麼是 Cufon?"
-
-#: functions.php:328
-#, fuzzy
-#@ lightword
-msgid "website"
-msgstr "網站"
-
-#: functions.php:330
-#@ lightword
-msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
-msgstr ""
-
-#: functions.php:331
-#@ lightword
-msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
-msgstr ""
-
-#: functions.php:332
-#@ lightword
-msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
-msgstr ""
-
-#: functions.php:335
-#@ lightword
-msgid "Click here to reset all settings"
-msgstr "點選這裡以重置所以設定"
-
-#: functions.php:554
-msgid "Search"
-msgstr "搜尋"
-
-#: functions.php:570
-#: functions.php:581
-#@ lightword
-msgid "Off"
-msgstr "關閉"
-
-#: functions.php:628
-#@ lightword
-msgid "Posted on"
-msgstr "發布於"
-
-#: functions.php:628
-#@ lightword
-msgid "F j, Y"
-msgstr ""
-
-#: functions.php:645
-#@ lightword
-msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr "請在您的瀏覽器啟用\"逆連結追蹤\"，如果你是垃圾散佈者，請不要再散佈垃圾了!!"
-
-#: alternatives/sidebar_v2.php:48
-#: functions.php:666
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "Syndicate this site using RSS"
-msgstr "使用RSS 訂閱本站"
-
-#: functions.php:666
-#@ lightword
-msgid "Subscribe via RSS"
-msgstr "使用RSS 訂閱本站"
-
-#: functions.php:701
-#@ lightword
-msgid "F jS, Y - H:i"
-msgstr ""
-
-#: functions.php:703
-#@ lightword
-msgid "( REPLY )"
-msgstr "( 回覆 )"
-
-#: functions.php:704
-#: legacy.comments.php:33
-#@ lightword
-msgid "Your comment is awaiting moderation."
-msgstr "您的回覆正在等待審核。"
-
-#: functions.php:773
-#: functions.php:778
-#, fuzzy
-#@ lightword
-msgid "LightWord Navigation Bar"
-msgstr "LightWord 設定"
-
-#: header.php:38
-#: single-page-template.php:43
-#@ lightword
-msgid "Home"
-msgstr "首頁"
-
-#: index.php:14
-#, fuzzy
-#@ lightword
-msgid "Posted by"
-msgstr "發布於"
-
-#: index.php:20
-#: page.php:11
-#: single-page-template.php:66
-#: single.php:14
-#@ lightword
-msgid "PAGES"
-msgstr "頁面"
-
-#: index.php:23
+# @ lightword
+#: comments.php:65
 #: single.php:31
-#@ lightword
-msgid "Filed under:"
-msgstr "分類於："
-
-#: index.php:23
-#: single.php:31
-#@ lightword
-msgid "Tagged as:"
-msgstr "標籤："
-
-#: index.php:24
-#@ lightword
-msgid "1 Comment"
-msgstr "1 則回覆"
-
-#: index.php:24
-#: single.php:32
-#@ lightword
-msgid "Comments Off"
-msgstr "回覆關閉"
-
-#: index.php:24
-#@ lightword
-msgid "No Comments"
-msgstr "沒有回覆"
-
-#: index.php:24
-#@ lightword
-msgid "Read more about"
-msgstr "閱讀更多\"關於我\""
-
-#: index.php:43
-#@ lightword
-msgid "&laquo; Newer Entries"
-msgstr "&laquo; 較新的文章"
-
-#: index.php:44
-#@ lightword
-msgid "Older Entries &raquo;"
-msgstr "較舊的文章 &raquo;"
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "F jS, Y"
-msgstr ""
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "edit this comment"
-msgstr "編輯這個回覆"
-
-#: legacy.comments.php:52
-#: single.php:32
-#@ lightword
 msgid "Leave a comment"
 msgstr "回覆此文章"
 
-#: legacy.comments.php:55
+# @ lightword
+#: comments.php:68
 #, php-format
-#@ lightword
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "你必須 <a href=\"%s\">登入</a> 才能回復."
 
-#: legacy.comments.php:62
+# @ lightword
+#: comments.php:73
 #, php-format
-#@ lightword
 msgid "Logged in as %s."
 msgstr "目前登入帳號： %s."
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: comments.php:73
 msgid "Log out of this account"
 msgstr "登出這個帳號"
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: comments.php:73
 msgid "Log out &raquo;"
 msgstr "登出 &raquo;"
 
-#: legacy.comments.php:67
-#@ lightword
+# @ lightword
+#: comments.php:82
 msgid "Name"
 msgstr "姓名"
 
-#: legacy.comments.php:67
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: comments.php:82
+#: comments.php:85
 msgid "(required)"
 msgstr "(必須的)"
 
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: comments.php:85
 msgid "Mail (will not be published)"
 msgstr "電子郵件 (不會公開)"
 
-#: legacy.comments.php:73
-#@ lightword
+# @ lightword
+#: comments.php:88
 msgid "Website"
 msgstr "網站"
 
-#: legacy.comments.php:77
+#: comments.php:92
+#, fuzzy
+msgid "( Cancel )"
+msgstr "( 取消 )"
+
+# @ lightword
+#: comments.php:105
+msgid "No trackbacks yet."
+msgstr "目前沒有人引用這篇文章。"
+
+# @ lightword
+#: comments.php:106
+msgid "Trackbacks are disabled."
+msgstr "引用功能被關閉。"
+
+# @ lightword
+#: footer.php:7
 #, php-format
-#@ lightword
-msgid "You can use these tags: %s"
-msgstr "你可以使用這些標籤: %s"
+msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
+msgstr ""
 
-#: page.php:7
-#: single-page-template.php:62
-#@ lightword
-msgid "Edit this page"
-msgstr "編輯這個頁面"
-
-#: alternatives/sidebar_v2.php:9
-#: sidebar-child.php:9
-#: sidebar.php:10
-#@ lightword
-msgid "Pages"
-msgstr "頁面"
-
-#: alternatives/sidebar_v2.php:14
-#: sidebar-child.php:14
-#: sidebar.php:15
-#@ lightword
-msgid "Categories"
-msgstr "分類"
-
-#: alternatives/sidebar_v2.php:34
-#: sidebar-child.php:19
-#: sidebar.php:20
-#@ lightword
-msgid "Blogroll"
-msgstr "網誌輪播"
-
-#: alternatives/sidebar_v2.php:39
-#: sidebar-child.php:24
-#: sidebar.php:25
-#@ lightword
-msgid "Archive"
-msgstr "彙整"
-
-#: alternatives/sidebar_v2.php:44
-#: sidebar-child.php:29
-#: sidebar.php:30
-#@ lightword
-msgid "Meta"
-msgstr "自訂欄位"
-
-#: alternatives/sidebar_v2.php:48
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "The latest comments to all posts in RSS"
-msgstr "在RSS追蹤所有文章的最新留言"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "回覆 <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-
-#: single.php:8
-#@ lightword
-msgid "Edit this post"
-msgstr "編輯此篇文章"
-
-#: single.php:18
-#@ lightword
-msgid "Enjoy this article?"
-msgstr "喜歡這篇文章?"
-
-#: single.php:19
-#@ lightword
-msgid "Consider subscribing to our rss feed!"
-msgstr "請考慮訂閱我們的RSS!"
-
-#: single.php:26
-#@ lightword
-msgid "About"
-msgstr "關於"
-
-#: single.php:26
-#@ lightword
-msgid "No description. Please complete your profile."
-msgstr "沒有詳細敘述，請在完成您的個人資料。"
-
+# @ lightword
 #: footer.php:9
-#@ lightword
 msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
 msgstr "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> translated by <a href=\"http://www.drehteller.net/\" target=\"_blank\">Drehteller</a> and <a href=\"http://www.1000-spiele.de/\" target=\"_blank\">Online Spiele</a>"
 
+# @ lightword
+#: footer.php:13
+msgid "Go to top"
+msgstr "Go to top"
+
+# @ lightword
+#: functions.php:18
+msgid "Layout settings"
+msgstr "版面設定"
+
+# @ lightword
+#: functions.php:20
+#: functions.php:21
+msgid "Original"
+msgstr "原始的"
+
+# @ lightword
+#: functions.php:20
+msgid "Wider"
+msgstr "更寬"
+
+# @ lightword
+#: functions.php:25
+#, fuzzy
+msgid "Cuf&oacute;n settings"
+msgstr "Cufon 設定"
+
+# @ lightword
+#: functions.php:26
+msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
+msgstr ""
+
+# @ lightword
+#: functions.php:28
+#: functions.php:29
+#: functions.php:53
+#: functions.php:133
+#: functions.php:134
+msgid "Enabled"
+msgstr "啟用"
+
+# @ lightword
+#: functions.php:28
+#: functions.php:53
+#: functions.php:54
+#: functions.php:73
+#: functions.php:74
+#: functions.php:133
+msgid "Disabled"
+msgstr "關閉"
+
+# @ lightword
+#: functions.php:28
+msgid "Extra"
+msgstr "額外的"
+
+#: functions.php:28
+msgid "CSS3 Font-face (lightweight)"
+msgstr ""
+
+# @ lightword
+#: functions.php:38
+msgid "Disable comments on pages"
+msgstr "關閉\"回覆功能\""
+
+# @ lightword
+#: functions.php:39
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "如果您想 \"關閉\"文章的回覆功能 ，請勾選這個選項。"
+
+# @ lightword
+#: functions.php:51
+msgid "Custom image header"
+msgstr "自訂標題的影像"
+
+#: functions.php:53
+msgid "Use Wordpress Custom Header"
+msgstr ""
+
+# @ lightword
+#: functions.php:58
+msgid "Header image height in pixels"
+msgstr "標題影像的高度 (px單位)"
+
+# @ lightword
+#: functions.php:64
+#, fuzzy
+msgid "Header image width in pixels"
+msgstr "標題影像的高度 (px單位)"
+
+# @ lightword
+#: functions.php:70
+msgid "About author feature"
+msgstr "\"關於作者\"功能"
+
+# @ lightword
+#: functions.php:71
+#, fuzzy
+msgid "Add information about post author"
+msgstr "在文章的底部加入\"關於作者\"的資料。"
+
+# @ lightword
+#: functions.php:73
+msgid "Main page"
+msgstr ""
+
+# @ lightword
+#: functions.php:73
+msgid "Single page"
+msgstr ""
+
+# @ lightword
+#: functions.php:73
+msgid "Both"
+msgstr ""
+
+# @ lightword
+#: functions.php:77
+msgid "Enjoy this post feature"
+msgstr "\"喜歡這篇文章\"功能"
+
+# @ lightword
+#: functions.php:78
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "如果您想\"啟用\"<em>喜歡這篇文章</em>的功能，請勾選此選項。"
+
+# @ lightword
+#: functions.php:83
+msgid "Show categories on front menu"
+msgstr "在您的網頁顯示分類"
+
+# @ lightword
+#: functions.php:84
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "如果您想在網頁選單顯示\"分類\"而不是\"頁面\"，請勾選這個選項。"
+
+# @ lightword
+#: functions.php:89
+msgid "Exclude pages from front menu"
+msgstr "在網頁選單裡防止文章被顯示"
+
+# @ lightword
+#: functions.php:90
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr "輸入您想防止的文章編號。 例如：<code>5,19,24</code>"
+
+# @ lightword
+#: functions.php:95
+msgid "Exclude categories from front menu"
+msgstr "在網頁選單裡防止分類被顯示"
+
+# @ lightword
+#: functions.php:96
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr "輸入您想防止的分類編號。 例如：<code>5,19,24</code>"
+
+# @ lightword
+#: functions.php:101
+msgid "Remove home button"
+msgstr "移除\"首頁\"按鈕。"
+
+# @ lightword
+#: functions.php:102
+msgid "Remove home button from front menu"
+msgstr "在您的網頁選單移除\"首頁\"按鈕。"
+
+# @ lightword
+#: functions.php:107
+msgid "Remove search box"
+msgstr "移除\"搜尋列\""
+
+# @ lightword
+#: functions.php:108
+msgid "Remove search box and expand space for front menu"
+msgstr "移除您的\"搜尋列\"並拓寬您的網頁選單。"
+
+# @ lightword
+#: functions.php:113
+msgid "Remove tags from posts"
+msgstr "在您的文章移除\"標籤\""
+
+# @ lightword
+#: functions.php:114
+msgid "Show only categories in post footer"
+msgstr "只顯示\"分類\"在您文章的底部"
+
+# @ lightword
+#: functions.php:119
+msgid "Remove RSS badge"
+msgstr "移除RSS識別"
+
+# @ lightword
+#: functions.php:120
+msgid "Remove RSS badge from blog header"
+msgstr "將您網頁上面的RSS識別移除"
+
+# @ lightword
+#: functions.php:125
+msgid "Google Custom Search Engine"
+msgstr ""
+
+# @ lightword
+#: functions.php:126
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "在Google CSE裡的<strong>Search box code</strong>找到 <code>name=\"cx\"</code> ， 然後將 <code>value</code> 填入."
+
+# @ lightword
+#: functions.php:131
+msgid "Sidebox settings"
+msgstr "日期方塊設定"
+
+# @ lightword
+#: functions.php:133
+msgid "Show only date"
+msgstr "只顯示日期"
+
+# @ lightword
+#: functions.php:133
+msgid "Show only in posts"
+msgstr "只在文章裡顯示"
+
+# @ lightword
+#: functions.php:133
+msgid "Last two options together"
+msgstr "選擇最後兩個選項"
+
+# @ lightword
+#: functions.php:138
+msgid "Sidebar settings"
+msgstr "側邊攔設定"
+
+# @ lightword
+#: functions.php:140
+msgid "Two sidebars option is available on Wider layout only"
+msgstr "在 Wider 版面才能使用兩個側邊攔"
+
+# @ lightword
+#: functions.php:141
+#: functions.php:142
+msgid "One sidebar"
+msgstr "一條側邊攔"
+
+# @ lightword
+#: functions.php:141
+msgid "Two sidebars"
+msgstr "兩條側邊攔"
+
+# @ lightword
+#: functions.php:145
+msgid "Custom CSS"
+msgstr "自訂CSS語法"
+
+# @ lightword
+#: functions.php:146
+msgid "Put your custom css code here"
+msgstr "請將您的CSS語法填入這裡"
+
+# @ lightword
+#: functions.php:151
+msgid "AdSense"
+msgstr "AdSense"
+
+# @ lightword
+#: functions.php:152
+#, fuzzy
+msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
+msgstr "將您的 AdSense 代碼複製並填入這裡。"
+
+# @ lightword
+#: functions.php:157
+msgid "Additional header content"
+msgstr ""
+
+# @ lightword
+#: functions.php:158
+msgid "Additional header content, including scripts, etc"
+msgstr ""
+
+# @ lightword
+#: functions.php:163
+msgid "Additional footer content"
+msgstr ""
+
+# @ lightword
+#: functions.php:164
+msgid "Additional footer content for Google Analytics or any other service"
+msgstr ""
+
+# @ lightword
+#: functions.php:200
+#: functions.php:212
+msgid "LightWord Settings"
+msgstr "LightWord 設定"
+
+# @ lightword
+#: functions.php:207
+msgid "settings saved"
+msgstr "儲存設定"
+
+# @ lightword
+#: functions.php:208
+msgid "settings reset"
+msgstr "重置設定"
+
+# @ lightword
+#: functions.php:216
+msgid "Support the developer"
+msgstr "協助開發者"
+
+# @ lightword
 #: functions.php:228
-#: functions.php:236
-#: functions.php:244
-#: functions.php:252
-#: functions.php:260
-#: functions.php:268
-#: functions.php:275
-#@ lightword
-msgid "name"
+#: functions.php:306
+msgid "Save changes"
+msgstr "儲存改變"
+
+# @ lightword
+#: functions.php:233
+msgid "General settings"
+msgstr "一般設定"
+
+# @ lightword
+#: functions.php:312
+msgid "Search for help"
+msgstr "尋求幫忙"
+
+# @ lightword
+#: functions.php:312
+msgid "or"
+msgstr "或"
+
+# @ lightword
+#: functions.php:352
+#, fuzzy
+msgid "What is Cuf&oacute;n?"
+msgstr "什麼是 Cufon?"
+
+# @ lightword
+#: functions.php:352
+#, fuzzy
+msgid "website"
+msgstr "網站"
+
+# @ lightword
+#: functions.php:354
+msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
 msgstr ""
 
-#: functions.php:230
-#: functions.php:238
-#: functions.php:246
-#: functions.php:262
-#: functions.php:270
-#: functions.php:277
-#@ lightword
-msgid "desc"
+# @ lightword
+#: functions.php:355
+msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
 msgstr ""
 
-#: functions.php:245
-#@ lightword
-msgid "id"
+# @ lightword
+#: functions.php:356
+msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
 msgstr ""
+
+# @ lightword
+#: functions.php:359
+msgid "Click here to reset all settings"
+msgstr "點選這裡以重置所以設定"
+
+#: functions.php:588
+msgid "Search"
+msgstr "搜尋"
+
+# @ lightword
+#: functions.php:604
+#: functions.php:615
+msgid "Off"
+msgstr "關閉"
+
+# @ lightword
+#: functions.php:662
+msgid "Posted on"
+msgstr "發布於"
+
+# @ lightword
+#: functions.php:662
+msgid "F j, Y"
+msgstr ""
+
+# @ lightword
+#: functions.php:679
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "請在您的瀏覽器啟用\"逆連結追蹤\"，如果你是垃圾散佈者，請不要再散佈垃圾了!!"
+
+# @ lightword
+#: functions.php:700
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "Syndicate this site using RSS"
+msgstr "使用RSS 訂閱本站"
+
+# @ lightword
+#: functions.php:700
+msgid "Subscribe via RSS"
+msgstr "使用RSS 訂閱本站"
+
+# @ lightword
+#: functions.php:735
+msgid "F jS, Y - H:i"
+msgstr ""
+
+# @ lightword
+#: functions.php:737
+msgid "( REPLY )"
+msgstr "( 回覆 )"
+
+# @ lightword
+#: functions.php:738
+msgid "Your comment is awaiting moderation."
+msgstr "您的回覆正在等待審核。"
+
+# @ lightword
+#: functions.php:807
+#: functions.php:812
+#, fuzzy
+msgid "LightWord Navigation Bar"
+msgstr "LightWord 設定"
+
+# @ lightword
+#: header.php:38
+#: single-page-template.php:43
+msgid "Home"
+msgstr "首頁"
+
+# @ lightword
+#: index.php:13
+#: single.php:25
+#, fuzzy
+msgid "Posted by"
+msgstr "發布於"
+
+# @ lightword
+#: index.php:19
+#: page.php:11
+#: single-page-template.php:70
+#: single.php:14
+msgid "PAGES"
+msgstr "頁面"
+
+# @ lightword
+#: index.php:22
+#: single.php:30
+msgid "Filed under:"
+msgstr "分類於："
+
+# @ lightword
+#: index.php:22
+#: single.php:30
+msgid "Tagged as:"
+msgstr "標籤："
+
+# @ lightword
+#: index.php:23
+msgid "1 Comment"
+msgstr "1 則回覆"
+
+# @ lightword
+#: index.php:23
+#: single.php:31
+msgid "Comments Off"
+msgstr "回覆關閉"
+
+# @ lightword
+#: index.php:23
+msgid "No Comments"
+msgstr "沒有回覆"
+
+# @ lightword
+#: index.php:23
+msgid "Read more about"
+msgstr "閱讀更多\"關於我\""
+
+# @ lightword
+#: index.php:42
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; 較新的文章"
+
+# @ lightword
+#: index.php:43
+msgid "Older Entries &raquo;"
+msgstr "較舊的文章 &raquo;"
+
+# @ lightword
+#: page.php:7
+#: single-page-template.php:66
+msgid "Edit this page"
+msgstr "編輯這個頁面"
+
+# @ lightword
+#: sidebar-child.php:9
+#: sidebar.php:10
+#: alternatives/sidebar_v2.php:9
+msgid "Pages"
+msgstr "頁面"
+
+# @ lightword
+#: sidebar-child.php:14
+#: sidebar.php:15
+#: alternatives/sidebar_v2.php:14
+msgid "Categories"
+msgstr "分類"
+
+# @ lightword
+#: sidebar-child.php:19
+#: sidebar.php:20
+#: alternatives/sidebar_v2.php:34
+msgid "Blogroll"
+msgstr "網誌輪播"
+
+# @ lightword
+#: sidebar-child.php:24
+#: sidebar.php:25
+#: alternatives/sidebar_v2.php:39
+msgid "Archive"
+msgstr "彙整"
+
+# @ lightword
+#: sidebar-child.php:29
+#: sidebar.php:30
+#: alternatives/sidebar_v2.php:44
+msgid "Meta"
+msgstr "自訂欄位"
+
+# @ lightword
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+# @ lightword
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "在RSS追蹤所有文章的最新留言"
+
+# @ lightword
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "回覆 <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+# @ lightword
+#: single.php:8
+msgid "Edit this post"
+msgstr "編輯此篇文章"
+
+# @ lightword
+#: single.php:18
+msgid "Enjoy this article?"
+msgstr "喜歡這篇文章?"
+
+# @ lightword
+#: single.php:19
+msgid "Consider subscribing to our rss feed!"
+msgstr "請考慮訂閱我們的RSS!"
+
+# @ lightword
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n "
+#~ "text on header.<br/>Image location: <code>lightword/images/header-image."
+#~ "png</code> / Max width: <code>796px</code><br/><br/><em>After this option "
+#~ "is selected a new option will be revealed. Guess what? Image height! :)</"
+#~ "em>"
+#~ msgstr ""
+#~ "如果您想在標題處\"顯示影像\"而不是 Cufon 文字，請勾選這個選項。<br/>影像位"
+#~ "置： <code>lightword/images/header-image.png</code> / 最大寬度： "
+#~ "<code>796px</code>"
 

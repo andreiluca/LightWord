@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Finnish translation of LightWord (1.9.8)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-21 02:59+0200\n"
+"POT-Creation-Date: 2010-10-14 17:47+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Tomi Rantalankila\n"
@@ -13,771 +13,738 @@ msgstr ""
 "X-Poedit-Language: Finnish\n"
 "X-Poedit-Country: FINLAND\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: ..\n"
-"X-Textdomain-Support: yes"
 
-#: archives.php:10
-#: index.php:24
-#@ lightword
+# @ lightword
+#: ../archives.php:10
+#: ../index.php:23
 msgid "Continue reading"
 msgstr "Lisää"
 
-#: archives.php:61
-#: archives.php:71
-#: index.php:33
-#: page.php:17
-#: single-page-template.php:72
-#: single.php:49
-#@ lightword
+# @ lightword
+#: ../archives.php:61
+#: ../archives.php:71
+#: ../index.php:32
+#: ../page.php:17
+#: ../single-page-template.php:76
+#: ../single.php:48
 msgid "Not Found"
 msgstr "Etsimääsi sisältöä ei löytynyt"
 
-#: archives.php:61
-#: archives.php:72
-#: index.php:34
-#: page.php:18
-#: single-page-template.php:73
-#: single.php:50
-#@ lightword
+# @ lightword
+#: ../archives.php:61
+#: ../archives.php:72
+#: ../index.php:33
+#: ../page.php:18
+#: ../single-page-template.php:77
+#: ../single.php:49
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "Valitettavasti etsimääsi sisältöä ei löytynyt."
 
-#: comments.php:6
-#: legacy.comments.php:8
-#@ lightword
+# @ lightword
+#: ../comments.php:6
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "Tämä viesti on salasanasuojattu. Ole hyvä ja syötä salasana nähdäksesi kommentit."
 
-#: comments.php:15
-#: index.php:24
-#: legacy.comments.php:12
-#@ lightword
+# @ lightword
+#: ../comments.php:15
+#: ../index.php:23
 msgid "Comments"
 msgstr "Kommentit"
 
-#: comments.php:16
-#@ lightword
+# @ lightword
+#: ../comments.php:16
 msgid "Trackbacks"
 msgstr "Paluuviitteet"
 
-#: comments.php:17
-#: legacy.comments.php:13
-#@ lightword
+# @ lightword
+#: ../comments.php:17
 msgid "( subscribe to comments on this post )"
 msgstr "( seuraa tämän artikkelin kommentteja )"
 
-#: comments.php:30
-#@ lightword
+# @ lightword
+#: ../comments.php:30
 msgid "&laquo; Older Comments"
 msgstr "&laquo; Vanhemmat kommentit"
 
-#: comments.php:31
-#@ lightword
+# @ lightword
+#: ../comments.php:31
 msgid "Newer Comments &raquo;"
 msgstr "Uudemmat kommentit &raquo;"
 
-#: comments.php:39
-#: legacy.comments.php:47
-#@ lightword
+# @ lightword
+#: ../comments.php:39
 msgid "No comments yet."
 msgstr "Ei kommentteja vielä."
 
-#: comments.php:41
-#: legacy.comments.php:91
-#@ lightword
+# @ lightword
+#: ../comments.php:41
 msgid "Sorry, the comment form is closed at this time."
 msgstr "Valitettavasti kommentointi on toistaiseksi estetty."
 
-#: comments.php:53
-#: legacy.comments.php:81
-#@ lightword
+# @ lightword
+#: ../comments.php:53
+#: ../comments.php:92
 msgid "Submit"
 msgstr "Lähetä"
 
-#: comments.php:59
+#: ../comments.php:59
 #, fuzzy
 msgid "Cancel reply"
 msgstr "( Peruuta )"
 
-#: comments.php:69
-#@ lightword
-msgid "No trackbacks yet."
-msgstr "Ei paluuviitteitä vielä."
-
-#: comments.php:70
-#@ lightword
-msgid "Trackbacks are disabled."
-msgstr "Paluuviitteet kytketty pois päältä."
-
-#: footer.php:7
-#, fuzzy, php-format, php-format
-#@ lightword
-msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
-msgstr ""
-
-#: footer.php:13
-#@ lightword
-msgid "Go to top"
-msgstr "Ylös"
-
-#: functions.php:16
-#@ lightword
-msgid "Layout settings"
-msgstr "Ulkoasun asetukset"
-
-#: functions.php:18
-#: functions.php:19
-#@ lightword
-msgid "Original"
-msgstr "Normaali"
-
-#: functions.php:18
-#@ lightword
-msgid "Wider"
-msgstr "Leveä"
-
-#: functions.php:23
-#, fuzzy
-#@ lightword
-msgid "Cuf&oacute;n settings"
-msgstr "Cufonin asetukset<p><i>(kytke pois päältä jos ääkköset eivät toimi)</i></p>"
-
-#: functions.php:24
-#@ lightword
-msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
-msgstr ""
-
-#: functions.php:26
-#: functions.php:27
-#: functions.php:117
-#: functions.php:118
-#@ lightword
-msgid "Enabled"
-msgstr "Päällä"
-
-#: functions.php:26
-#: functions.php:57
-#: functions.php:58
-#: functions.php:117
-#@ lightword
-msgid "Disabled"
-msgstr "Pois päältä"
-
-#: functions.php:26
-#@ lightword
-msgid "Extra"
-msgstr ""
-
-#: functions.php:26
-msgid "CSS3 Font-face (lightweight)"
-msgstr ""
-
-#: functions.php:36
-#@ lightword
-msgid "Disable comments on pages"
-msgstr "Estä kommentointi sivuilla"
-
-#: functions.php:37
-#@ lightword
-msgid "Check this box if you would like to DISABLE COMMENTS on pages"
-msgstr "Laita ruksi tähän laatikkoon jos haluat ESTÄÄ KOMMENTIT sivuilla"
-
-#: functions.php:42
-#@ lightword
-msgid "Custom image header"
-msgstr "Muokattu kuvakenttä"
-
-#: functions.php:43
-#, fuzzy
-#@ lightword
-msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
-msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KUVAN Cufon tekstin sijasta sivun ylätunnisteessa.<br/>Kuvan sijainti: <code>lightword/images/header-image.png</code> / Mitat: <code>600x56px</code>"
-
-#: functions.php:48
-#@ lightword
-msgid "Header image height in pixels"
-msgstr "Ylätunnisteen kuvan korkeus pikseleinä"
-
-#: functions.php:54
-#@ lightword
-msgid "About author feature"
-msgstr "Tietoa artikkelin kirjoittaja (author) ominaisuudesta"
-
-#: functions.php:55
-#, fuzzy
-#@ lightword
-msgid "Add information about post author"
-msgstr "Jätä tietoa artikkelin kirjoittajasta artikkelin alatunnisteeseen"
-
-#: functions.php:57
-#@ lightword
-msgid "Main page"
-msgstr ""
-
-#: functions.php:57
-#@ lightword
-msgid "Single page"
-msgstr ""
-
-#: functions.php:57
-#@ lightword
-msgid "Both"
-msgstr ""
-
-#: functions.php:61
-#@ lightword
-msgid "Enjoy this post feature"
-msgstr "Nauti tämän viestin ominaisuuksista"
-
-#: functions.php:62
-#@ lightword
-msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr "Laita ruksi tähän laatikkoon jos haluat laittaa <em>Nauti tästä artikkelista</em> ominaisuuden PÄÄLLE"
-
-#: functions.php:67
-#@ lightword
-msgid "Show categories on front menu"
-msgstr "Näytä kategoriat päävalikossa"
-
-#: functions.php:68
-#@ lightword
-msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
-msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KATEGORIAT sivujen sijasta päävalikossa"
-
-#: functions.php:73
-#@ lightword
-msgid "Exclude pages from front menu"
-msgstr "Poista sivut yläotsakkeesta"
-
-#: functions.php:74
-#@ lightword
-msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
-msgstr "Kirjoita sivun numero seuraavaan kenttään, esimerkiksi : <code>5,19,24</code>"
-
-#: functions.php:79
-#@ lightword
-msgid "Exclude categories from front menu"
-msgstr "Poista kategoriat yläotsakkeesta"
-
-#: functions.php:80
-#@ lightword
-msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
-msgstr "Kirjoita kategorioiden numero seuraavaan kenttään, esimerkiksi: <code>5,19,24</code>"
-
-#: functions.php:85
-#@ lightword
-msgid "Remove home button"
-msgstr "Poista etusivu-nappi"
-
-#: functions.php:86
-#@ lightword
-msgid "Remove home button from front menu"
-msgstr "Poista etusivu-nappi päävalikosta"
-
-#: functions.php:91
-#@ lightword
-msgid "Remove search box"
-msgstr "Poista hakulaatikko"
-
-#: functions.php:92
-#@ lightword
-msgid "Remove search box and expand space for front menu"
-msgstr "Poista hakulaatikko ja lisää tilaa ylätunnisteelle"
-
-#: functions.php:97
-#@ lightword
-msgid "Remove tags from posts"
-msgstr "Poista tagit artikkeleista"
-
-#: functions.php:98
-#@ lightword
-msgid "Show only categories in post footer"
-msgstr "Näytä ainoastaan kategoriat artikkelin alatunnisteessa"
-
-#: functions.php:103
-#@ lightword
-msgid "Remove RSS badge"
-msgstr "Poista RSS-leima"
-
-#: functions.php:104
-#@ lightword
-msgid "Remove RSS badge from blog header"
-msgstr "Poista RSS-leima blogin ylätunnisteesta"
-
-#: functions.php:109
-#@ lightword
-msgid "Google Custom Search Engine"
-msgstr ""
-
-#: functions.php:110
-#@ lightword
-msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
-msgstr "Etsi <code>name=\"cx\"</code> in the <strong>Hakulaatikon koodi</strong> Google CSE:llä ja kirjoita <code>arvo</code> tähän."
-
-#: functions.php:115
-#@ lightword
-msgid "Sidebox settings"
-msgstr "Artikkelin päivämäärän esitys"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only date"
-msgstr "Näytä vain päivämäärä"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only in posts"
-msgstr "Näytä ainoastaan artikkeleissa"
-
-#: functions.php:117
-#@ lightword
-msgid "Last two options together"
-msgstr "Kummatkin vaihtoehdot yhdessä"
-
-#: functions.php:122
-#@ lightword
-msgid "Sidebar settings"
-msgstr "Sivupalkin asetukset"
-
-#: functions.php:124
-#@ lightword
-msgid "Two sidebars option is available on Wider layout only"
-msgstr "Kahta sivupalkkia voi käyttää ainoastaan leveämmän ulkoasun kanssa"
-
-#: functions.php:125
-#: functions.php:126
-#@ lightword
-msgid "One sidebar"
-msgstr "Yksi sivupalkki"
-
-#: functions.php:125
-#@ lightword
-msgid "Two sidebars"
-msgstr "Kaksi sivupalkkia"
-
-#: functions.php:129
-#@ lightword
-msgid "Custom CSS"
-msgstr "Omavalintainen CSS"
-
-#: functions.php:130
-#@ lightword
-msgid "Put your custom css code here"
-msgstr "Kirjoita oma CSS-koodisi tähän"
-
-#: functions.php:135
-#@ lightword
-msgid "AdSense"
-msgstr ""
-
-#: functions.php:136
-#, fuzzy
-#@ lightword
-msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
-msgstr "Kopioi AdSense koodisi ja liitä se tähän."
-
-#: functions.php:141
-#@ lightword
-msgid "Additional header content"
-msgstr ""
-
-#: functions.php:142
-#@ lightword
-msgid "Additional header content, including scripts, etc"
-msgstr ""
-
-#: functions.php:147
-#@ lightword
-msgid "Additional footer content"
-msgstr ""
-
-#: functions.php:148
-#@ lightword
-msgid "Additional footer content for Google Analytics or any other service"
-msgstr ""
-
-#: functions.php:184
-#: functions.php:196
-#@ lightword
-msgid "LightWord Settings"
-msgstr "LightWordin asetukset"
-
-#: functions.php:191
-#@ lightword
-msgid "settings saved"
-msgstr ": asetukset tallennettu"
-
-#: functions.php:192
-#@ lightword
-msgid "settings reset"
-msgstr ": asetukset palautettu"
-
-#: functions.php:200
-#@ lightword
-msgid "Support the developer"
-msgstr "Tue kehittäjää"
-
-#: functions.php:212
-#: functions.php:282
-#@ lightword
-msgid "Save changes"
-msgstr "Tallenna muutokset"
-
-#: functions.php:217
-#@ lightword
-msgid "General settings"
-msgstr "Yleiset asetukset"
-
-#: functions.php:288
-#@ lightword
-msgid "Search for help"
-msgstr "Etsi apua"
-
-#: functions.php:288
-#@ lightword
-msgid "or"
-msgstr "tai"
-
-#: functions.php:328
-#, fuzzy
-#@ lightword
-msgid "What is Cuf&oacute;n?"
-msgstr "Mikä on Cufon?"
-
-#: functions.php:328
-#, fuzzy
-#@ lightword
-msgid "website"
-msgstr "WWW-sivu"
-
-#: functions.php:330
-#@ lightword
-msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
-msgstr ""
-
-#: functions.php:331
-#@ lightword
-msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
-msgstr ""
-
-#: functions.php:332
-#@ lightword
-msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
-msgstr ""
-
-#: functions.php:335
-#@ lightword
-msgid "Click here to reset all settings"
-msgstr "Palauta tästä kaikki alkuperäiset asetukset"
-
-#: functions.php:554
-msgid "Search"
-msgstr "Hae"
-
-#: functions.php:570
-#: functions.php:581
-#@ lightword
-msgid "Off"
-msgstr "Pois"
-
-#: functions.php:628
-#@ lightword
-msgid "Posted on"
-msgstr "Kirjoitettu"
-
-#: functions.php:628
-#, fuzzy
-#@ lightword
-msgid "F j, Y"
-msgstr "j.m.Y, G:i"
-
-#: functions.php:645
-#@ lightword
-msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr "Ole hyvä ja laita selaimesi viitteet päälle. Jos taas olet roskapostittaja niin poistu sivulta!"
-
-#: alternatives/sidebar_v2.php:48
-#: functions.php:666
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "Syndicate this site using RSS"
-msgstr "Seuraa sivua RSS-syötteellä"
-
-#: functions.php:666
-#@ lightword
-msgid "Subscribe via RSS"
-msgstr "RSS"
-
-#: functions.php:701
-#@ lightword
-msgid "F jS, Y - H:i"
-msgstr "j.m.Y, G:i"
-
-#: functions.php:703
-#@ lightword
-msgid "( REPLY )"
-msgstr "( VASTAA )"
-
-#: functions.php:704
-#: legacy.comments.php:33
-#@ lightword
-msgid "Your comment is awaiting moderation."
-msgstr "Kommenttisi odottaa tarkistusta."
-
-#: functions.php:773
-#: functions.php:778
-#, fuzzy
-#@ lightword
-msgid "LightWord Navigation Bar"
-msgstr "LightWordin asetukset"
-
-#: header.php:38
-#: single-page-template.php:43
-#@ lightword
-msgid "Home"
-msgstr "Etusivu"
-
-#: index.php:14
-#, fuzzy
-#@ lightword
-msgid "Posted by"
-msgstr "Kirjoitettu"
-
-#: index.php:20
-#: page.php:11
-#: single-page-template.php:66
-#: single.php:14
-#@ lightword
-msgid "PAGES"
-msgstr "SIVUT"
-
-#: index.php:23
-#: single.php:31
-#@ lightword
-msgid "Filed under:"
-msgstr "Kategoriat:"
-
-#: index.php:23
-#: single.php:31
-#@ lightword
-msgid "Tagged as:"
-msgstr "Tagit:"
-
-#: index.php:24
-#@ lightword
-msgid "1 Comment"
-msgstr "1 kommentti"
-
-#: index.php:24
-#: single.php:32
-#@ lightword
-msgid "Comments Off"
-msgstr "Kommentit pois päältä"
-
-#: index.php:24
-#@ lightword
-msgid "No Comments"
-msgstr "Ei kommentteja"
-
-#: index.php:24
-#@ lightword
-msgid "Read more about"
-msgstr "Lue lisää"
-
-#: index.php:43
-#@ lightword
-msgid "&laquo; Newer Entries"
-msgstr "&laquo; Uudemmat artikkelit"
-
-#: index.php:44
-#@ lightword
-msgid "Older Entries &raquo;"
-msgstr "Vanhemmat artikkelit &raquo;"
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "F jS, Y"
-msgstr "j.m.Y, G:i"
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "edit this comment"
-msgstr "muokkaa tätä kommenttia"
-
-#: legacy.comments.php:52
-#: single.php:32
-#@ lightword
+# @ lightword
+#: ../comments.php:65
+#: ../single.php:31
 msgid "Leave a comment"
 msgstr "Jätä kommentti"
 
-#: legacy.comments.php:55
+# @ lightword
+#: ../comments.php:68
 #, php-format
-#@ lightword
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Sinun pitää olle <a href=\"%s\">kirjautuneena sisään</a> kommentoidaksesi."
 
-#: legacy.comments.php:62
+# @ lightword
+#: ../comments.php:73
 #, php-format
-#@ lightword
 msgid "Logged in as %s."
 msgstr "Kirjautunut sisään tunnuksella %s."
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: ../comments.php:73
 msgid "Log out of this account"
 msgstr "Kirjaa tunnus ulos"
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: ../comments.php:73
 msgid "Log out &raquo;"
 msgstr "Kirjaudu ulos &raquo;"
 
-#: legacy.comments.php:67
-#@ lightword
+# @ lightword
+#: ../comments.php:82
 msgid "Name"
 msgstr "Nimi"
 
-#: legacy.comments.php:67
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: ../comments.php:82
+#: ../comments.php:85
 msgid "(required)"
 msgstr "(vaaditaan)"
 
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: ../comments.php:85
 msgid "Mail (will not be published)"
 msgstr "Sähköposti (ei julkaista)"
 
-#: legacy.comments.php:73
-#@ lightword
+# @ lightword
+#: ../comments.php:88
 msgid "Website"
 msgstr "WWW-sivu"
 
-#: legacy.comments.php:77
+#: ../comments.php:92
+#, fuzzy
+msgid "( Cancel )"
+msgstr "( Peruuta )"
+
+# @ lightword
+#: ../comments.php:105
+msgid "No trackbacks yet."
+msgstr "Ei paluuviitteitä vielä."
+
+# @ lightword
+#: ../comments.php:106
+msgid "Trackbacks are disabled."
+msgstr "Paluuviitteet kytketty pois päältä."
+
+# @ lightword
+#: ../footer.php:7
 #, php-format
-#@ lightword
-msgid "You can use these tags: %s"
-msgstr "Voit käyttää näitä tageja: %s"
-
-#: page.php:7
-#: single-page-template.php:62
-#@ lightword
-msgid "Edit this page"
-msgstr "Muokkaa tätä sivua"
-
-#: alternatives/sidebar_v2.php:9
-#: sidebar-child.php:9
-#: sidebar.php:10
-#@ lightword
-msgid "Pages"
-msgstr "Sivut"
-
-#: alternatives/sidebar_v2.php:14
-#: sidebar-child.php:14
-#: sidebar.php:15
-#@ lightword
-msgid "Categories"
-msgstr "Kategoriat"
-
-#: alternatives/sidebar_v2.php:34
-#: sidebar-child.php:19
-#: sidebar.php:20
-#@ lightword
-msgid "Blogroll"
+msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
 msgstr ""
 
-#: alternatives/sidebar_v2.php:39
-#: sidebar-child.php:24
-#: sidebar.php:25
-#@ lightword
-msgid "Archive"
-msgstr "Arkisto"
-
-#: alternatives/sidebar_v2.php:44
-#: sidebar-child.php:29
-#: sidebar.php:30
-#@ lightword
-msgid "Meta"
-msgstr ""
-
-#: alternatives/sidebar_v2.php:48
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "<abbr title=\"RSS-syöte\">RSS</abbr>"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "The latest comments to all posts in RSS"
-msgstr "Viimeimmät kommentit kaikista artikkeleista RSS-syötteenä"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "Kommentit <abbr title=\"Really Simple Syndication\">RSS-syötteenä</abbr>"
-
-#: single.php:8
-#@ lightword
-msgid "Edit this post"
-msgstr "Muokkaa tätä artikkelia"
-
-#: single.php:18
-#@ lightword
-msgid "Enjoy this article?"
-msgstr "Nauti tästä artikkelista?"
-
-#: single.php:19
-#@ lightword
-msgid "Consider subscribing to our rss feed!"
-msgstr "Harkitse RSS-syötteemme seuraamista!"
-
-#: single.php:26
-#@ lightword
-msgid "About"
-msgstr "Tietoa"
-
-#: single.php:26
-#@ lightword
-msgid "No description. Please complete your profile."
-msgstr "Ei kuvausta. Ole hyvä ja täydennä profiiliasi."
-
-#: footer.php:9
-#@ lightword
+# @ lightword
+#: ../footer.php:9
 msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
 msgstr "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> translated by <a href=\"http://www.drehteller.net/\" target=\"_blank\">Drehteller</a> and <a href=\"http://www.1000-spiele.de/\" target=\"_blank\">Online Spiele</a>"
 
-#: functions.php:228
-#: functions.php:236
-#: functions.php:244
-#: functions.php:252
-#: functions.php:260
-#: functions.php:268
-#: functions.php:275
-#@ lightword
-msgid "name"
+# @ lightword
+#: ../footer.php:13
+msgid "Go to top"
+msgstr "Ylös"
+
+# @ lightword
+#: ../functions.php:18
+msgid "Layout settings"
+msgstr "Ulkoasun asetukset"
+
+# @ lightword
+#: ../functions.php:20
+#: ../functions.php:21
+msgid "Original"
+msgstr "Normaali"
+
+# @ lightword
+#: ../functions.php:20
+msgid "Wider"
+msgstr "Leveä"
+
+# @ lightword
+#: ../functions.php:25
+#, fuzzy
+msgid "Cuf&oacute;n settings"
+msgstr "Cufonin asetukset<p><i>(kytke pois päältä jos ääkköset eivät toimi)</i></p>"
+
+# @ lightword
+#: ../functions.php:26
+msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
 msgstr ""
 
-#: functions.php:230
-#: functions.php:238
-#: functions.php:246
-#: functions.php:262
-#: functions.php:270
-#: functions.php:277
-#@ lightword
-msgid "desc"
+# @ lightword
+#: ../functions.php:28
+#: ../functions.php:29
+#: ../functions.php:53
+#: ../functions.php:133
+#: ../functions.php:134
+msgid "Enabled"
+msgstr "Päällä"
+
+# @ lightword
+#: ../functions.php:28
+#: ../functions.php:53
+#: ../functions.php:54
+#: ../functions.php:73
+#: ../functions.php:74
+#: ../functions.php:133
+msgid "Disabled"
+msgstr "Pois päältä"
+
+# @ lightword
+#: ../functions.php:28
+msgid "Extra"
 msgstr ""
 
-#: functions.php:245
-#@ lightword
-msgid "id"
+#: ../functions.php:28
+msgid "CSS3 Font-face (lightweight)"
 msgstr ""
+
+# @ lightword
+#: ../functions.php:38
+msgid "Disable comments on pages"
+msgstr "Estä kommentointi sivuilla"
+
+# @ lightword
+#: ../functions.php:39
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Laita ruksi tähän laatikkoon jos haluat ESTÄÄ KOMMENTIT sivuilla"
+
+# @ lightword
+#: ../functions.php:51
+msgid "Custom image header"
+msgstr "Muokattu kuvakenttä"
+
+#: ../functions.php:53
+msgid "Use Wordpress Custom Header"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:58
+msgid "Header image height in pixels"
+msgstr "Ylätunnisteen kuvan korkeus pikseleinä"
+
+# @ lightword
+#: ../functions.php:64
+#, fuzzy
+msgid "Header image width in pixels"
+msgstr "Ylätunnisteen kuvan korkeus pikseleinä"
+
+# @ lightword
+#: ../functions.php:70
+msgid "About author feature"
+msgstr "Tietoa artikkelin kirjoittaja (author) ominaisuudesta"
+
+# @ lightword
+#: ../functions.php:71
+#, fuzzy
+msgid "Add information about post author"
+msgstr "Jätä tietoa artikkelin kirjoittajasta artikkelin alatunnisteeseen"
+
+# @ lightword
+#: ../functions.php:73
+msgid "Main page"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:73
+msgid "Single page"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:73
+msgid "Both"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:77
+msgid "Enjoy this post feature"
+msgstr "Nauti tämän viestin ominaisuuksista"
+
+# @ lightword
+#: ../functions.php:78
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Laita ruksi tähän laatikkoon jos haluat laittaa <em>Nauti tästä artikkelista</em> ominaisuuden PÄÄLLE"
+
+# @ lightword
+#: ../functions.php:83
+msgid "Show categories on front menu"
+msgstr "Näytä kategoriat päävalikossa"
+
+# @ lightword
+#: ../functions.php:84
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KATEGORIAT sivujen sijasta päävalikossa"
+
+# @ lightword
+#: ../functions.php:89
+msgid "Exclude pages from front menu"
+msgstr "Poista sivut yläotsakkeesta"
+
+# @ lightword
+#: ../functions.php:90
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr "Kirjoita sivun numero seuraavaan kenttään, esimerkiksi : <code>5,19,24</code>"
+
+# @ lightword
+#: ../functions.php:95
+msgid "Exclude categories from front menu"
+msgstr "Poista kategoriat yläotsakkeesta"
+
+# @ lightword
+#: ../functions.php:96
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr "Kirjoita kategorioiden numero seuraavaan kenttään, esimerkiksi: <code>5,19,24</code>"
+
+# @ lightword
+#: ../functions.php:101
+msgid "Remove home button"
+msgstr "Poista etusivu-nappi"
+
+# @ lightword
+#: ../functions.php:102
+msgid "Remove home button from front menu"
+msgstr "Poista etusivu-nappi päävalikosta"
+
+# @ lightword
+#: ../functions.php:107
+msgid "Remove search box"
+msgstr "Poista hakulaatikko"
+
+# @ lightword
+#: ../functions.php:108
+msgid "Remove search box and expand space for front menu"
+msgstr "Poista hakulaatikko ja lisää tilaa ylätunnisteelle"
+
+# @ lightword
+#: ../functions.php:113
+msgid "Remove tags from posts"
+msgstr "Poista tagit artikkeleista"
+
+# @ lightword
+#: ../functions.php:114
+msgid "Show only categories in post footer"
+msgstr "Näytä ainoastaan kategoriat artikkelin alatunnisteessa"
+
+# @ lightword
+#: ../functions.php:119
+msgid "Remove RSS badge"
+msgstr "Poista RSS-leima"
+
+# @ lightword
+#: ../functions.php:120
+msgid "Remove RSS badge from blog header"
+msgstr "Poista RSS-leima blogin ylätunnisteesta"
+
+# @ lightword
+#: ../functions.php:125
+msgid "Google Custom Search Engine"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:126
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Etsi <code>name=\"cx\"</code> in the <strong>Hakulaatikon koodi</strong> Google CSE:llä ja kirjoita <code>arvo</code> tähän."
+
+# @ lightword
+#: ../functions.php:131
+msgid "Sidebox settings"
+msgstr "Artikkelin päivämäärän esitys"
+
+# @ lightword
+#: ../functions.php:133
+msgid "Show only date"
+msgstr "Näytä vain päivämäärä"
+
+# @ lightword
+#: ../functions.php:133
+msgid "Show only in posts"
+msgstr "Näytä ainoastaan artikkeleissa"
+
+# @ lightword
+#: ../functions.php:133
+msgid "Last two options together"
+msgstr "Kummatkin vaihtoehdot yhdessä"
+
+# @ lightword
+#: ../functions.php:138
+msgid "Sidebar settings"
+msgstr "Sivupalkin asetukset"
+
+# @ lightword
+#: ../functions.php:140
+msgid "Two sidebars option is available on Wider layout only"
+msgstr "Kahta sivupalkkia voi käyttää ainoastaan leveämmän ulkoasun kanssa"
+
+# @ lightword
+#: ../functions.php:141
+#: ../functions.php:142
+msgid "One sidebar"
+msgstr "Yksi sivupalkki"
+
+# @ lightword
+#: ../functions.php:141
+msgid "Two sidebars"
+msgstr "Kaksi sivupalkkia"
+
+# @ lightword
+#: ../functions.php:145
+msgid "Custom CSS"
+msgstr "Omavalintainen CSS"
+
+# @ lightword
+#: ../functions.php:146
+msgid "Put your custom css code here"
+msgstr "Kirjoita oma CSS-koodisi tähän"
+
+# @ lightword
+#: ../functions.php:151
+msgid "AdSense"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:152
+#, fuzzy
+msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
+msgstr "Kopioi AdSense koodisi ja liitä se tähän."
+
+# @ lightword
+#: ../functions.php:157
+msgid "Additional header content"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:158
+msgid "Additional header content, including scripts, etc"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:163
+msgid "Additional footer content"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:164
+msgid "Additional footer content for Google Analytics or any other service"
+msgstr ""
+
+# @ lightword
+#: ../functions.php:200
+#: ../functions.php:212
+msgid "LightWord Settings"
+msgstr "LightWordin asetukset"
+
+# @ lightword
+#: ../functions.php:207
+msgid "settings saved"
+msgstr ": asetukset tallennettu"
+
+# @ lightword
+#: ../functions.php:208
+msgid "settings reset"
+msgstr ": asetukset palautettu"
+
+# @ lightword
+#: ../functions.php:216
+msgid "Support the developer"
+msgstr "Tue kehittäjää"
+
+# @ lightword
+#: ../functions.php:228
+#: ../functions.php:306
+msgid "Save changes"
+msgstr "Tallenna muutokset"
+
+# @ lightword
+#: ../functions.php:233
+msgid "General settings"
+msgstr "Yleiset asetukset"
+
+# @ lightword
+#: ../functions.php:312
+msgid "Search for help"
+msgstr "Etsi apua"
+
+# @ lightword
+#: ../functions.php:312
+msgid "or"
+msgstr "tai"
+
+# @ lightword
+#: ../functions.php:352
+#, fuzzy
+msgid "What is Cuf&oacute;n?"
+msgstr "Mikä on Cufon?"
+
+# @ lightword
+#: ../functions.php:352
+#, fuzzy
+msgid "website"
+msgstr "WWW-sivu"
+
+# @ lightword
+#: ../functions.php:354
+msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
+msgstr ""
+
+# @ lightword
+#: ../functions.php:355
+msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
+msgstr ""
+
+# @ lightword
+#: ../functions.php:356
+msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
+msgstr ""
+
+# @ lightword
+#: ../functions.php:359
+msgid "Click here to reset all settings"
+msgstr "Palauta tästä kaikki alkuperäiset asetukset"
+
+#: ../functions.php:588
+msgid "Search"
+msgstr "Hae"
+
+# @ lightword
+#: ../functions.php:604
+#: ../functions.php:615
+msgid "Off"
+msgstr "Pois"
+
+# @ lightword
+#: ../functions.php:662
+msgid "Posted on"
+msgstr "Kirjoitettu"
+
+# @ lightword
+#: ../functions.php:662
+#, fuzzy
+msgid "F j, Y"
+msgstr "j.m.Y, G:i"
+
+# @ lightword
+#: ../functions.php:679
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Ole hyvä ja laita selaimesi viitteet päälle. Jos taas olet roskapostittaja niin poistu sivulta!"
+
+# @ lightword
+#: ../functions.php:700
+#: ../sidebar-child.php:33
+#: ../sidebar.php:34
+#: ../alternatives/sidebar_v2.php:48
+msgid "Syndicate this site using RSS"
+msgstr "Seuraa sivua RSS-syötteellä"
+
+# @ lightword
+#: ../functions.php:700
+msgid "Subscribe via RSS"
+msgstr "RSS"
+
+# @ lightword
+#: ../functions.php:735
+msgid "F jS, Y - H:i"
+msgstr "j.m.Y, G:i"
+
+# @ lightword
+#: ../functions.php:737
+msgid "( REPLY )"
+msgstr "( VASTAA )"
+
+# @ lightword
+#: ../functions.php:738
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa tarkistusta."
+
+# @ lightword
+#: ../functions.php:807
+#: ../functions.php:812
+#, fuzzy
+msgid "LightWord Navigation Bar"
+msgstr "LightWordin asetukset"
+
+# @ lightword
+#: ../header.php:38
+#: ../single-page-template.php:43
+msgid "Home"
+msgstr "Etusivu"
+
+# @ lightword
+#: ../index.php:13
+#: ../single.php:25
+#, fuzzy
+msgid "Posted by"
+msgstr "Kirjoitettu"
+
+# @ lightword
+#: ../index.php:19
+#: ../page.php:11
+#: ../single-page-template.php:70
+#: ../single.php:14
+msgid "PAGES"
+msgstr "SIVUT"
+
+# @ lightword
+#: ../index.php:22
+#: ../single.php:30
+msgid "Filed under:"
+msgstr "Kategoriat:"
+
+# @ lightword
+#: ../index.php:22
+#: ../single.php:30
+msgid "Tagged as:"
+msgstr "Tagit:"
+
+# @ lightword
+#: ../index.php:23
+msgid "1 Comment"
+msgstr "1 kommentti"
+
+# @ lightword
+#: ../index.php:23
+#: ../single.php:31
+msgid "Comments Off"
+msgstr "Kommentit pois päältä"
+
+# @ lightword
+#: ../index.php:23
+msgid "No Comments"
+msgstr "Ei kommentteja"
+
+# @ lightword
+#: ../index.php:23
+msgid "Read more about"
+msgstr "Lue lisää"
+
+# @ lightword
+#: ../index.php:42
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Uudemmat artikkelit"
+
+# @ lightword
+#: ../index.php:43
+msgid "Older Entries &raquo;"
+msgstr "Vanhemmat artikkelit &raquo;"
+
+# @ lightword
+#: ../page.php:7
+#: ../single-page-template.php:66
+msgid "Edit this page"
+msgstr "Muokkaa tätä sivua"
+
+# @ lightword
+#: ../sidebar-child.php:9
+#: ../sidebar.php:10
+#: ../alternatives/sidebar_v2.php:9
+msgid "Pages"
+msgstr "Sivut"
+
+# @ lightword
+#: ../sidebar-child.php:14
+#: ../sidebar.php:15
+#: ../alternatives/sidebar_v2.php:14
+msgid "Categories"
+msgstr "Kategoriat"
+
+# @ lightword
+#: ../sidebar-child.php:19
+#: ../sidebar.php:20
+#: ../alternatives/sidebar_v2.php:34
+msgid "Blogroll"
+msgstr ""
+
+# @ lightword
+#: ../sidebar-child.php:24
+#: ../sidebar.php:25
+#: ../alternatives/sidebar_v2.php:39
+msgid "Archive"
+msgstr "Arkisto"
+
+# @ lightword
+#: ../sidebar-child.php:29
+#: ../sidebar.php:30
+#: ../alternatives/sidebar_v2.php:44
+msgid "Meta"
+msgstr ""
+
+# @ lightword
+#: ../sidebar-child.php:33
+#: ../sidebar.php:34
+#: ../alternatives/sidebar_v2.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"RSS-syöte\">RSS</abbr>"
+
+# @ lightword
+#: ../sidebar-child.php:34
+#: ../sidebar.php:35
+#: ../alternatives/sidebar_v2.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "Viimeimmät kommentit kaikista artikkeleista RSS-syötteenä"
+
+# @ lightword
+#: ../sidebar-child.php:34
+#: ../sidebar.php:35
+#: ../alternatives/sidebar_v2.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Kommentit <abbr title=\"Really Simple Syndication\">RSS-syötteenä</abbr>"
+
+# @ lightword
+#: ../single.php:8
+msgid "Edit this post"
+msgstr "Muokkaa tätä artikkelia"
+
+# @ lightword
+#: ../single.php:18
+msgid "Enjoy this article?"
+msgstr "Nauti tästä artikkelista?"
+
+# @ lightword
+#: ../single.php:19
+msgid "Consider subscribing to our rss feed!"
+msgstr "Harkitse RSS-syötteemme seuraamista!"
+
+# @ lightword
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n "
+#~ "text on header.<br/>Image location: <code>lightword/images/header-image."
+#~ "png</code> / Max width: <code>796px</code><br/><br/><em>After this option "
+#~ "is selected a new option will be revealed. Guess what? Image height! :)</"
+#~ "em>"
+#~ msgstr ""
+#~ "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KUVAN Cufon tekstin "
+#~ "sijasta sivun ylätunnisteessa.<br/>Kuvan sijainti: <code>lightword/images/"
+#~ "header-image.png</code> / Mitat: <code>600x56px</code>"
 

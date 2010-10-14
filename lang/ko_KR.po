@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-21 02:59+0200\n"
+"POT-Creation-Date: 2010-10-14 17:47+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Test <test@test.com>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -10,90 +10,82 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Language: \n"
-"X-Poedit-Country: \n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
+# @ lightword
 #: archives.php:10
-#: index.php:24
-#@ lightword
+#: index.php:23
 msgid "Continue reading"
 msgstr "계속 읽기"
 
+# @ lightword
 #: archives.php:61
 #: archives.php:71
-#: index.php:33
+#: index.php:32
 #: page.php:17
-#: single-page-template.php:72
-#: single.php:49
-#@ lightword
+#: single-page-template.php:76
+#: single.php:48
 msgid "Not Found"
 msgstr "찾을 수 없습니다"
 
+# @ lightword
 #: archives.php:61
 #: archives.php:72
-#: index.php:34
+#: index.php:33
 #: page.php:18
-#: single-page-template.php:73
-#: single.php:50
-#@ lightword
+#: single-page-template.php:77
+#: single.php:49
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "죄송합니다, 귀한는 이곳에 없는 뭔가를 찾고있습니다."
 
+# @ lightword
 #: comments.php:6
-#: legacy.comments.php:8
-#@ lightword
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "이 글은 비밀글입니다. 비밀번호를 입력하시면 덧글을 보실 수 있습니다."
 
+# @ lightword
 #: comments.php:15
-#: index.php:24
-#: legacy.comments.php:12
-#@ lightword
+#: index.php:23
 msgid "Comments"
 msgstr "덧글"
 
+# @ lightword
 #: comments.php:16
-#@ lightword
 msgid "Trackbacks"
 msgstr "엮인글"
 
+# @ lightword
 #: comments.php:17
-#: legacy.comments.php:13
-#@ lightword
 msgid "( subscribe to comments on this post )"
 msgstr "( 이 포스트의 덧글을 구독하기 )"
 
+# @ lightword
 #: comments.php:30
-#@ lightword
 msgid "&laquo; Older Comments"
 msgstr "&laquo; 이전 덧글"
 
+# @ lightword
 #: comments.php:31
-#@ lightword
 msgid "Newer Comments &raquo;"
 msgstr "최근 덧글 &raquo;"
 
+# @ lightword
 #: comments.php:39
-#: legacy.comments.php:47
-#@ lightword
 msgid "No comments yet."
 msgstr "아직 덧글이 없습니다."
 
+# @ lightword
 #: comments.php:41
-#: legacy.comments.php:91
-#@ lightword
 msgid "Sorry, the comment form is closed at this time."
 msgstr "죄송합니다, 현재 덧글쓰기가 잠긴상태 입니다."
 
+# @ lightword
 #: comments.php:53
-#: legacy.comments.php:81
-#@ lightword
+#: comments.php:92
 msgid "Submit"
 msgstr "등록"
 
@@ -102,682 +94,655 @@ msgstr "등록"
 msgid "Cancel reply"
 msgstr "(취소)"
 
-#: comments.php:69
-#@ lightword
-msgid "No trackbacks yet."
-msgstr "아직 엮인글이 없습니다."
-
-#: comments.php:70
-#@ lightword
-msgid "Trackbacks are disabled."
-msgstr "엮인글이 비활성 상태입니다."
-
-#: footer.php:7
-#, fuzzy, php-format, php-format
-#@ lightword
-msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
-msgstr ""
-
-#: footer.php:13
-#@ lightword
-msgid "Go to top"
-msgstr "위로 이동"
-
-#: functions.php:16
-#@ lightword
-msgid "Layout settings"
-msgstr "레이아웃 설정"
-
-#: functions.php:18
-#: functions.php:19
-#@ lightword
-msgid "Original"
-msgstr "기존"
-
-#: functions.php:18
-#@ lightword
-msgid "Wider"
-msgstr "넓게"
-
-#: functions.php:23
-#, fuzzy
-#@ lightword
-msgid "Cuf&oacute;n settings"
-msgstr "Cufon 설정"
-
-#: functions.php:24
-#@ lightword
-msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
-msgstr ""
-
-#: functions.php:26
-#: functions.php:27
-#: functions.php:117
-#: functions.php:118
-#@ lightword
-msgid "Enabled"
-msgstr "활성화"
-
-#: functions.php:26
-#: functions.php:57
-#: functions.php:58
-#: functions.php:117
-#@ lightword
-msgid "Disabled"
-msgstr "비활성화"
-
-#: functions.php:26
-#@ lightword
-msgid "Extra"
-msgstr "엑스트라"
-
-#: functions.php:26
-msgid "CSS3 Font-face (lightweight)"
-msgstr ""
-
-#: functions.php:36
-#@ lightword
-msgid "Disable comments on pages"
-msgstr "페이지에 덧글쓰기 비활성화"
-
-#: functions.php:37
-#@ lightword
-msgid "Check this box if you would like to DISABLE COMMENTS on pages"
-msgstr "페이지에 덧글쓰기를 비활성화 시키려면 이 박스를 체크하십시오"
-
-#: functions.php:42
-#@ lightword
-msgid "Custom image header"
-msgstr "사용자 정의 이미지 헤더"
-
-#: functions.php:43
-#, fuzzy
-#@ lightword
-msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
-msgstr "헤더에 Cufon텍스트 대신 이미지를 표시하려면 이 박스를 체크하십시오.<br/>이미지위치: <code>lightword/images/header-image.png</code> / 최대너비: <code>796px</code>"
-
-#: functions.php:48
-#@ lightword
-msgid "Header image height in pixels"
-msgstr "헤더 이미지 픽셀 높이"
-
-#: functions.php:54
-#@ lightword
-msgid "About author feature"
-msgstr "글쓴이 소개 기능"
-
-#: functions.php:55
-#, fuzzy
-#@ lightword
-msgid "Add information about post author"
-msgstr "포스트 하단에 포스트 작성자에 대한 정보 추가"
-
-#: functions.php:57
-#@ lightword
-msgid "Main page"
-msgstr ""
-
-#: functions.php:57
-#@ lightword
-msgid "Single page"
-msgstr ""
-
-#: functions.php:57
-#@ lightword
-msgid "Both"
-msgstr ""
-
-#: functions.php:61
-#@ lightword
-msgid "Enjoy this post feature"
-msgstr "게시물 구독 기능"
-
-#: functions.php:62
-#@ lightword
-msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr "<em>게시물 구독 기능</em> 기능을 활성화 시키려면 이 박스를 체크하십시오."
-
-#: functions.php:67
-#@ lightword
-msgid "Show categories on front menu"
-msgstr "프런트 메뉴에 카테고리 표시"
-
-#: functions.php:68
-#@ lightword
-msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
-msgstr "페이지 상단바 대신 카테고리를 표시하려면 이 박스를 체크하십시오"
-
-#: functions.php:73
-#@ lightword
-msgid "Exclude pages from front menu"
-msgstr "프런트 메뉴에서 페이지 제외"
-
-#: functions.php:74
-#@ lightword
-msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
-msgstr "아래 칸에 페이지 아이디를 입력하세요.입력 예: <code>5,19,24</code>"
-
-#: functions.php:79
-#@ lightword
-msgid "Exclude categories from front menu"
-msgstr "프런트 메뉴에서 카테고리 제외"
-
-#: functions.php:80
-#@ lightword
-msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
-msgstr "아래 칸에 카테고리 아이디를 입력하세요.입력 예: <code>5,19,24</code>"
-
-#: functions.php:85
-#@ lightword
-msgid "Remove home button"
-msgstr "홈 버튼 제거"
-
-#: functions.php:86
-#@ lightword
-msgid "Remove home button from front menu"
-msgstr "프런트 메뉴에서 홈 버튼 제거"
-
-#: functions.php:91
-#@ lightword
-msgid "Remove search box"
-msgstr "검색박스 제거"
-
-#: functions.php:92
-#@ lightword
-msgid "Remove search box and expand space for front menu"
-msgstr "프런트 메뉴의 검색박스와 확장공간 제거"
-
-#: functions.php:97
-#@ lightword
-msgid "Remove tags from posts"
-msgstr "포스트에서 태그 제거"
-
-#: functions.php:98
-#@ lightword
-msgid "Show only categories in post footer"
-msgstr "포스트 하단에 카테고리만 표시"
-
-#: functions.php:103
-#@ lightword
-msgid "Remove RSS badge"
-msgstr "RSS 배지 제거"
-
-#: functions.php:104
-#@ lightword
-msgid "Remove RSS badge from blog header"
-msgstr "블로그 헤더에서 RSS 배지 제거"
-
-#: functions.php:109
-#@ lightword
-msgid "Google Custom Search Engine"
-msgstr ""
-
-#: functions.php:110
-#@ lightword
-msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
-msgstr "Google CSE 검색박스 코드에서 <code>name=\"cx\"</code>를 찾으신후 갚을 입력하세요."
-
-#: functions.php:115
-#@ lightword
-msgid "Sidebox settings"
-msgstr "사이드 상자 설정"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only date"
-msgstr "날자만 표시"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only in posts"
-msgstr "포스트에만 표시"
-
-#: functions.php:117
-#@ lightword
-msgid "Last two options together"
-msgstr "마지막 두 옵션 모두"
-
-#: functions.php:122
-#, fuzzy
-#@ lightword
-msgid "Sidebar settings"
-msgstr "사이드 상자 설정"
-
-#: functions.php:124
-#@ lightword
-msgid "Two sidebars option is available on Wider layout only"
-msgstr ""
-
-#: functions.php:125
-#: functions.php:126
-#@ lightword
-msgid "One sidebar"
-msgstr ""
-
-#: functions.php:125
-#@ lightword
-msgid "Two sidebars"
-msgstr ""
-
-#: functions.php:129
-#@ lightword
-msgid "Custom CSS"
-msgstr ""
-
-#: functions.php:130
-#@ lightword
-msgid "Put your custom css code here"
-msgstr "귀하의 사용자 정의 CSS 코드를 여기에 넣어주세요"
-
-#: functions.php:135
-#@ lightword
-msgid "AdSense"
-msgstr ""
-
-#: functions.php:136
-#@ lightword
-msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
-msgstr ""
-
-#: functions.php:141
-#@ lightword
-msgid "Additional header content"
-msgstr ""
-
-#: functions.php:142
-#@ lightword
-msgid "Additional header content, including scripts, etc"
-msgstr ""
-
-#: functions.php:147
-#@ lightword
-msgid "Additional footer content"
-msgstr ""
-
-#: functions.php:148
-#@ lightword
-msgid "Additional footer content for Google Analytics or any other service"
-msgstr ""
-
-#: functions.php:184
-#: functions.php:196
-#@ lightword
-msgid "LightWord Settings"
-msgstr "LightWord 설정"
-
-#: functions.php:191
-#@ lightword
-msgid "settings saved"
-msgstr "설정이 저장 되였습니다"
-
-#: functions.php:192
-#@ lightword
-msgid "settings reset"
-msgstr "설정이 재설정 되였습니다"
-
-#: functions.php:200
-#@ lightword
-msgid "Support the developer"
-msgstr "개발자 지원"
-
-#: functions.php:212
-#: functions.php:282
-#@ lightword
-msgid "Save changes"
-msgstr "변경사항 저장"
-
-#: functions.php:217
-#@ lightword
-msgid "General settings"
-msgstr "일반설정"
-
-#: functions.php:288
-#@ lightword
-msgid "Search for help"
-msgstr "도움에 대한 검색"
-
-#: functions.php:288
-#@ lightword
-msgid "or"
-msgstr "혹은"
-
-#: functions.php:328
-#, fuzzy
-#@ lightword
-msgid "What is Cuf&oacute;n?"
-msgstr "Cufon은 무엇인지?"
-
-#: functions.php:328
-#, fuzzy
-#@ lightword
-msgid "website"
-msgstr "웹사이트"
-
-#: functions.php:330
-#@ lightword
-msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
-msgstr ""
-
-#: functions.php:331
-#@ lightword
-msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
-msgstr ""
-
-#: functions.php:332
-#@ lightword
-msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
-msgstr ""
-
-#: functions.php:335
-#@ lightword
-msgid "Click here to reset all settings"
-msgstr "여기를 클릭하여 모든 설정을 재설정"
-
-#: functions.php:554
-msgid "Search"
-msgstr "검색"
-
-#: functions.php:570
-#: functions.php:581
-#@ lightword
-msgid "Off"
-msgstr ""
-
-#: functions.php:628
-#@ lightword
-msgid "Posted on"
-msgstr "작성시간"
-
-#: functions.php:628
-#, fuzzy
-#@ lightword
-msgid "F j, Y"
-msgstr "Y년m월d일"
-
-#: functions.php:645
-#@ lightword
-msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr "귀하의 브라우저에서 유출입 사이트를 활성화 하십시오.혹,당신이 스패머라면,꺼져!"
-
-#: alternatives/sidebar_v2.php:48
-#: functions.php:666
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "Syndicate this site using RSS"
-msgstr "RSS를 사용하여 이 사이트를 신디케이트"
-
-#: functions.php:666
-#@ lightword
-msgid "Subscribe via RSS"
-msgstr "RSS를 통해 구독"
-
-#: functions.php:701
-#@ lightword
-msgid "F jS, Y - H:i"
-msgstr "Y년m월d일 H:i"
-
-#: functions.php:703
-#@ lightword
-msgid "( REPLY )"
-msgstr "( 답장 )"
-
-#: functions.php:704
-#: legacy.comments.php:33
-#@ lightword
-msgid "Your comment is awaiting moderation."
-msgstr "귀하의 덧글은 검토되고 있습니다."
-
-#: functions.php:773
-#: functions.php:778
-#, fuzzy
-#@ lightword
-msgid "LightWord Navigation Bar"
-msgstr "LightWord 설정"
-
-#: header.php:38
-#: single-page-template.php:43
-#@ lightword
-msgid "Home"
-msgstr "홈"
-
-#: index.php:14
-#, fuzzy
-#@ lightword
-msgid "Posted by"
-msgstr "작성시간"
-
-#: index.php:20
-#: page.php:11
-#: single-page-template.php:66
-#: single.php:14
-#@ lightword
-msgid "PAGES"
-msgstr "페이지수"
-
-#: index.php:23
+# @ lightword
+#: comments.php:65
 #: single.php:31
-#@ lightword
-msgid "Filed under:"
-msgstr "카테고리:"
-
-#: index.php:23
-#: single.php:31
-#@ lightword
-msgid "Tagged as:"
-msgstr "태그:"
-
-#: index.php:24
-#@ lightword
-msgid "1 Comment"
-msgstr "덧글: 1개"
-
-#: index.php:24
-#: single.php:32
-#@ lightword
-msgid "Comments Off"
-msgstr "덧글 잠금"
-
-#: index.php:24
-#@ lightword
-msgid "No Comments"
-msgstr "덧글이 없습니다"
-
-#: index.php:24
-#@ lightword
-msgid "Read more about"
-msgstr ""
-
-#: index.php:43
-#@ lightword
-msgid "&laquo; Newer Entries"
-msgstr "&laquo; 최근 항목"
-
-#: index.php:44
-#@ lightword
-msgid "Older Entries &raquo;"
-msgstr "이전 항목 &raquo;"
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "F jS, Y"
-msgstr "Y년m월d일"
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "edit this comment"
-msgstr "이 덧글을 편집하기"
-
-#: legacy.comments.php:52
-#: single.php:32
-#@ lightword
 msgid "Leave a comment"
 msgstr "덧글 남기기"
 
-#: legacy.comments.php:55
+# @ lightword
+#: comments.php:68
 #, php-format
-#@ lightword
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "덧글을 게시하려면 <a href=\"%s\">로그인</a>해야합니다."
 
-#: legacy.comments.php:62
+# @ lightword
+#: comments.php:73
 #, php-format
-#@ lightword
 msgid "Logged in as %s."
 msgstr "%s로 로그인됨."
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: comments.php:73
 msgid "Log out of this account"
 msgstr "본 계정을 로그아웃"
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: comments.php:73
 msgid "Log out &raquo;"
 msgstr "로그아웃 &raquo;"
 
-#: legacy.comments.php:67
-#@ lightword
+# @ lightword
+#: comments.php:82
 msgid "Name"
 msgstr "성함"
 
-#: legacy.comments.php:67
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: comments.php:82
+#: comments.php:85
 msgid "(required)"
 msgstr "(필수)"
 
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: comments.php:85
 msgid "Mail (will not be published)"
 msgstr "이메일 주소 (게시되지 않을 것입니다)"
 
-#: legacy.comments.php:73
-#@ lightword
+# @ lightword
+#: comments.php:88
 msgid "Website"
 msgstr "웹사이트"
 
-#: legacy.comments.php:77
+#: comments.php:92
+#, fuzzy
+msgid "( Cancel )"
+msgstr "(취소)"
+
+# @ lightword
+#: comments.php:105
+msgid "No trackbacks yet."
+msgstr "아직 엮인글이 없습니다."
+
+# @ lightword
+#: comments.php:106
+msgid "Trackbacks are disabled."
+msgstr "엮인글이 비활성 상태입니다."
+
+# @ lightword
+#: footer.php:7
 #, php-format
-#@ lightword
-msgid "You can use these tags: %s"
-msgstr "이러한 태그를 사용하실수 있습니다: %s"
-
-#: page.php:7
-#: single-page-template.php:62
-#@ lightword
-msgid "Edit this page"
-msgstr "이 페이지를 편집하기"
-
-#: alternatives/sidebar_v2.php:9
-#: sidebar-child.php:9
-#: sidebar.php:10
-#@ lightword
-msgid "Pages"
-msgstr "페이지"
-
-#: alternatives/sidebar_v2.php:14
-#: sidebar-child.php:14
-#: sidebar.php:15
-#@ lightword
-msgid "Categories"
-msgstr "카테고리"
-
-#: alternatives/sidebar_v2.php:34
-#: sidebar-child.php:19
-#: sidebar.php:20
-#@ lightword
-msgid "Blogroll"
-msgstr "블로그 롤"
-
-#: alternatives/sidebar_v2.php:39
-#: sidebar-child.php:24
-#: sidebar.php:25
-#@ lightword
-msgid "Archive"
-msgstr "글목록"
-
-#: alternatives/sidebar_v2.php:44
-#: sidebar-child.php:29
-#: sidebar.php:30
-#@ lightword
-msgid "Meta"
+msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
 msgstr ""
 
-#: alternatives/sidebar_v2.php:48
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr ""
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "The latest comments to all posts in RSS"
-msgstr "모든 포스트에 대한 최신 덧글 RSS"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "덧글 <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-
-#: single.php:8
-#@ lightword
-msgid "Edit this post"
-msgstr "이 포스트를 편집하기"
-
-#: single.php:18
-#@ lightword
-msgid "Enjoy this article?"
-msgstr "이 문장이 마음에 드십니까?"
-
-#: single.php:19
-#@ lightword
-msgid "Consider subscribing to our rss feed!"
-msgstr "저희의 RSS 피드 구독을 고려해버세요!"
-
-#: single.php:26
-#@ lightword
-msgid "About"
-msgstr "소개"
-
-#: single.php:26
-#@ lightword
-msgid "No description. Please complete your profile."
-msgstr "설명이 없습니다. 귀하의 프로필을 작성하시기 바랍니다."
-
+# @ lightword
 #: footer.php:9
-#@ lightword
 msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
 msgstr "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> translated by <a href=\"http://www.kamerazubehoer.net/\" target=\"_blank\">Kamerazubehör</a> and <a href=\"http://www.1000-spiele.de/\" target=\"_blank\">Online Spiele</a>"
 
+# @ lightword
+#: footer.php:13
+msgid "Go to top"
+msgstr "위로 이동"
+
+# @ lightword
+#: functions.php:18
+msgid "Layout settings"
+msgstr "레이아웃 설정"
+
+# @ lightword
+#: functions.php:20
+#: functions.php:21
+msgid "Original"
+msgstr "기존"
+
+# @ lightword
+#: functions.php:20
+msgid "Wider"
+msgstr "넓게"
+
+# @ lightword
+#: functions.php:25
+#, fuzzy
+msgid "Cuf&oacute;n settings"
+msgstr "Cufon 설정"
+
+# @ lightword
+#: functions.php:26
+msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
+msgstr ""
+
+# @ lightword
+#: functions.php:28
+#: functions.php:29
+#: functions.php:53
+#: functions.php:133
+#: functions.php:134
+msgid "Enabled"
+msgstr "활성화"
+
+# @ lightword
+#: functions.php:28
+#: functions.php:53
+#: functions.php:54
+#: functions.php:73
+#: functions.php:74
+#: functions.php:133
+msgid "Disabled"
+msgstr "비활성화"
+
+# @ lightword
+#: functions.php:28
+msgid "Extra"
+msgstr "엑스트라"
+
+#: functions.php:28
+msgid "CSS3 Font-face (lightweight)"
+msgstr ""
+
+# @ lightword
+#: functions.php:38
+msgid "Disable comments on pages"
+msgstr "페이지에 덧글쓰기 비활성화"
+
+# @ lightword
+#: functions.php:39
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "페이지에 덧글쓰기를 비활성화 시키려면 이 박스를 체크하십시오"
+
+# @ lightword
+#: functions.php:51
+msgid "Custom image header"
+msgstr "사용자 정의 이미지 헤더"
+
+#: functions.php:53
+msgid "Use Wordpress Custom Header"
+msgstr ""
+
+# @ lightword
+#: functions.php:58
+msgid "Header image height in pixels"
+msgstr "헤더 이미지 픽셀 높이"
+
+# @ lightword
+#: functions.php:64
+#, fuzzy
+msgid "Header image width in pixels"
+msgstr "헤더 이미지 픽셀 높이"
+
+# @ lightword
+#: functions.php:70
+msgid "About author feature"
+msgstr "글쓴이 소개 기능"
+
+# @ lightword
+#: functions.php:71
+#, fuzzy
+msgid "Add information about post author"
+msgstr "포스트 하단에 포스트 작성자에 대한 정보 추가"
+
+# @ lightword
+#: functions.php:73
+msgid "Main page"
+msgstr ""
+
+# @ lightword
+#: functions.php:73
+msgid "Single page"
+msgstr ""
+
+# @ lightword
+#: functions.php:73
+msgid "Both"
+msgstr ""
+
+# @ lightword
+#: functions.php:77
+msgid "Enjoy this post feature"
+msgstr "게시물 구독 기능"
+
+# @ lightword
+#: functions.php:78
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "<em>게시물 구독 기능</em> 기능을 활성화 시키려면 이 박스를 체크하십시오."
+
+# @ lightword
+#: functions.php:83
+msgid "Show categories on front menu"
+msgstr "프런트 메뉴에 카테고리 표시"
+
+# @ lightword
+#: functions.php:84
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "페이지 상단바 대신 카테고리를 표시하려면 이 박스를 체크하십시오"
+
+# @ lightword
+#: functions.php:89
+msgid "Exclude pages from front menu"
+msgstr "프런트 메뉴에서 페이지 제외"
+
+# @ lightword
+#: functions.php:90
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr "아래 칸에 페이지 아이디를 입력하세요.입력 예: <code>5,19,24</code>"
+
+# @ lightword
+#: functions.php:95
+msgid "Exclude categories from front menu"
+msgstr "프런트 메뉴에서 카테고리 제외"
+
+# @ lightword
+#: functions.php:96
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr "아래 칸에 카테고리 아이디를 입력하세요.입력 예: <code>5,19,24</code>"
+
+# @ lightword
+#: functions.php:101
+msgid "Remove home button"
+msgstr "홈 버튼 제거"
+
+# @ lightword
+#: functions.php:102
+msgid "Remove home button from front menu"
+msgstr "프런트 메뉴에서 홈 버튼 제거"
+
+# @ lightword
+#: functions.php:107
+msgid "Remove search box"
+msgstr "검색박스 제거"
+
+# @ lightword
+#: functions.php:108
+msgid "Remove search box and expand space for front menu"
+msgstr "프런트 메뉴의 검색박스와 확장공간 제거"
+
+# @ lightword
+#: functions.php:113
+msgid "Remove tags from posts"
+msgstr "포스트에서 태그 제거"
+
+# @ lightword
+#: functions.php:114
+msgid "Show only categories in post footer"
+msgstr "포스트 하단에 카테고리만 표시"
+
+# @ lightword
+#: functions.php:119
+msgid "Remove RSS badge"
+msgstr "RSS 배지 제거"
+
+# @ lightword
+#: functions.php:120
+msgid "Remove RSS badge from blog header"
+msgstr "블로그 헤더에서 RSS 배지 제거"
+
+# @ lightword
+#: functions.php:125
+msgid "Google Custom Search Engine"
+msgstr ""
+
+# @ lightword
+#: functions.php:126
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Google CSE 검색박스 코드에서 <code>name=\"cx\"</code>를 찾으신후 갚을 입력하세요."
+
+# @ lightword
+#: functions.php:131
+msgid "Sidebox settings"
+msgstr "사이드 상자 설정"
+
+# @ lightword
+#: functions.php:133
+msgid "Show only date"
+msgstr "날자만 표시"
+
+# @ lightword
+#: functions.php:133
+msgid "Show only in posts"
+msgstr "포스트에만 표시"
+
+# @ lightword
+#: functions.php:133
+msgid "Last two options together"
+msgstr "마지막 두 옵션 모두"
+
+# @ lightword
+#: functions.php:138
+#, fuzzy
+msgid "Sidebar settings"
+msgstr "사이드 상자 설정"
+
+# @ lightword
+#: functions.php:140
+msgid "Two sidebars option is available on Wider layout only"
+msgstr ""
+
+# @ lightword
+#: functions.php:141
+#: functions.php:142
+msgid "One sidebar"
+msgstr ""
+
+# @ lightword
+#: functions.php:141
+msgid "Two sidebars"
+msgstr ""
+
+# @ lightword
+#: functions.php:145
+msgid "Custom CSS"
+msgstr ""
+
+# @ lightword
+#: functions.php:146
+msgid "Put your custom css code here"
+msgstr "귀하의 사용자 정의 CSS 코드를 여기에 넣어주세요"
+
+# @ lightword
+#: functions.php:151
+msgid "AdSense"
+msgstr ""
+
+# @ lightword
+#: functions.php:152
+msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
+msgstr ""
+
+# @ lightword
+#: functions.php:157
+msgid "Additional header content"
+msgstr ""
+
+# @ lightword
+#: functions.php:158
+msgid "Additional header content, including scripts, etc"
+msgstr ""
+
+# @ lightword
+#: functions.php:163
+msgid "Additional footer content"
+msgstr ""
+
+# @ lightword
+#: functions.php:164
+msgid "Additional footer content for Google Analytics or any other service"
+msgstr ""
+
+# @ lightword
+#: functions.php:200
+#: functions.php:212
+msgid "LightWord Settings"
+msgstr "LightWord 설정"
+
+# @ lightword
+#: functions.php:207
+msgid "settings saved"
+msgstr "설정이 저장 되였습니다"
+
+# @ lightword
+#: functions.php:208
+msgid "settings reset"
+msgstr "설정이 재설정 되였습니다"
+
+# @ lightword
+#: functions.php:216
+msgid "Support the developer"
+msgstr "개발자 지원"
+
+# @ lightword
 #: functions.php:228
-#: functions.php:236
-#: functions.php:244
-#: functions.php:252
-#: functions.php:260
-#: functions.php:268
-#: functions.php:275
-#@ lightword
-msgid "name"
+#: functions.php:306
+msgid "Save changes"
+msgstr "변경사항 저장"
+
+# @ lightword
+#: functions.php:233
+msgid "General settings"
+msgstr "일반설정"
+
+# @ lightword
+#: functions.php:312
+msgid "Search for help"
+msgstr "도움에 대한 검색"
+
+# @ lightword
+#: functions.php:312
+msgid "or"
+msgstr "혹은"
+
+# @ lightword
+#: functions.php:352
+#, fuzzy
+msgid "What is Cuf&oacute;n?"
+msgstr "Cufon은 무엇인지?"
+
+# @ lightword
+#: functions.php:352
+#, fuzzy
+msgid "website"
+msgstr "웹사이트"
+
+# @ lightword
+#: functions.php:354
+msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
 msgstr ""
 
-#: functions.php:230
-#: functions.php:238
-#: functions.php:246
-#: functions.php:262
-#: functions.php:270
-#: functions.php:277
-#@ lightword
-msgid "desc"
+# @ lightword
+#: functions.php:355
+msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
 msgstr ""
 
-#: functions.php:245
-#@ lightword
-msgid "id"
+# @ lightword
+#: functions.php:356
+msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
 msgstr ""
+
+# @ lightword
+#: functions.php:359
+msgid "Click here to reset all settings"
+msgstr "여기를 클릭하여 모든 설정을 재설정"
+
+#: functions.php:588
+msgid "Search"
+msgstr "검색"
+
+# @ lightword
+#: functions.php:604
+#: functions.php:615
+msgid "Off"
+msgstr ""
+
+# @ lightword
+#: functions.php:662
+msgid "Posted on"
+msgstr "작성시간"
+
+# @ lightword
+#: functions.php:662
+#, fuzzy
+msgid "F j, Y"
+msgstr "Y년m월d일"
+
+# @ lightword
+#: functions.php:679
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "귀하의 브라우저에서 유출입 사이트를 활성화 하십시오.혹,당신이 스패머라면,꺼져!"
+
+# @ lightword
+#: functions.php:700
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "Syndicate this site using RSS"
+msgstr "RSS를 사용하여 이 사이트를 신디케이트"
+
+# @ lightword
+#: functions.php:700
+msgid "Subscribe via RSS"
+msgstr "RSS를 통해 구독"
+
+# @ lightword
+#: functions.php:735
+msgid "F jS, Y - H:i"
+msgstr "Y년m월d일 H:i"
+
+# @ lightword
+#: functions.php:737
+msgid "( REPLY )"
+msgstr "( 답장 )"
+
+# @ lightword
+#: functions.php:738
+msgid "Your comment is awaiting moderation."
+msgstr "귀하의 덧글은 검토되고 있습니다."
+
+# @ lightword
+#: functions.php:807
+#: functions.php:812
+#, fuzzy
+msgid "LightWord Navigation Bar"
+msgstr "LightWord 설정"
+
+# @ lightword
+#: header.php:38
+#: single-page-template.php:43
+msgid "Home"
+msgstr "홈"
+
+# @ lightword
+#: index.php:13
+#: single.php:25
+#, fuzzy
+msgid "Posted by"
+msgstr "작성시간"
+
+# @ lightword
+#: index.php:19
+#: page.php:11
+#: single-page-template.php:70
+#: single.php:14
+msgid "PAGES"
+msgstr "페이지수"
+
+# @ lightword
+#: index.php:22
+#: single.php:30
+msgid "Filed under:"
+msgstr "카테고리:"
+
+# @ lightword
+#: index.php:22
+#: single.php:30
+msgid "Tagged as:"
+msgstr "태그:"
+
+# @ lightword
+#: index.php:23
+msgid "1 Comment"
+msgstr "덧글: 1개"
+
+# @ lightword
+#: index.php:23
+#: single.php:31
+msgid "Comments Off"
+msgstr "덧글 잠금"
+
+# @ lightword
+#: index.php:23
+msgid "No Comments"
+msgstr "덧글이 없습니다"
+
+# @ lightword
+#: index.php:23
+msgid "Read more about"
+msgstr ""
+
+# @ lightword
+#: index.php:42
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; 최근 항목"
+
+# @ lightword
+#: index.php:43
+msgid "Older Entries &raquo;"
+msgstr "이전 항목 &raquo;"
+
+# @ lightword
+#: page.php:7
+#: single-page-template.php:66
+msgid "Edit this page"
+msgstr "이 페이지를 편집하기"
+
+# @ lightword
+#: sidebar-child.php:9
+#: sidebar.php:10
+#: alternatives/sidebar_v2.php:9
+msgid "Pages"
+msgstr "페이지"
+
+# @ lightword
+#: sidebar-child.php:14
+#: sidebar.php:15
+#: alternatives/sidebar_v2.php:14
+msgid "Categories"
+msgstr "카테고리"
+
+# @ lightword
+#: sidebar-child.php:19
+#: sidebar.php:20
+#: alternatives/sidebar_v2.php:34
+msgid "Blogroll"
+msgstr "블로그 롤"
+
+# @ lightword
+#: sidebar-child.php:24
+#: sidebar.php:25
+#: alternatives/sidebar_v2.php:39
+msgid "Archive"
+msgstr "글목록"
+
+# @ lightword
+#: sidebar-child.php:29
+#: sidebar.php:30
+#: alternatives/sidebar_v2.php:44
+msgid "Meta"
+msgstr ""
+
+# @ lightword
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+# @ lightword
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "모든 포스트에 대한 최신 덧글 RSS"
+
+# @ lightword
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "덧글 <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+# @ lightword
+#: single.php:8
+msgid "Edit this post"
+msgstr "이 포스트를 편집하기"
+
+# @ lightword
+#: single.php:18
+msgid "Enjoy this article?"
+msgstr "이 문장이 마음에 드십니까?"
+
+# @ lightword
+#: single.php:19
+msgid "Consider subscribing to our rss feed!"
+msgstr "저희의 RSS 피드 구독을 고려해버세요!"
+
+# @ lightword
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n "
+#~ "text on header.<br/>Image location: <code>lightword/images/header-image."
+#~ "png</code> / Max width: <code>796px</code><br/><br/><em>After this option "
+#~ "is selected a new option will be revealed. Guess what? Image height! :)</"
+#~ "em>"
+#~ msgstr ""
+#~ "헤더에 Cufon텍스트 대신 이미지를 표시하려면 이 박스를 체크하십시오.<br/>이"
+#~ "미지위치: <code>lightword/images/header-image.png</code> / 최대너비: "
+#~ "<code>796px</code>"
 

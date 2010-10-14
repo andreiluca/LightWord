@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-21 02:58+0200\n"
+"POT-Creation-Date: 2010-10-14 17:47+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: David Llop <dallovi90@gmail.com>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -13,87 +13,81 @@ msgstr ""
 "X-Poedit-Language: English\n"
 "X-Poedit-Country: UNITED STATES\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
+# @ lightword
 #: archives.php:10
-#: index.php:24
-#@ lightword
+#: index.php:23
 msgid "Continue reading"
 msgstr "Continua llegint"
 
+# @ lightword
 #: archives.php:61
 #: archives.php:71
-#: index.php:33
+#: index.php:32
 #: page.php:17
-#: single-page-template.php:72
-#: single.php:49
-#@ lightword
+#: single-page-template.php:76
+#: single.php:48
 msgid "Not Found"
 msgstr "No trobat"
 
+# @ lightword
 #: archives.php:61
 #: archives.php:72
-#: index.php:34
+#: index.php:33
 #: page.php:18
-#: single-page-template.php:73
-#: single.php:50
-#@ lightword
+#: single-page-template.php:77
+#: single.php:49
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "Perdona, però el que estàs buscant no està aquí."
 
+# @ lightword
 #: comments.php:6
-#: legacy.comments.php:8
-#@ lightword
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "Aquesta entrada està protegida amb contrasenya. Introdueix-la per veure els comentaris."
 
+# @ lightword
 #: comments.php:15
-#: index.php:24
-#: legacy.comments.php:12
-#@ lightword
+#: index.php:23
 msgid "Comments"
 msgstr "Comentaris"
 
+# @ lightword
 #: comments.php:16
-#@ lightword
 msgid "Trackbacks"
 msgstr "Retroenllaços"
 
+# @ lightword
 #: comments.php:17
-#: legacy.comments.php:13
-#@ lightword
 msgid "( subscribe to comments on this post )"
 msgstr "( subscriu-te als comentaris d'aquesta entrada)"
 
+# @ lightword
 #: comments.php:30
-#@ lightword
 msgid "&laquo; Older Comments"
 msgstr "&laquo; Comentaris antics"
 
+# @ lightword
 #: comments.php:31
-#@ lightword
 msgid "Newer Comments &raquo;"
 msgstr "Comentaris més recents &raquo;"
 
+# @ lightword
 #: comments.php:39
-#: legacy.comments.php:47
-#@ lightword
 msgid "No comments yet."
 msgstr "Encara no hi ha comentaris"
 
+# @ lightword
 #: comments.php:41
-#: legacy.comments.php:91
-#@ lightword
 msgid "Sorry, the comment form is closed at this time."
 msgstr "Ho sentim, el formulari de comentaris esta tancat ara per ara."
 
+# @ lightword
 #: comments.php:53
-#: legacy.comments.php:81
-#@ lightword
+#: comments.php:92
 msgid "Submit"
 msgstr "Envia"
 
@@ -102,674 +96,635 @@ msgstr "Envia"
 msgid "Cancel reply"
 msgstr "(Cancel·la)"
 
-#: comments.php:69
-#@ lightword
-msgid "No trackbacks yet."
-msgstr "Encara no hi ha retroenllaços"
-
-#: comments.php:70
-#@ lightword
-msgid "Trackbacks are disabled."
-msgstr "Els retroenllaços estan desactivats."
-
-#: footer.php:7
-#, php-format
-#@ lightword
-msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
-msgstr "Copyright %s %s %s &middot; Powered by %s <br/>"
-
-#: footer.php:13
-#@ lightword
-msgid "Go to top"
-msgstr "Ves amunt"
-
-#: functions.php:16
-#@ lightword
-msgid "Layout settings"
-msgstr "Opcions de format"
-
-#: functions.php:18
-#: functions.php:19
-#@ lightword
-msgid "Original"
-msgstr "Original"
-
-#: functions.php:18
-#@ lightword
-msgid "Wider"
-msgstr "Més ample"
-
-#: functions.php:23
-#@ lightword
-msgid "Cuf&oacute;n settings"
-msgstr ""
-
-#: functions.php:24
-#@ lightword
-msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
-msgstr ""
-
-#: functions.php:26
-#: functions.php:27
-#: functions.php:117
-#: functions.php:118
-#@ lightword
-msgid "Enabled"
-msgstr "Actiu"
-
-#: functions.php:26
-#: functions.php:57
-#: functions.php:58
-#: functions.php:117
-#@ lightword
-msgid "Disabled"
-msgstr "Inactiu"
-
-#: functions.php:26
-#@ lightword
-msgid "Extra"
-msgstr "Extra"
-
-#: functions.php:26
-msgid "CSS3 Font-face (lightweight)"
-msgstr "CSS3 Font-face (lightweight)"
-
-#: functions.php:36
-#@ lightword
-msgid "Disable comments on pages"
-msgstr "Desactiva els comentaris a les pàgines"
-
-#: functions.php:37
-#@ lightword
-msgid "Check this box if you would like to DISABLE COMMENTS on pages"
-msgstr ""
-
-#: functions.php:42
-#@ lightword
-msgid "Custom image header"
-msgstr "Imatge de capçalera personaltzada"
-
-#: functions.php:43
-#@ lightword
-msgid "Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>"
-msgstr ""
-
-#: functions.php:48
-#@ lightword
-msgid "Header image height in pixels"
-msgstr "Altura de la imatge en píxels"
-
-#: functions.php:54
-#@ lightword
-msgid "About author feature"
-msgstr ""
-
-#: functions.php:55
-#@ lightword
-msgid "Add information about post author"
-msgstr "Afegeix informació sobre l'autor"
-
-#: functions.php:57
-#@ lightword
-msgid "Main page"
-msgstr "Pàgina principal"
-
-#: functions.php:57
-#@ lightword
-msgid "Single page"
-msgstr "Pàgina única"
-
-#: functions.php:57
-#@ lightword
-msgid "Both"
-msgstr "Ambdós"
-
-#: functions.php:61
-#@ lightword
-msgid "Enjoy this post feature"
-msgstr ""
-
-#: functions.php:62
-#@ lightword
-msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr ""
-
-#: functions.php:67
-#@ lightword
-msgid "Show categories on front menu"
-msgstr ""
-
-#: functions.php:68
-#@ lightword
-msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
-msgstr ""
-
-#: functions.php:73
-#@ lightword
-msgid "Exclude pages from front menu"
-msgstr ""
-
-#: functions.php:74
-#@ lightword
-msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
-msgstr ""
-
-#: functions.php:79
-#@ lightword
-msgid "Exclude categories from front menu"
-msgstr ""
-
-#: functions.php:80
-#@ lightword
-msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
-msgstr ""
-
-#: functions.php:85
-#@ lightword
-msgid "Remove home button"
-msgstr ""
-
-#: functions.php:86
-#@ lightword
-msgid "Remove home button from front menu"
-msgstr ""
-
-#: functions.php:91
-#@ lightword
-msgid "Remove search box"
-msgstr "Elimina la caixa de cerca"
-
-#: functions.php:92
-#@ lightword
-msgid "Remove search box and expand space for front menu"
-msgstr ""
-
-#: functions.php:97
-#@ lightword
-msgid "Remove tags from posts"
-msgstr "Elimina les etiquetes"
-
-#: functions.php:98
-#@ lightword
-msgid "Show only categories in post footer"
-msgstr ""
-
-#: functions.php:103
-#@ lightword
-msgid "Remove RSS badge"
-msgstr ""
-
-#: functions.php:104
-#@ lightword
-msgid "Remove RSS badge from blog header"
-msgstr ""
-
-#: functions.php:109
-#@ lightword
-msgid "Google Custom Search Engine"
-msgstr ""
-
-#: functions.php:110
-#@ lightword
-msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
-msgstr ""
-
-#: functions.php:115
-#@ lightword
-msgid "Sidebox settings"
-msgstr ""
-
-#: functions.php:117
-#@ lightword
-msgid "Show only date"
-msgstr "Mostra sols la data"
-
-#: functions.php:117
-#@ lightword
-msgid "Show only in posts"
-msgstr "Mostra sols en les entrades"
-
-#: functions.php:117
-#@ lightword
-msgid "Last two options together"
-msgstr ""
-
-#: functions.php:122
-#@ lightword
-msgid "Sidebar settings"
-msgstr "Preferències de barres laterals"
-
-#: functions.php:124
-#@ lightword
-msgid "Two sidebars option is available on Wider layout only"
-msgstr ""
-
-#: functions.php:125
-#: functions.php:126
-#@ lightword
-msgid "One sidebar"
-msgstr "Una barra lateral"
-
-#: functions.php:125
-#@ lightword
-msgid "Two sidebars"
-msgstr "Dos barres laterals"
-
-#: functions.php:129
-#@ lightword
-msgid "Custom CSS"
-msgstr "CSS Personalitzat"
-
-#: functions.php:130
-#@ lightword
-msgid "Put your custom css code here"
-msgstr ""
-
-#: functions.php:135
-#@ lightword
-msgid "AdSense"
-msgstr "AdSense"
-
-#: functions.php:136
-#@ lightword
-msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
-msgstr ""
-
-#: functions.php:141
-#@ lightword
-msgid "Additional header content"
-msgstr ""
-
-#: functions.php:142
-#@ lightword
-msgid "Additional header content, including scripts, etc"
-msgstr ""
-
-#: functions.php:147
-#@ lightword
-msgid "Additional footer content"
-msgstr ""
-
-#: functions.php:148
-#@ lightword
-msgid "Additional footer content for Google Analytics or any other service"
-msgstr ""
-
-#: functions.php:184
-#: functions.php:196
-#@ lightword
-msgid "LightWord Settings"
-msgstr "Opcions del LightWord"
-
-#: functions.php:191
-#@ lightword
-msgid "settings saved"
-msgstr "Les preferències s'han guardat"
-
-#: functions.php:192
-#@ lightword
-msgid "settings reset"
-msgstr "Les preferències s'han restaurat"
-
-#: functions.php:200
-#@ lightword
-msgid "Support the developer"
-msgstr "Ajuda el desenvolupador"
-
-#: functions.php:212
-#: functions.php:282
-#@ lightword
-msgid "Save changes"
-msgstr "Guarda els canvis"
-
-#: functions.php:217
-#@ lightword
-msgid "General settings"
-msgstr "Opcions generals"
-
-#: functions.php:288
-#@ lightword
-msgid "Search for help"
-msgstr "Busca ajuda"
-
-#: functions.php:288
-#@ lightword
-msgid "or"
-msgstr "o"
-
-#: functions.php:328
-#@ lightword
-msgid "What is Cuf&oacute;n?"
-msgstr ""
-
-#: functions.php:328
-#@ lightword
-msgid "website"
-msgstr "lloc web"
-
-#: functions.php:330
-#@ lightword
-msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
-msgstr ""
-
-#: functions.php:331
-#@ lightword
-msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
-msgstr ""
-
-#: functions.php:332
-#@ lightword
-msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
-msgstr "Els caràcter koreans no estàn suportats"
-
-#: functions.php:335
-#@ lightword
-msgid "Click here to reset all settings"
-msgstr "Clica aquí per restaurar totes les preferències"
-
-#: functions.php:554
-msgid "Search"
-msgstr "Cerca"
-
-#: functions.php:570
-#: functions.php:581
-#@ lightword
-msgid "Off"
-msgstr "Desactivat"
-
-#: functions.php:628
-#@ lightword
-msgid "Posted on"
-msgstr "Enviat a"
-
-#: functions.php:628
-#@ lightword
-msgid "F j, Y"
-msgstr ""
-
-#: functions.php:645
-#@ lightword
-msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr ""
-
-#: alternatives/sidebar_v2.php:48
-#: functions.php:666
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "Syndicate this site using RSS"
-msgstr "Subscriu-te a aquest lloc utilitzant RSS"
-
-#: functions.php:666
-#@ lightword
-msgid "Subscribe via RSS"
-msgstr "Subscriu-te via RSS"
-
-#: functions.php:701
-#@ lightword
-msgid "F jS, Y - H:i"
-msgstr ""
-
-#: functions.php:703
-#@ lightword
-msgid "( REPLY )"
-msgstr "(RESPON)"
-
-#: functions.php:704
-#: legacy.comments.php:33
-#@ lightword
-msgid "Your comment is awaiting moderation."
-msgstr "El teu comentari està en espera de moderació."
-
-#: functions.php:773
-#: functions.php:778
-#, fuzzy
-#@ lightword
-msgid "LightWord Navigation Bar"
-msgstr "Opcions del LightWord"
-
-#: header.php:38
-#: single-page-template.php:43
-#@ lightword
-msgid "Home"
-msgstr "Inici"
-
-#: index.php:14
-#@ lightword
-msgid "Posted by"
-msgstr "Enviat per"
-
-#: index.php:20
-#: page.php:11
-#: single-page-template.php:66
-#: single.php:14
-#@ lightword
-msgid "PAGES"
-msgstr "PÀGINES"
-
-#: index.php:23
+# @ lightword
+#: comments.php:65
 #: single.php:31
-#@ lightword
-msgid "Filed under:"
-msgstr "Arxivat com a:"
-
-#: index.php:23
-#: single.php:31
-#@ lightword
-msgid "Tagged as:"
-msgstr "etiquetes:"
-
-#: index.php:24
-#@ lightword
-msgid "1 Comment"
-msgstr "1 comentari"
-
-#: index.php:24
-#: single.php:32
-#@ lightword
-msgid "Comments Off"
-msgstr "cometaris desactivats"
-
-#: index.php:24
-#@ lightword
-msgid "No Comments"
-msgstr "sense comentaris"
-
-#: index.php:24
-#@ lightword
-msgid "Read more about"
-msgstr "segueix llegint"
-
-#: index.php:43
-#@ lightword
-msgid "&laquo; Newer Entries"
-msgstr "&laquo; Entrades més recents"
-
-#: index.php:44
-#@ lightword
-msgid "Older Entries &raquo;"
-msgstr "Entrades anteriors &raquo;"
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "F jS, Y"
-msgstr ""
-
-#: legacy.comments.php:26
-#@ lightword
-msgid "edit this comment"
-msgstr "edita aquest comentari"
-
-#: legacy.comments.php:52
-#: single.php:32
-#@ lightword
 msgid "Leave a comment"
 msgstr "Deixa un comentari"
 
-#: legacy.comments.php:55
+# @ lightword
+#: comments.php:68
 #, php-format
-#@ lightword
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Has d'<a href=\"%s\">entrar</a> per deixar un comentari."
 
-#: legacy.comments.php:62
+# @ lightword
+#: comments.php:73
 #, php-format
-#@ lightword
 msgid "Logged in as %s."
 msgstr "Has entrat com a %s."
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: comments.php:73
 msgid "Log out of this account"
 msgstr "Surt del compte"
 
-#: legacy.comments.php:62
-#@ lightword
+# @ lightword
+#: comments.php:73
 msgid "Log out &raquo;"
 msgstr "Surt &raquo;"
 
-#: legacy.comments.php:67
-#@ lightword
+# @ lightword
+#: comments.php:82
 msgid "Name"
 msgstr "Nom"
 
-#: legacy.comments.php:67
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: comments.php:82
+#: comments.php:85
 msgid "(required)"
 msgstr "(obligatori)"
 
-#: legacy.comments.php:70
-#@ lightword
+# @ lightword
+#: comments.php:85
 msgid "Mail (will not be published)"
 msgstr "Correu-e (no apareixerà en l'entrada)"
 
-#: legacy.comments.php:73
-#@ lightword
+# @ lightword
+#: comments.php:88
 msgid "Website"
 msgstr "Lloc web"
 
-#: legacy.comments.php:77
+#: comments.php:92
+#, fuzzy
+msgid "( Cancel )"
+msgstr "(Cancel·la)"
+
+# @ lightword
+#: comments.php:105
+msgid "No trackbacks yet."
+msgstr "Encara no hi ha retroenllaços"
+
+# @ lightword
+#: comments.php:106
+msgid "Trackbacks are disabled."
+msgstr "Els retroenllaços estan desactivats."
+
+# @ lightword
+#: footer.php:7
 #, php-format
-#@ lightword
-msgid "You can use these tags: %s"
-msgstr "Etiquetes suggerides: %s"
+msgid "Copyright %s %s %s &middot; Powered by %s <br/>"
+msgstr "Copyright %s %s %s &middot; Powered by %s <br/>"
 
-#: page.php:7
-#: single-page-template.php:62
-#@ lightword
-msgid "Edit this page"
-msgstr "Edita aquesta pàgina"
-
-#: alternatives/sidebar_v2.php:9
-#: sidebar-child.php:9
-#: sidebar.php:10
-#@ lightword
-msgid "Pages"
-msgstr "Pàgines"
-
-#: alternatives/sidebar_v2.php:14
-#: sidebar-child.php:14
-#: sidebar.php:15
-#@ lightword
-msgid "Categories"
-msgstr "Categories"
-
-#: alternatives/sidebar_v2.php:34
-#: sidebar-child.php:19
-#: sidebar.php:20
-#@ lightword
-msgid "Blogroll"
-msgstr "Blogs preferits"
-
-#: alternatives/sidebar_v2.php:39
-#: sidebar-child.php:24
-#: sidebar.php:25
-#@ lightword
-msgid "Archive"
-msgstr "Arxiu"
-
-#: alternatives/sidebar_v2.php:44
-#: sidebar-child.php:29
-#: sidebar.php:30
-#@ lightword
-msgid "Meta"
-msgstr "Meta"
-
-#: alternatives/sidebar_v2.php:48
-#: sidebar-child.php:33
-#: sidebar.php:34
-#@ lightword
-msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "The latest comments to all posts in RSS"
-msgstr "Els últims comentaris de tots els articles en RSS"
-
-#: alternatives/sidebar_v2.php:49
-#: sidebar-child.php:34
-#: sidebar.php:35
-#@ lightword
-msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> de comentaris"
-
-#: single.php:8
-#@ lightword
-msgid "Edit this post"
-msgstr "Edita aquesta entrada"
-
-#: single.php:18
-#@ lightword
-msgid "Enjoy this article?"
-msgstr "T'ha agradat aquest article?"
-
-#: single.php:19
-#@ lightword
-msgid "Consider subscribing to our rss feed!"
-msgstr "No et vols subscriure al nostre rss?"
-
-#: single.php:26
-#@ lightword
-msgid "About"
-msgstr "Sobre nosaltres"
-
-#: single.php:26
-#@ lightword
-msgid "No description. Please complete your profile."
-msgstr "No hi ha cap descripció. Completa el teu perfil."
-
+# @ lightword
 #: footer.php:9
-#@ lightword
 msgid "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> by Andrei Luca"
 msgstr "<a href=\"http://www.lightworddesign.net/\" target=\"_blank\" title=\"Lightword Theme\">Lightword Theme</a> translated by <a href=\"http://www.seguros.org.es/\" target=\"_blank\">Seguros</a> and <a href=\"http://www.1000-spiele.de/\" target=\"_blank\">Online Spiele</a>"
 
+# @ lightword
+#: footer.php:13
+msgid "Go to top"
+msgstr "Ves amunt"
+
+# @ lightword
+#: functions.php:18
+msgid "Layout settings"
+msgstr "Opcions de format"
+
+# @ lightword
+#: functions.php:20
+#: functions.php:21
+msgid "Original"
+msgstr "Original"
+
+# @ lightword
+#: functions.php:20
+msgid "Wider"
+msgstr "Més ample"
+
+# @ lightword
+#: functions.php:25
+msgid "Cuf&oacute;n settings"
+msgstr ""
+
+# @ lightword
+#: functions.php:26
+msgid "Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters."
+msgstr ""
+
+# @ lightword
+#: functions.php:28
+#: functions.php:29
+#: functions.php:53
+#: functions.php:133
+#: functions.php:134
+msgid "Enabled"
+msgstr "Actiu"
+
+# @ lightword
+#: functions.php:28
+#: functions.php:53
+#: functions.php:54
+#: functions.php:73
+#: functions.php:74
+#: functions.php:133
+msgid "Disabled"
+msgstr "Inactiu"
+
+# @ lightword
+#: functions.php:28
+msgid "Extra"
+msgstr "Extra"
+
+#: functions.php:28
+msgid "CSS3 Font-face (lightweight)"
+msgstr "CSS3 Font-face (lightweight)"
+
+# @ lightword
+#: functions.php:38
+msgid "Disable comments on pages"
+msgstr "Desactiva els comentaris a les pàgines"
+
+# @ lightword
+#: functions.php:39
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr ""
+
+# @ lightword
+#: functions.php:51
+msgid "Custom image header"
+msgstr "Imatge de capçalera personaltzada"
+
+#: functions.php:53
+msgid "Use Wordpress Custom Header"
+msgstr ""
+
+# @ lightword
+#: functions.php:58
+msgid "Header image height in pixels"
+msgstr "Altura de la imatge en píxels"
+
+# @ lightword
+#: functions.php:64
+#, fuzzy
+msgid "Header image width in pixels"
+msgstr "Altura de la imatge en píxels"
+
+# @ lightword
+#: functions.php:70
+msgid "About author feature"
+msgstr ""
+
+# @ lightword
+#: functions.php:71
+msgid "Add information about post author"
+msgstr "Afegeix informació sobre l'autor"
+
+# @ lightword
+#: functions.php:73
+msgid "Main page"
+msgstr "Pàgina principal"
+
+# @ lightword
+#: functions.php:73
+msgid "Single page"
+msgstr "Pàgina única"
+
+# @ lightword
+#: functions.php:73
+msgid "Both"
+msgstr "Ambdós"
+
+# @ lightword
+#: functions.php:77
+msgid "Enjoy this post feature"
+msgstr ""
+
+# @ lightword
+#: functions.php:78
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr ""
+
+# @ lightword
+#: functions.php:83
+msgid "Show categories on front menu"
+msgstr ""
+
+# @ lightword
+#: functions.php:84
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr ""
+
+# @ lightword
+#: functions.php:89
+msgid "Exclude pages from front menu"
+msgstr ""
+
+# @ lightword
+#: functions.php:90
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+# @ lightword
+#: functions.php:95
+msgid "Exclude categories from front menu"
+msgstr ""
+
+# @ lightword
+#: functions.php:96
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+# @ lightword
+#: functions.php:101
+msgid "Remove home button"
+msgstr ""
+
+# @ lightword
+#: functions.php:102
+msgid "Remove home button from front menu"
+msgstr ""
+
+# @ lightword
+#: functions.php:107
+msgid "Remove search box"
+msgstr "Elimina la caixa de cerca"
+
+# @ lightword
+#: functions.php:108
+msgid "Remove search box and expand space for front menu"
+msgstr ""
+
+# @ lightword
+#: functions.php:113
+msgid "Remove tags from posts"
+msgstr "Elimina les etiquetes"
+
+# @ lightword
+#: functions.php:114
+msgid "Show only categories in post footer"
+msgstr ""
+
+# @ lightword
+#: functions.php:119
+msgid "Remove RSS badge"
+msgstr ""
+
+# @ lightword
+#: functions.php:120
+msgid "Remove RSS badge from blog header"
+msgstr ""
+
+# @ lightword
+#: functions.php:125
+msgid "Google Custom Search Engine"
+msgstr ""
+
+# @ lightword
+#: functions.php:126
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr ""
+
+# @ lightword
+#: functions.php:131
+msgid "Sidebox settings"
+msgstr ""
+
+# @ lightword
+#: functions.php:133
+msgid "Show only date"
+msgstr "Mostra sols la data"
+
+# @ lightword
+#: functions.php:133
+msgid "Show only in posts"
+msgstr "Mostra sols en les entrades"
+
+# @ lightword
+#: functions.php:133
+msgid "Last two options together"
+msgstr ""
+
+# @ lightword
+#: functions.php:138
+msgid "Sidebar settings"
+msgstr "Preferències de barres laterals"
+
+# @ lightword
+#: functions.php:140
+msgid "Two sidebars option is available on Wider layout only"
+msgstr ""
+
+# @ lightword
+#: functions.php:141
+#: functions.php:142
+msgid "One sidebar"
+msgstr "Una barra lateral"
+
+# @ lightword
+#: functions.php:141
+msgid "Two sidebars"
+msgstr "Dos barres laterals"
+
+# @ lightword
+#: functions.php:145
+msgid "Custom CSS"
+msgstr "CSS Personalitzat"
+
+# @ lightword
+#: functions.php:146
+msgid "Put your custom css code here"
+msgstr ""
+
+# @ lightword
+#: functions.php:151
+msgid "AdSense"
+msgstr "AdSense"
+
+# @ lightword
+#: functions.php:152
+msgid "Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want."
+msgstr ""
+
+# @ lightword
+#: functions.php:157
+msgid "Additional header content"
+msgstr ""
+
+# @ lightword
+#: functions.php:158
+msgid "Additional header content, including scripts, etc"
+msgstr ""
+
+# @ lightword
+#: functions.php:163
+msgid "Additional footer content"
+msgstr ""
+
+# @ lightword
+#: functions.php:164
+msgid "Additional footer content for Google Analytics or any other service"
+msgstr ""
+
+# @ lightword
+#: functions.php:200
+#: functions.php:212
+msgid "LightWord Settings"
+msgstr "Opcions del LightWord"
+
+# @ lightword
+#: functions.php:207
+msgid "settings saved"
+msgstr "Les preferències s'han guardat"
+
+# @ lightword
+#: functions.php:208
+msgid "settings reset"
+msgstr "Les preferències s'han restaurat"
+
+# @ lightword
+#: functions.php:216
+msgid "Support the developer"
+msgstr "Ajuda el desenvolupador"
+
+# @ lightword
 #: functions.php:228
-#: functions.php:236
-#: functions.php:244
-#: functions.php:252
-#: functions.php:260
-#: functions.php:268
-#: functions.php:275
-#@ lightword
-msgid "name"
+#: functions.php:306
+msgid "Save changes"
+msgstr "Guarda els canvis"
+
+# @ lightword
+#: functions.php:233
+msgid "General settings"
+msgstr "Opcions generals"
+
+# @ lightword
+#: functions.php:312
+msgid "Search for help"
+msgstr "Busca ajuda"
+
+# @ lightword
+#: functions.php:312
+msgid "or"
+msgstr "o"
+
+# @ lightword
+#: functions.php:352
+msgid "What is Cuf&oacute;n?"
 msgstr ""
 
-#: functions.php:230
-#: functions.php:238
-#: functions.php:246
-#: functions.php:262
-#: functions.php:270
-#: functions.php:277
-#@ lightword
-msgid "desc"
+# @ lightword
+#: functions.php:352
+msgid "website"
+msgstr "lloc web"
+
+# @ lightword
+#: functions.php:354
+msgid "&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript."
 msgstr ""
 
-#: functions.php:245
-#@ lightword
-msgid "id"
+# @ lightword
+#: functions.php:355
+msgid "&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>."
 msgstr ""
+
+# @ lightword
+#: functions.php:356
+msgid "Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading)."
+msgstr "Els caràcter koreans no estàn suportats"
+
+# @ lightword
+#: functions.php:359
+msgid "Click here to reset all settings"
+msgstr "Clica aquí per restaurar totes les preferències"
+
+#: functions.php:588
+msgid "Search"
+msgstr "Cerca"
+
+# @ lightword
+#: functions.php:604
+#: functions.php:615
+msgid "Off"
+msgstr "Desactivat"
+
+# @ lightword
+#: functions.php:662
+msgid "Posted on"
+msgstr "Enviat a"
+
+# @ lightword
+#: functions.php:662
+msgid "F j, Y"
+msgstr ""
+
+# @ lightword
+#: functions.php:679
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr ""
+
+# @ lightword
+#: functions.php:700
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "Syndicate this site using RSS"
+msgstr "Subscriu-te a aquest lloc utilitzant RSS"
+
+# @ lightword
+#: functions.php:700
+msgid "Subscribe via RSS"
+msgstr "Subscriu-te via RSS"
+
+# @ lightword
+#: functions.php:735
+msgid "F jS, Y - H:i"
+msgstr ""
+
+# @ lightword
+#: functions.php:737
+msgid "( REPLY )"
+msgstr "(RESPON)"
+
+# @ lightword
+#: functions.php:738
+msgid "Your comment is awaiting moderation."
+msgstr "El teu comentari està en espera de moderació."
+
+# @ lightword
+#: functions.php:807
+#: functions.php:812
+#, fuzzy
+msgid "LightWord Navigation Bar"
+msgstr "Opcions del LightWord"
+
+# @ lightword
+#: header.php:38
+#: single-page-template.php:43
+msgid "Home"
+msgstr "Inici"
+
+# @ lightword
+#: index.php:13
+#: single.php:25
+msgid "Posted by"
+msgstr "Enviat per"
+
+# @ lightword
+#: index.php:19
+#: page.php:11
+#: single-page-template.php:70
+#: single.php:14
+msgid "PAGES"
+msgstr "PÀGINES"
+
+# @ lightword
+#: index.php:22
+#: single.php:30
+msgid "Filed under:"
+msgstr "Arxivat com a:"
+
+# @ lightword
+#: index.php:22
+#: single.php:30
+msgid "Tagged as:"
+msgstr "etiquetes:"
+
+# @ lightword
+#: index.php:23
+msgid "1 Comment"
+msgstr "1 comentari"
+
+# @ lightword
+#: index.php:23
+#: single.php:31
+msgid "Comments Off"
+msgstr "cometaris desactivats"
+
+# @ lightword
+#: index.php:23
+msgid "No Comments"
+msgstr "sense comentaris"
+
+# @ lightword
+#: index.php:23
+msgid "Read more about"
+msgstr "segueix llegint"
+
+# @ lightword
+#: index.php:42
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Entrades més recents"
+
+# @ lightword
+#: index.php:43
+msgid "Older Entries &raquo;"
+msgstr "Entrades anteriors &raquo;"
+
+# @ lightword
+#: page.php:7
+#: single-page-template.php:66
+msgid "Edit this page"
+msgstr "Edita aquesta pàgina"
+
+# @ lightword
+#: sidebar-child.php:9
+#: sidebar.php:10
+#: alternatives/sidebar_v2.php:9
+msgid "Pages"
+msgstr "Pàgines"
+
+# @ lightword
+#: sidebar-child.php:14
+#: sidebar.php:15
+#: alternatives/sidebar_v2.php:14
+msgid "Categories"
+msgstr "Categories"
+
+# @ lightword
+#: sidebar-child.php:19
+#: sidebar.php:20
+#: alternatives/sidebar_v2.php:34
+msgid "Blogroll"
+msgstr "Blogs preferits"
+
+# @ lightword
+#: sidebar-child.php:24
+#: sidebar.php:25
+#: alternatives/sidebar_v2.php:39
+msgid "Archive"
+msgstr "Arxiu"
+
+# @ lightword
+#: sidebar-child.php:29
+#: sidebar.php:30
+#: alternatives/sidebar_v2.php:44
+msgid "Meta"
+msgstr "Meta"
+
+# @ lightword
+#: sidebar-child.php:33
+#: sidebar.php:34
+#: alternatives/sidebar_v2.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+# @ lightword
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "Els últims comentaris de tots els articles en RSS"
+
+# @ lightword
+#: sidebar-child.php:34
+#: sidebar.php:35
+#: alternatives/sidebar_v2.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> de comentaris"
+
+# @ lightword
+#: single.php:8
+msgid "Edit this post"
+msgstr "Edita aquesta entrada"
+
+# @ lightword
+#: single.php:18
+msgid "Enjoy this article?"
+msgstr "T'ha agradat aquest article?"
+
+# @ lightword
+#: single.php:19
+msgid "Consider subscribing to our rss feed!"
+msgstr "No et vols subscriure al nostre rss?"
 
