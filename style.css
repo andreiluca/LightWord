@@ -41,12 +41,13 @@ h1#logo small a{font-size:12px;border-bottom:1px solid #FFF;}
 #header{height:113px;}
 #top{z-index:1;cursor:pointer;display:block;margin-left:5px;position:relative;bottom:-55px;margin-top:-55px;min-height:56px;}
 #top_cufon{cursor:pointer;display:block;margin-left:5px;position:relative;bottom:-55px;margin-top:-55px;min-height:56px;}
+#top_cufon small{ width:600px; }
 #top strong{display:none;}
 #top_bar{padding:72px 23px 0 20px;}
 #searchform{float:right;width:191px;height:26px;background:url(images/searchbox.png) no-repeat;position:relative;top:1px;}
 #header #s{border:1px solid #000;float:left;border:0;width:154px;background:none;color:#ACACAB;margin:4px 0 0 4px;}
 #header #go{float:right;width:25px;height:26px;background-color:transparent;border:0px;cursor:pointer;}
-#content{padding:0 10px 15px 15px;margin-left:7px;}
+#content{padding:15px 10px 15px 15px;margin:-7px 0 0 7px;z-index:20 !important;position:relative;}
 #content-body{display:inline-block;min-height:300px;height:auto !important;margin-right:25px;}
 * html #content-body{float:left;margin-right:24px;} *+html #content-body{float:left;margin-right:28px;}
 #footer{height:8px;}
@@ -57,7 +58,8 @@ h1#logo small a{font-size:12px;border-bottom:1px solid #FFF;}
 
 /* FRONT MENU */
 
-ul#front_menu{float:left;text-transform:uppercase;position:relative;top:-4px;}
+ul#front_menu{float:left;text-transform:uppercase;margin-top:-4px;height:35px !important;z-index:-10;}
+
 * html .expand{margin-top:-13px;} *+html .expand{margin-top:-13px;}
 #front_menu li{list-style:none;float:left;margin-right:4px;}
 * html #front_menu li{height:36px;display:inline;}
@@ -68,7 +70,8 @@ ul#front_menu{float:left;text-transform:uppercase;position:relative;top:-4px;}
 * html #front_menu li a,* html #front_menu li a span{width:1%;white-space:nowrap;cursor:pointer;}
 * html #front_menu li a span{position:relative;}
 #front_menu li {background:none;float:left; position:relative;}
-#front_menu ul {width:200px;position:absolute;display:none; background:#FFF;border-left:1px solid #ACACAB;border-right:1px solid #ACACAB;border-bottom:1px solid #ACACAB;-moz-border-radius-bottomleft: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius:5px;}
+ul#front_menu ul {width:200px;position:absolute; background:#FFF;border-left:1px solid #ACACAB;border-right:1px solid #ACACAB;border-bottom:1px solid #ACACAB;-moz-border-radius-bottomleft: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius:5px;}
+
 #front_menu ul li a, #front_menu ul li a span{margin:-3px -1px;height:auto;background:none;}
 #front_menu li ul a {width:200px; float:left; white-space:nowrap;}
 #front_menu li ul a:hover{text-decoration:underline;}
