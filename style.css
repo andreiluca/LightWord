@@ -4,7 +4,7 @@ Theme URI: http://www.lightworddesign.net/
 Description: Simply clever theme with two or three columns, adsense support, fixed-width, widget-ready and threaded comments. Compatible with Wordpress 2.8+ (including 2.9.x), valid XHTML & CSS. Cufon text replacement is back!
 Author: Andrei Luca
 Template: lightword
-Version: 2.0
+Version: 2.0.0.1
 Tags: white, light, two-columns, right-sidebar, fixed-width, theme-options, translation-ready, threaded-comments, custom-header,three-columns
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -28,6 +28,9 @@ h5{font-size:1.4em;margin: 15px 0 15px;}
 h6{font-size:1.3em;margin: 15px 0 15px;}
 hr{color:#DCDCDB;background-color:#DCDCDB;height:1px;border:0px;}
 pre{width:100%; white-space:pre-wrap;}
+dl{padding:.4em 0 1em;}
+dt{text-decoration:underline;font-weight:bold;}
+dd{}
 
 /* LAYOUT */
 #wrapper{margin:0 auto;text-align:left;}

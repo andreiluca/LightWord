@@ -41,16 +41,9 @@ $options = array (
             "type" => "checkbox",
             "std" => "false"),
 
-/*    array(  "name" => __('Custom image header','lightword'),
-			"desc" => __('Check this box if you would like to SHOW IMAGE instead of Cuf&oacute;n text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>600px</code><br/><br/><em>After this option is selected a new option will be revealed. Guess what? Image height! :)</em>','lightword'),
-            "id" => $shortname."_top_header_image",
-            "type" => "checkbox",
-            "std" => "false"),*/
-
-
     array(  "name" => __('Custom image header', 'lightword'),
             "id" => $shortname."_top_header_image",
-            "options" => array( __('Disabled','lightword'), __('Enabled','lightword'), __('Use Wordpress Custom Header','lightword') ),
+            "options" => array( __('Disabled','lightword'), __('Enabled','lightword') ),
             "std" => __('Disabled','lightword'),
             "desc" => '',
             "type" => "select"),
@@ -176,8 +169,8 @@ $options = array (
 function lightword_admin() {
 global $themename, $shortname, $options;
 
-if ( @$_GET['page'] == basename(__FILE__) ) {
-if ( 'save' == @$_REQUEST['action'] ) {
+if ( nullit($_GET['page']) == basename(__FILE__) ) {
+if ( 'save' == nullit($_REQUEST['action']) ) {
 
 foreach ($options as $value) {
 update_option( @$value['id'], lightword_stripslash_check(@$_REQUEST[ $value['id'] ]) ); }
@@ -191,7 +184,7 @@ if( isset( $_REQUEST[ @$value['id'] ] ) ) {
 }
 	header("Location: themes.php?page=functions.php&saved=true");
 
-} else if( 'reset' == @$_REQUEST['action'] ) {
+} else if( 'reset' == nullit($_REQUEST['action']) ) {
 foreach ($options as $value) {
 delete_option( @$value['id'] ); }
 	header("Location: themes.php?page=functions.php&reset=true");
@@ -204,8 +197,8 @@ add_theme_page(__('LightWord Settings','lightword'), __('LightWord Settings','li
 
 function lightword_admin_page() {
 global $themename, $themeversion, $shortname, $options, $lw_top_header_image, $top_header_image_height, $lw_show_categories;
-if ( @$_REQUEST['saved'] ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings saved','lightword'); echo '.</strong></p></div>'; }
-if ( @$_REQUEST['reset'] ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings reset','lightword'); echo '.</strong></p></div>'; }
+if ( nullit($_REQUEST['saved']) ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings saved','lightword'); echo '.</strong></p></div>'; }
+if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings reset','lightword'); echo '.</strong></p></div>'; }
 ?>
 <div class="wrap">
 
@@ -263,7 +256,7 @@ if ( @$_REQUEST['reset'] ) { echo '<div id="message" class="updated fade"><p><st
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 <?php break; case 'header_image_height': ?>
-<?php if($lw_top_header_image == "Enabled" || $lw_top_header_image == "Use Wordpress Custom Header") : ?>
+<?php if($lw_top_header_image == "Enabled") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
 <td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
@@ -271,7 +264,7 @@ if ( @$_REQUEST['reset'] ) { echo '<div id="message" class="updated fade"><p><st
 <?php endif; ?>
 
 <?php break; case 'header_image_width': ?>
-<?php if($lw_top_header_image == "Enabled" || $lw_top_header_image == "Use Wordpress Custom Header") : ?>
+<?php if($lw_top_header_image == "Enabled") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
 <td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
@@ -502,18 +495,11 @@ global $lw_top_header_image, $lw_top_header_image_height, $lw_top_header_image_w
 
 if($lw_top_header_image == "Enabled") { ?>
 
-<a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>"><span id="top" style="background:url('<?php echo $top_header_image_path; ?>') no-repeat;height:<?php echo $lw_top_header_image_height; ?>px;width:<?php echo $lw_top_header_image_width; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
-
-<?php }elseif($lw_top_header_image == "Disabled"){ ?>
-
-<div id="top_cufon"><h1 id="logo"><a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> <small><?php bloginfo('description'); ?></small></h1></div>
+<a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>"><span id="top" style="background:url('<?php header_image(); ?>') no-repeat;height:<?php echo HEADER_IMAGE_HEIGHT; ?>px;width:<?php echo HEADER_IMAGE_WIDTH; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
 
 <?php }else{ ?>
 
-<!-- wp custom header -->
-
-<a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>"><span id="top" style="background:url('<?php header_image(); ?>') no-repeat;height:<?php echo HEADER_IMAGE_HEIGHT; ?>px;width:<?php echo HEADER_IMAGE_WIDTH; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
-
+<div id="top_cufon"><h1 id="logo"><a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> <small><?php bloginfo('description'); ?></small></h1></div>
 
 <?php
     }
@@ -553,7 +539,11 @@ if($cufon_enabled == 1) echo $cufon_footer_script;
 // HOME BUTTON
 
 function lightword_homebtn($homebtn_value){
-global $lw_remove_homebtn; if($lw_remove_homebtn == "false") { if(is_front_page()) $selected="s"; ?><li><a class="<?php echo $selected; ?>" title="<?php echo $homebtn_value; ?>" href="<?php echo get_option('home'); ?>"><span><?php echo $homebtn_value ?></span></a></li>
+global $lw_remove_homebtn;
+$selected = "";
+if($lw_remove_homebtn == "false") {
+    if(is_front_page()) $selected="s"; ?>
+    <li><a class="<?php echo $selected; ?>" title="<?php echo $homebtn_value; ?>" href="<?php echo get_option('home'); ?>"><span><?php echo $homebtn_value ?></span></a></li>
 <?php
 }
 }
@@ -790,6 +780,20 @@ echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 </form></div><div style="clear:both;"></div>';
   // echo '<a class="preview button" href="'.get_bloginfo('wpurl').'/wp-admin/themes.php?page=functions.php" id="post-preview">'.__('LightWord Settings','lightword').'</a><br/><br/></p>';
 }
+
+
+function nullit(&$varin) {
+//must pass by reference, so there is no explicit copying of var data
+//if undefined variable, then returns ’’ without doing an error, otherwise just returns the var.
+//this is done so we don’t get warning
+if (isset($varin)) {
+return ($varin);
+}
+else {
+return ('');
+}
+}
+
 
 // SIDEBARD WIDGETS
 
