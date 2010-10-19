@@ -524,7 +524,7 @@ if ($lw_cufon_settings == "CSS3 Font-face (lightweight)") {$cufon_extra = 0; $cu
 
 function lightword_cufon_header(){
 global $cufon_enabled, $cufon_extra, $fontface;
-$cufon_header_script = "\n<script src=\"".get_bloginfo('template_directory')."/js/cufon-yui.js\" type=\"text/javascript\"></script>\n<script src=\"".get_bloginfo('template_directory')."/js/vera.font.js\" type=\"text/javascript\"></script><script type=\"text/javascript\">/*<![CDATA[*/Cufon.replace(['h1','h2','h3#reply-title'], { fontFamily: 'Vera' });/*]]>*/</script>";
+$cufon_header_script = "\n<script src=\"".get_bloginfo('template_directory')."/js/cufon-yui.js\" type=\"text/javascript\"></script>\n<script src=\"".get_bloginfo('template_directory')."/js/vera.font.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\">/*<![CDATA[*/Cufon.replace(['h1','h2','h3#reply-title'], { fontFamily: 'Vera' });/*]]>*/</script>";
 if($cufon_extra == 1) $cufon_header_script = str_replace("vera.font.js", "vera_extra.font.js", $cufon_header_script);
 if($cufon_enabled == 1) echo $cufon_header_script;
 if($fontface == 1) echo "\n<style type=\"text/css\">@font-face { font-family: Vera; src: url(".get_bloginfo('template_directory')."/alternatives/font-face/Vera-Bold.ttf);}</style>\n";
@@ -665,7 +665,7 @@ return $file;
 // SPAM PROTECT
 
 function check_referrer() {
-if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == “”) {
+if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == "") {
 wp_die( __('Please enable referrers in your browser, or, if you\'re a spammer, bugger off!','lightword') );
 }
 }
@@ -673,14 +673,14 @@ wp_die( __('Please enable referrers in your browser, or, if you\'re a spammer, b
 // RSS FEED BADGE OPTIONS
 
 function lightword_rss_feed_css_false(){
-echo "<style type=\"text/css\">/*<![CDATA[*/* html #searchform{margin-top:-13px;}*+ html #searchform{margin-top:-13px;}  #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;} /*]]>*/</style>";
+echo "<style type=\"text/css\">\nhtml #searchform{margin-top:-13px;}*+ html #searchform{margin-top:-13px;}  #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;} \n</style>\n";
 }
 function lightword_rss_feed_css_true(){
 global $lw_layout_settings;
 if($lw_layout_settings == "Wider"){
-echo "<style type=\"text/css\">/*<![CDATA[*/ #header{background:transparent url(".get_bloginfo('template_directory')."/images/wider/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}/*]]>*/</style>";
+echo "<style type=\"text/css\">\n#header{background:transparent url(".get_bloginfo('template_directory')."/images/wider/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}\n</style>";
 }else{
-echo "<style type=\"text/css\">/*<![CDATA[*/ #header{background:transparent url(".get_bloginfo('template_directory')."/images/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}/*]]>*/</style>";
+echo "<style type=\"text/css\">\n#header{background:transparent url(".get_bloginfo('template_directory')."/images/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}\n</style>";
 }
 }
 
@@ -700,7 +700,7 @@ $lw_layout_wider = "";
 if($lw_layout_settings == "Wider") $lw_layout_wider = "wider/";
 if($lw_layout_settings == "Wider" && $lw_sidebar_settings == "Two sidebars") $lw_layout_wider = "wider/two-sidebars/";
 
-echo "\n<!--[if IE 6]><style type=\"text/css\">/*<![CDATA[*/";
+echo "\n<!--[if IE 6]><style type=\"text/css\">";
 if($lw_remove_rss == "false"){
 echo "#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".get_bloginfo('template_directory')."/images/".$lw_layout_wider."content_top.png',sizingMethod='scale'); }";
 }else{
@@ -714,7 +714,7 @@ echo ".only_date{background-image: none; filter:progid:DXImageTransform.Microsof
 echo ".comm_date{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".get_bloginfo('template_directory')."/images/date_comm_box.png',sizingMethod='scale'); }";
 }
 
-echo "/*]]>*/</style><![endif]-->";
+echo "</style><![endif]-->\n";
 }
 
 // THREADED COMMENTS
@@ -868,6 +868,28 @@ add_filter('comment_form_default_fields', 'lightword_comment_fields');
 
 // CUSTOM HEADER
 require_once(TEMPLATEPATH."/custom_header.php");
+
+// Include CSS in WP head
+
+
+if ( !is_admin() ) {
+    $theme  = get_theme( get_current_theme() );
+    wp_register_style( 'lightword_stylesheet', get_bloginfo( 'stylesheet_url' ), false, $theme['Version'] );
+    wp_enqueue_style( 'lightword_stylesheet' );
+
+if($lw_layout_settings == "Wider") :
+    wp_register_style( 'lightword_stylesheet_wider', get_bloginfo( 'template_directory' ) . "/wider.css", false, $theme['Version'] );
+    wp_enqueue_style( 'lightword_stylesheet_wider' );
+if($lw_sidebar_settings=="Two sidebars"):
+    wp_register_style( 'lightword_stylesheet_newsidebar', get_bloginfo( 'template_directory' ) . "/new_sidebar.css", false, $theme['Version'] );
+    wp_enqueue_style( 'lightword_stylesheet_newsidebar' );
+endif;
+else:
+    wp_register_style( 'lightword_stylesheet_original', get_bloginfo( 'template_directory' ) . "/original.css", false, $theme['Version'] );
+    wp_enqueue_style( 'lightword_stylesheet_original' );
+endif;
+}
+
 
 // ENABLE FUNCTIONS
 

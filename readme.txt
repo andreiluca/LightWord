@@ -78,6 +78,9 @@ CHANGELOG | V2
 | Parts of code rewritten from scratch due to WP3 deprecated functions
 | Wordpress Custom Header (you will have to activate it from LightWord Settings -> Custom Image Header first)
 
+CHANGELOG | V2.0.0.1
+| Theme Guielines issues
+
 Best regards,
 Andrei Luca
 http://www.lightworddesign.net

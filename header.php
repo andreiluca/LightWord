@@ -6,20 +6,11 @@
 <head profile="http://gmpg.org/xfn/11">
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-<?php global $lw_layout_settings,$lw_sidebar_settings; if($lw_layout_settings == "Wider") : ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/wider.css" type="text/css" />
-<?php if($lw_sidebar_settings=="Two sidebars"): ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/new_sidebar.css" type="text/css" />
-<?php endif; ?>
-<?php else: ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/original.css" type="text/css" />
-<?php endif; ?>
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php wp_enqueue_script('jquery'); ?>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php global $lw_header_content, $lw_wp3_menus; echo "\n".$lw_header_content."\n"; ?>
+<?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 </head>
 
