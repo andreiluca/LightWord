@@ -78,8 +78,11 @@ CHANGELOG | V2
 | Parts of code rewritten from scratch due to WP3 deprecated functions
 | Wordpress Custom Header (you will have to activate it from LightWord Settings -> Custom Image Header first)
 
-CHANGELOG | V2.0.0.1
+CHANGELOG | V2.0.0.2
 | Theme Guielines issues
+| Content-type meta declaration move before title
+| xHTML validation error fixed
+| Comment form function validation fixed
 
 Best regards,
 Andrei Luca

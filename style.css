@@ -4,7 +4,7 @@ Theme URI: http://www.lightworddesign.net/
 Description: Simply clever theme with two or three columns, adsense support, fixed-width, widget-ready and threaded comments. Compatible with Wordpress 2.8+ (including 2.9.x), valid XHTML & CSS. Cufon text replacement is back!
 Author: Andrei Luca
 Template: lightword
-Version: 2.0.0.1
+Version: 2.0.0.2
 Tags: white, light, two-columns, right-sidebar, fixed-width, theme-options, translation-ready, threaded-comments, custom-header,three-columns
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -44,7 +44,7 @@ h1#logo small a{font-size:12px;border-bottom:1px solid #FFF;}
 #top_cufon small{ width:600px; }
 #top strong{display:none;}
 #top_bar{padding:72px 23px 0 20px;}
-#searchform{float:right;width:191px;height:26px;background:url(images/searchbox.png) no-repeat;position:relative;top:1px;}
+#searchform{float:right;width:191px;height:26px;background:url(images/searchbox.png) no-repeat;position:relative;top:14px;}
 #header #s{border:1px solid #000;float:left;border:0;width:154px;background:none;color:#ACACAB;margin:4px 0 0 4px;}
 #header #go{float:right;width:25px;height:26px;background-color:transparent;border:0px;cursor:pointer;}
 #content{padding:15px 10px 15px 15px;margin:-7px 0 0 7px;z-index:20 !important;position:relative;}
@@ -58,7 +58,7 @@ h1#logo small a{font-size:12px;border-bottom:1px solid #FFF;}
 
 /* FRONT MENU */
 
-ul#front_menu{float:left;text-transform:uppercase;margin-top:-4px;height:35px !important;z-index:-10;}
+ul#front_menu{float:left;text-transform:uppercase;margin-top:-4px;height:36px !important;z-index:-10;}
 
 * html .expand{margin-top:-13px;} *+html .expand{margin-top:-13px;}
 #front_menu li{list-style:none;float:left;margin-right:4px;}
@@ -71,7 +71,6 @@ ul#front_menu{float:left;text-transform:uppercase;margin-top:-4px;height:35px !i
 * html #front_menu li a span{position:relative;}
 #front_menu li {background:none;float:left; position:relative;}
 ul#front_menu ul {width:200px;position:absolute; background:#FFF;border-left:1px solid #ACACAB;border-right:1px solid #ACACAB;border-bottom:1px solid #ACACAB;-moz-border-radius-bottomleft: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius:5px;}
-
 #front_menu ul li a, #front_menu ul li a span{margin:-3px -1px;height:auto;background:none;}
 #front_menu li ul a {width:200px; float:left; white-space:nowrap;}
 #front_menu li ul a:hover{text-decoration:underline;}

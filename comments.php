@@ -44,11 +44,10 @@ $oddcomment = 'alt ';
 
  <?php if ($comments || comments_open()): ?>
 
-<br/><div id="respond">
-<?php cancel_comment_reply_link(); ?>
+<br/>
 
 <?php
-if ( function_exists('wp_nav_menu') ) {
+if ( function_exists('comment_form') ) {
 comment_form(array(
                         'label_submit' => __('Submit','lightword'),
                         'title_reply' => 'Leave a comment',
@@ -61,7 +60,8 @@ comment_form(array(
                         ));
 }else{
 ?>
-
+<div id="respond">
+<?php cancel_comment_reply_link(); ?>
 <h2 style="background:transparent;"><?php comment_form_title( __('Leave a comment', 'lightword'), 'Reply' ); ?></h2>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
@@ -94,10 +94,10 @@ comment_form(array(
 <?php do_action('comment_form', $post->ID); ?>
 </form>
 <?php endif; ?>
-
+</div>
 <?php } ?>
 
-</div>
+
 <?php endif; ?>
 </div>
 
