@@ -10,7 +10,7 @@
 <?php lightword_simple_date(); ?>
 <?php if ($lw_post_author == "Main page" || $lw_post_author == "Both") : ?>
 <div class="about_author">
-<h4><?php _e('Posted by','lightword'); ?> <a href="<?php the_author_url(); ?> "><?php the_author(); ?></a></h4><?php // the_author_description(); if(!get_the_author_description()) _e('No description. Please complete your profile.','lightword'); ?>
+<h4><?php _e('Posted by','lightword'); ?> <a href="<?php the_author_meta('url'); ?>"><?php the_author(); ?></a></h4>
 </div>
 <?php endif; ?>
 <?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { the_post_thumbnail(array( 200,200 ), array( 'class' => 'alignleft' )); } ?>

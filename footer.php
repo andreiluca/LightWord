@@ -13,7 +13,7 @@ printf(__('Copyright %s %s %s &middot; Powered by %s <br/>','lightword'),'&copy;
 <a title="<?php _e('Go to top','lightword'); ?>" class="top" href="#top"><?php _e('Go to top','lightword'); ?> &uarr;</a>
 </span>
 </div>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/menu.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
 </div>
 <?php wp_footer(); ?>
 </body>

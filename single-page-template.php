@@ -16,16 +16,16 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <?php global $lw_layout_settings; if($lw_layout_settings == "Wider") : ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/wider.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/wider.css" type="text/css" />
 <?php else: ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/original.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/original.css" type="text/css" />
 <?php endif; ?>
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/single-page-template.css" type="text/css" />
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/single-page-template.css" type="text/css" />
+<link rel="shortcut icon" href="<?php echo home_url(); ?>/favicon.ico" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_enqueue_script('jquery'); ?>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-<!--[if IE 6]><style type="text/css">/*<![CDATA[*/#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php bloginfo('template_directory'); ?>/images/single-page-template/content_top.png',sizingMethod='scale'); } /*]]>*/</style><![endif]-->
+<!--[if IE 6]><style type="text/css">/*<![CDATA[*/#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php echo get_template_directory_uri(); ?>/images/single-page-template/content_top.png',sizingMethod='scale'); } /*]]>*/</style><![endif]-->
 <?php wp_head(); ?>
 </head>
 
@@ -35,7 +35,7 @@
 <div id="header">
 <?php lightword_rss_feed(); ?>
 <?php global $lw_remove_rss; if($lw_remove_rss == "true") {  ?>
-<?php echo "<style type=\"text/css\">/*<![CDATA[*/ #header{background:transparent url(".get_bloginfo('template_directory')."/images/single-page-template/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}/*]]>*/</style>"; } ?>
+<?php echo "<style type=\"text/css\">/*<![CDATA[*/ #header{background:transparent url(".get_template_directory_uri()."/images/single-page-template/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}/*]]>*/</style>"; } ?>
 
 <div id="top_bar">
 <div class="center_menu">

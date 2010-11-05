@@ -22,7 +22,7 @@
 
 <?php if ($lw_post_author == "Single page" || $lw_post_author == "Both" && is_attachment() != TRUE) : ?>
 <div class="about_author">
-<h4><?php _e('Posted by','lightword'); ?> <a href="<?php the_author_url(); ?> "><?php the_author(); ?></a></h4><?php // the_author_description(); if(!get_the_author_description()) _e('No description. Please complete your profile.','lightword'); ?>
+<h4><?php _e('Posted by','lightword'); ?> <a href="<?php the_author_meta('url'); ?> "><?php the_author(); ?></a></h4>
 </div>
 <?php endif; ?>
 
