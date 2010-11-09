@@ -78,11 +78,12 @@ CHANGELOG | V2
 | Parts of code rewritten from scratch due to WP3 deprecated functions
 | Wordpress Custom Header (you will have to activate it from LightWord Settings -> Custom Image Header first)
 
-CHANGELOG | V2.0.0.3
+CHANGELOG | V2.0.0.4
 | Theme Guielines issues
 | xHTML validation error fixed
 | Comment form function validation fixed
 | Deprecated functions replaced
+| Table Head color readable issue
 
 Best regards,
 Andrei Luca

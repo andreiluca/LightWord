@@ -4,7 +4,7 @@ Theme URI: http://www.lightworddesign.net/
 Description: Simply clever theme with two or three columns, adsense support, fixed-width, widget-ready and threaded comments. Compatible with WordPress 2.9 and above, valid XHTML & CSS + WP3 ready.
 Author: Andrei Luca
 Template: lightword
-Version: 2.0.0.3
+Version: 2.0.0.4
 Tags: white, light, two-columns, right-sidebar, fixed-width, theme-options, translation-ready, threaded-comments, custom-header,three-columns
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -92,7 +92,7 @@ blockquote{margin:20px 10px 10px 5px;border-left:4px solid #DDD;padding:0 5px 0 
 abbr, acronym, span.abbr{cursor:help;border-bottom:1px dotted #000;}
 table{margin:.5em 0 1em;}
 table td,table th{text-align:left;border-right:1px solid #fff;padding:.9em .8em;}
-table th{background-color:#eee;color:#fff;text-transform:uppercase;font-weight:bold;border-bottom:1px solid #e8e1c8;}
+table th{background-color:#eee;text-transform:uppercase;font-weight:bold;border-bottom:1px solid #e8e1c8;}
 table td{background-color:#f5f5f5;}
 table th a{color:#d6f325;}
 table tr.even td{background-color:#eee;}
