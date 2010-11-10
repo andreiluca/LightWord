@@ -1,4 +1,4 @@
-    <?php
+<?php
 
     /**
     * @uses add_custom_image_header() To add support for a custom header.
