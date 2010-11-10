@@ -495,11 +495,11 @@ global $lw_top_header_image, $lw_top_header_image_height, $lw_top_header_image_w
 
 if($lw_top_header_image == "Enabled") { ?>
 
-<a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo home_url(); ?>"><span id="top" style="background:url('<?php header_image(); ?>') no-repeat;height:<?php echo HEADER_IMAGE_HEIGHT; ?>px;width:<?php echo HEADER_IMAGE_WIDTH; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
+<a name="top" title="<?php bloginfo('name'); ?>" href="<?php if(function_exists('home_url')) echo home_url(); else bloginfo('url'); ?>"><span id="top" style="background:url('<?php header_image(); ?>') no-repeat;height:<?php echo HEADER_IMAGE_HEIGHT; ?>px;width:<?php echo HEADER_IMAGE_WIDTH; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
 
 <?php }else{ ?>
 
-<div id="top_cufon"><h1 id="logo"><a name="top" title="<?php bloginfo('name'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a> <small><?php bloginfo('description'); ?></small></h1></div>
+<div id="top_cufon"><h1 id="logo"><a name="top" title="<?php bloginfo('name'); ?>" href="<?php if(function_exists('home_url')) echo home_url(); else bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> <small><?php bloginfo('description'); ?></small></h1></div>
 
 <?php
     }
@@ -543,7 +543,7 @@ global $lw_remove_homebtn;
 $selected = "";
 if($lw_remove_homebtn == "false") {
     if(is_front_page()) $selected="s"; ?>
-    <li><a class="<?php echo $selected; ?>" title="<?php echo $homebtn_value; ?>" href="<?php echo home_url(); ?>"><span><?php echo $homebtn_value ?></span></a></li>
+    <li><a class="<?php echo $selected; ?>" title="<?php echo $homebtn_value; ?>" href="<?php if(function_exists('home_url')) echo home_url(); else bloginfo('url'); ?>"><span><?php echo $homebtn_value ?></span></a></li>
 <?php
 }
 }
@@ -575,7 +575,7 @@ if(!empty($lw_google_search_code)){
 <input type="hidden" name="ie" value="UTF-8" />
 </form>
 <?php }else{ ?>
-<form method="get" id="searchform" action="<?php echo home_url(); ?>"> <input type="text" value="" name="s" id="s" /> <input type="submit" id="go" value="" alt="<?php _e('Search'); ?>" title="<?php _e('Search'); ?>" /></form>
+<form method="get" id="searchform" action="<?php if(function_exists('home_url')) echo home_url(); else bloginfo('url'); ?>"> <input type="text" value="" name="s" id="s" /> <input type="submit" id="go" value="" alt="<?php _e('Search'); ?>" title="<?php _e('Search'); ?>" /></form>
 <?php
 }
 }

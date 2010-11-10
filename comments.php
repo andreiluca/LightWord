@@ -70,7 +70,8 @@ comment_form(array(
 
 <form action="<?php echo site_url(); ?>/wp-comments-post.php" method="post" id="commentform">
 <?php if ( $user_ID ) : ?>
-<p><?php printf(__('Logged in as %s.','lightword'), '<a href="'.home_url().'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out of this account','lightword') ?>"><?php _e('Log out &raquo;','lightword'); ?></a></p>
+<?php if(function_exists('home_url')) $home_url = home_url(); else $home_url = get_bloginfo('url'); ?>
+<p><?php printf(__('Logged in as %s.','lightword'), '<a href="'.$home_url.'/wp-admin/profile.php">'.$user_identity.'</a>'); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out of this account','lightword') ?>"><?php _e('Log out &raquo;','lightword'); ?></a></p>
 
 <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="1"></textarea></p>
 
