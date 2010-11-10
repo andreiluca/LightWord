@@ -87,7 +87,7 @@ CHANGELOG | V2.0.0.3
 CHANGELOG | V2.0.0.4
 | Table Head color readable issue
 | home_url() issue with WP 2.0 fixed 
-| Cannot modify header error fixed
+| Cannot modify header error fixed (captainstu72 via twiter)
 
 Best regards,
 Andrei Luca
