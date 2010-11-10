@@ -16,10 +16,6 @@ define( 'HEADER_IMAGE', '%s/images/header-image.png' );
 define( 'HEADER_IMAGE_WIDTH', apply_filters( 'basic_header_image_width',  $lw_top_header_image_width ) );
 define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'basic_header_image_height', $lw_top_header_image_height ) );
 
-// We'll be using post thumbnails for custom header images on posts and pages.
-// We want them to be 940 pixels wide by 198 pixels tall (larger images will be auto-cropped to fit).
-//set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
-
 // Don't support text inside the header image.
 define( 'NO_HEADER_TEXT', true );
 
