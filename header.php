@@ -26,8 +26,8 @@
 <?php echo lightword_homebtn(__('Home','lightword')); ?>
 <?php
 if ( function_exists('wp_nav_menu') ) {
-$lightword_menu = wp_nav_menu( array( 'menu'=>'lightword_top_menu', 'fallback_cb'=>'lightword_wp_list_pages',  'echo' => false, 'menu_id'=>'front_menu', 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before'=>'<span>', 'link_after'=>'</span>' ) );
-$lightword_menu = str_replace(array('<ul id="front_menu" class="menu">','</ul>'), array(''), $lightword_menu);
+$lightword_menu = wp_nav_menu( array( 'menu' => 'lightword_top_menu', 'fallback_cb' => 'lightword_wp_list_pages', 'echo' => false, 'menu_id' => 'front_menu', 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before' => '<span>', 'link_after' => '</span>' ) );
+$lightword_menu = preg_replace( array( '/^<ul id="front_menu" class="menu">/', '/\n<\/ul>$/' ), '', $lightword_menu);
 echo $lightword_menu;
 }else{
 echo lightword_wp_list_pages();
