@@ -89,6 +89,15 @@ CHANGELOG | V2.0.0.4
 | home_url() issue with WP 2.9 fixed 
 | "Cannot modify header information" error fixed (captainstu72 via twiter)
 
+CHANGELOG | V2.0.0.4a
+| Nested menus should display correctly [voyagerfan5761] 
+
+CHANGELOG | V2.0.0.4b
+| Nested menus should display correctly 
+
+CHANGELOG | V2.0.0.4c
+| Nested menus should display correctly, please test.
+
 Best regards,
 Andrei Luca
 http://www.lightworddesign.net

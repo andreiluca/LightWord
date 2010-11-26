@@ -478,14 +478,15 @@ function lightword_stripslash_check($variable) {
 function lightword_wp_list_pages(){
 global $lw_show_categories, $lw_exclude_pages, $lw_exclude_categories;
 if ($lw_show_categories == "true") {
-$top_list = wp_list_categories("echo=0&depth=2&title_li=&exclude=".$lw_exclude_categories."");
+$top_list = wp_list_categories("echo=0&depth=2&title_li=&hide_empty=0&exclude=".$lw_exclude_categories."");
 $top_list = str_replace(array('">','</a>','<span><a','current-cat"><a'),array('"><span>','</span></a>','<a','"><a class="s"'), $top_list);
-echo $top_list;
+return $top_list;
 }else{
 $top_list = wp_list_pages("echo=0&depth=2&title_li=&exclude=".$lw_exclude_pages."");
 $top_list = str_replace(array('">','</a>','<span><a','current_page_item"><a'),array('"><span>','</span></a>','<a','"><a class="s"'), $top_list);
-echo $top_list;
+return $top_list;
 }
+
 }
 
 // HEADER IMAGE
