@@ -73,6 +73,12 @@ $options = array (
             "type" => "checkbox",
             "std" => "false"),
 
+    array(  "name" => __('Use basic wordpress pages/categories in front menu','lightword'),
+			"desc" => __('I don\'t want those awesome WP3 features.','lightword'),
+            "id" => $shortname."_use_wp_menus",
+            "type" => "checkbox",
+            "std" => ""),
+
     array(  "name" => __('Show categories on front menu','lightword'),
 			"desc" => __('Check this box if you would like to SHOW CATEGORIES instead pages on front menu','lightword'),
             "id" => $shortname."_show_categories",
