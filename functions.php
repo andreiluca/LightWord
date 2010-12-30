@@ -801,7 +801,7 @@ return ('');
 }
 
 
-// SIDEBARD WIDGETS
+// SIDEBAR WIDGETS
 
 if ( function_exists('register_sidebar') ) { register_sidebar(array('name' =>'Sidebar','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
 if ( function_exists('register_sidebar') && $lw_sidebar_settings == "Two sidebars") { register_sidebar(array('name' =>'Sidebar Child','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
@@ -813,7 +813,9 @@ if ( function_exists( 'add_theme_support' ) ) add_theme_support( 'menus' );
 if ( function_exists( 'add_theme_support' ) ) add_theme_support( 'automatic-feed-links' );
 if ( function_exists( 'add_custom_background' ) ) add_custom_background();
 
- if ( function_exists( 'register_nav_menus' ) )	register_nav_menus( array(
+// WORDPRESS 3.0+ FEATURES
+
+if ( function_exists( 'register_nav_menus' ) )	register_nav_menus( array(
 		'lightword_top_menu' => __( 'LightWord Navigation Bar', 'lightword' ),
 	) );
 
@@ -840,7 +842,7 @@ add_filter( 'wp_page_menu_args', 'lightword_page_menu_args' );
 
 $commenter = wp_get_current_commenter();
 
-global $req;
+global $req; // TODO does this do anything?
 
 /*        function lightword_comment_fields ($fields) {
             foreach ($fields as $name => $field) {
