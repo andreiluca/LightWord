@@ -188,12 +188,12 @@ if( isset( $_REQUEST[ @$value['id'] ] ) ) {
     delete_option( @$value['id'] );
     }
 }
-	header("Location: themes.php?page=functions.php&saved=true");
+	header("Location: " . admin_url( 'themes.php?page=functions.php&saved=true' ));
 
 } else if( 'reset' == nullit($_REQUEST['action']) ) {
 foreach ($options as $value) {
 delete_option( @$value['id'] ); }
-	header("Location: themes.php?page=functions.php&reset=true");
+	header("Location: " . admin_url( 'themes.php?page=functions.php&reset=true' ));
 }
 }
 add_theme_page(__('LightWord Settings','lightword'), __('LightWord Settings','lightword'), 'edit_themes', basename(__FILE__), 'lightword_admin_page');
