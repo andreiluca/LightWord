@@ -11,7 +11,6 @@ Template Name: Blog archive
 <?php
 // echo archives start
 $lastpost = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_date <'" . current_time('mysql') . "' AND post_status='publish' AND post_type='post' AND post_password='' ORDER BY post_date DESC LIMIT 1");
-//$output = get_option('hfy_archives_'.$lastpost);
 if(empty($output)){
 	$output = '';
 	$wpdb->query("DELETE FROM $wpdb->options WHERE option_name LIKE 'hfy_archives_%'");

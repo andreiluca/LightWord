@@ -454,31 +454,6 @@ function lightword_stripslash_check($variable) {
         return $stripped;
 }
 
-
-/**
- * Smart cache-busting
- * http://toscho.de/2008/frisches-layout/#comment-13
- */
-
-/*if ( !function_exists('fb_css_cache_buster') ) {
-        function fb_css_cache_buster($info, $show) {
-                if ($show == 'stylesheet_url') {
-
-                        // Is there already a querystring? If so, add to the end of that.
-                        if (strpos($pieces[1], '?') === false) {
-                                return $info . "?" . filemtime(WP_CONTENT_DIR . $pieces[1]);
-                        } else {
-                                $morsels = explode("?", $pieces[1]);
-                                return $info . "&" . filemtime(WP_CONTENT_DIR . $morsles[1]);
-                        }
-                } else {
-                        return $info;
-                }
-        }
-
-        add_filter('bloginfo_url', 'fb_css_cache_buster', 9999, 2);
-}*/
-
 // FRONT MENU / LIST PAGES OR CATEGORIES
 
 function lightword_wp_list_pages(){
@@ -825,44 +800,9 @@ register_nav_menu('lightword_top_menu', __( 'LightWord Navigation Bar', 'lightwo
 }
 add_action('after_setup_theme', 'register_custom_menu');
 
-//if ( function_exists( 'register_nav_menus' ) ) register_nav_menus('lightword_top_menu', 'LightWord Navigation');
-
-/*
-add_theme_support( 'nav-menus' );
-	register_nav_menus( array(
-		'lightword_top' => __( 'Menu', 'lightword' ),
-	) );
-
-function lightword_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
-}
-add_filter( 'wp_page_menu_args', 'lightword_page_menu_args' );
-*/
-
 $commenter = wp_get_current_commenter();
 
 global $req; // TODO does this do anything?
-
-/*        function lightword_comment_fields ($fields) {
-            foreach ($fields as $name => $field) {
-                $fields[$name] = preg_replace('/(<label(?:.*?)>(?:.*?)<\/label>)\s*(<span class="required">\*<\/span>)?\s*(<input(?:.*?)\/>)/', '\3\1\2',$field);
-            }
-            return $fields;
-        }
-
-
-$fields =  array(
-	'author' => '<p>' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /><label for="author">' . __( 'Name' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-	            '</p>',
-	'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
-	            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /></p>',
-	'url'    => '<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label>' .
-	            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
-);
-
-apply_filters( 'comment_form_default_fields', 'lightword_comment_fields' );*/
-
 
 function lightword_comment_fields ($fields) {
   foreach ($fields as $name => $field) {
