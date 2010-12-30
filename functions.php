@@ -753,7 +753,7 @@ function lightword_custom_dashboard_widgets() {
 }
 
 function lightword_custom_dashboard_help() {
-echo '<p>Thank you for using my precious LightWord theme.<br/>Currently you\'re using  v2.0 version which fully supports wordpress 3 menus. Hooray!<br/><br/>- Andrei, ROMANIA<div style="float:right;">';
+echo '<p>Thank you for using my precious LightWord theme.<br/>Currently you\'re using version 2.0 which fully supports WordPress 3 menus. Hooray!<br/><br/>- Andrei, ROMANIA<div style="float:right;">';
 echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="5545477">
