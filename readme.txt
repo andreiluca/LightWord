@@ -1,7 +1,7 @@
 
 
 Hey, thanks for downloading my theme.
-Notice: This is my first (free) wordpress theme.
+Notice: This is my first (free) WordPress theme.
 
 
 Localization feature added in 1.5
@@ -37,38 +37,38 @@ CHANGELOG | V1.9.8
 | One comment per page bug fixed (wordpress.org/support/topic/357045)
 
 CHANGELOG | 1.9.9
-| Cufon is back, special thanks goes to Voyagerfan5761 (technobabbl.es)
+| Cufón is back, special thanks goes to Voyagerfan5761 (technobabbl.es)
 | Finnish language updated (Tomi R. | rantom.fi)
 | Fixes an issue that can occur when a user has magic_quotes switched to on (Steven L. | isomehowhate.com)
 | Post author settings revised
 
 CHANGELOG | 1.9.9.1
-| Added danish and chinese (tradional) language file
+| Added Danish and Chinese (traditional) language file
 
 CHANGELOG | 1.9.9.2
-| Added bulgarian language file (thanks to Marin D.)
+| Added Bulgarian language file (thanks to Marin D.)
 
 CHANGELOG | 1.9.9.3
-| WP-PAGENAVI PLUGIN should work now
+| WP-PAGENAVI plugin should work now
 | Added some new admin panel fields
 | Fixed stripslashes bug on theme settings fields
 | Spanish language improved + some functions.php contribution by GeekRMX (ngeeks.com)
-| A new Cufon settings option: CSS3 Font-face (modern browsers) --  Voyagerfan5761 (technobabbl.es) ideea
+| A new Cufón settings option: CSS3 Font-face (modern browsers) --  Voyagerfan5761 (technobabbl.es) idea
 
 CHANGELOG | 1.9.9.4
 | Fixed: Comment reply link on pages
 | Fixed: Older/previous comments link on page
 
 CHANGELOG | 1.9.9.6
-| Fixed IE7 second-siderbar problem
-| Fixed Cufon js error on IE
-| Support for Wordpress 3.0 Features like background or menus (currently in beta)
+| Fixed IE7 second-sidebar problem
+| Fixed Cufón JS error on IE
+| Support for WordPress 3.0 Features like background or menus (currently in beta)
 | Code refreshing, replaced deprecated functions with new, updated ones
 
 CHANGELOG | 1.9.9.7
 | Save/reset buttons produces several PHP Warning notices
 | Image alignment revised
-| Single page template (rss badge issue) fix, thanks to Alin Sfetcu (sanctuary.ro)
+| Single page template (RSS badge issue) fix, thanks to Alin Sfetcu (sanctuary.ro)
 | Additional footer content (theme settings box) fixed
 
 CHANGELOG | V2
@@ -76,18 +76,18 @@ CHANGELOG | V2
 | Single page template WP3 Menus fixed
 | WP3 Menus goes out of Beta status
 | Parts of code rewritten from scratch due to WP3 deprecated functions
-| Wordpress Custom Header (you will have to activate it from LightWord Settings -> Custom Image Header first)
+| WordPress Custom Header (you will have to activate it from LightWord Settings -> Custom Image Header first)
 
 CHANGELOG | V2.0.0.3
-| Theme Guielines issues
-| xHTML validation error fixed
+| Theme Guidelines issues
+| XHTML validation error fixed
 | Comment form function validation fixed
 | Deprecated functions replaced
 
 CHANGELOG | V2.0.0.4
 | Table head color readable issue
 | home_url() issue with WP 2.9 fixed 
-| "Cannot modify header information" error fixed (captainstu72 via twiter)
+| "Cannot modify header information" error fixed (captainstu72 via Twitter)
 
 CHANGELOG | V2.0.0.4a
 | Nested menus should display correctly [voyagerfan5761] 
