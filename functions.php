@@ -867,8 +867,8 @@ register_activation_hook( __FILE__, 'lightword_has_been_activated' );
 
 function lightword_has_been_updated() {
 	global $shortname;
-	# Do removal of cruft from previous versions here
-	# ...
+	# Do removal of cruft from previous versions
+	delete_option( $shortname . '_christmas_joy' );
 	# Update database option so we don't keep running this code
 	update_option( $shortname . '_theme_version', LW_CURRENT_VERSION );
 }
