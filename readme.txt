@@ -86,14 +86,17 @@ CHANGELOG | V2.0.0.3
 
 CHANGELOG | V2.0.0.4
 | Table head color readable issue
-| home_url() issue with WP 2.9 fixed 
+| home_url() issue with WP 2.9 fixed
 | "Cannot modify header information" error fixed (captainstu72 via Twitter)
 
 CHANGELOG | V2.0.0.4a
-| Nested menus should display correctly [voyagerfan5761] 
+| Nested menus should display correctly [voyagerfan5761]
 
 CHANGELOG | V2.0.0.4b
-| Nested menus should display correctly 
+| Nested menus should display correctly
+
+CHANGELOG | V2.0.0.5
+| Czech language file added
 
 CHANGELOG | V2.0.0.6
 | Nested menus don't render properly issue fixed
