@@ -101,6 +101,7 @@ CHANGELOG | V2.0.0.5
 CHANGELOG | V2.0.0.6
 | Nested menus don't render properly issue fixed
 | Added an option to disable WP3 menus
+| Search form should no longer be placed too high when RSS badge is enabled (not removed)
 
 Best regards,
 Andrei Luca

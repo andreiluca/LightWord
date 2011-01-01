@@ -655,7 +655,7 @@ wp_die( __('Please enable referrers in your browser, or, if you\'re a spammer, b
 // RSS FEED BADGE OPTIONS
 
 function lightword_rss_feed_css_false(){
-echo "<style type=\"text/css\">\nhtml #searchform{margin-top:-13px;}*+ html #searchform{margin-top:-13px;}  #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;} \n</style>\n";
+echo "<style type=\"text/css\">\n#content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;} \n</style>\n";
 }
 function lightword_rss_feed_css_true(){
 global $lw_layout_settings;
