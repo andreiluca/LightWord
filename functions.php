@@ -277,7 +277,8 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 </tr><tr><td></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
-<?php break; case 'exclude_pages': ?>
+<?php break; case 'exclude_pages':
+	if( $lw_use_wp_menus == 'false' || $lw_use_wp_menus == '' ) { break; } ?>
 <?php if($lw_show_categories == "false" || $lw_show_categories == "") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
@@ -285,7 +286,8 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 </tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
-<?php break; case 'exclude_categories': ?>
+<?php break; case 'exclude_categories':
+	if( $lw_use_wp_menus == 'false' || $lw_use_wp_menus == '' ) { break; } ?>
 <?php if($lw_show_categories == "true") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
@@ -293,7 +295,8 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 </tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
-<?php break; case "checkbox": ?>
+<?php break; case "checkbox":
+	if( $value['id'] == 'lw_show_categories' && ( $lw_use_wp_menus == 'false' || $lw_use_wp_menus == '' ) ) { break; } ?>
 <tr>
 <td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
 <td width="75%"><?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = ""; } ?>
