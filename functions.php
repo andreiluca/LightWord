@@ -67,9 +67,9 @@ $options = array (
             'type' => 'checkbox',
             'std' => 'false'),
 
-    array(  'name' => __('Use WordPress custom menus','lightword'),
+    array(  'name' => __('Use &quot;dumb&quot; front menu','lightword'),
 			'desc' => __('Show an automatically generated list of pages/categories instead of a custom navigation menu','lightword'),
-            'id' => 'lw_use_wp_menus',
+            'id' => 'lw_use_dumb_menu',
             'type' => 'checkbox',
             'std' => 'false'),
 
@@ -271,7 +271,7 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 <?php endif; ?>
 
 <?php break; case 'exclude_pages':
-	if( $lw_use_wp_menus == 'false' || $lw_use_wp_menus == '' ) { break; } ?>
+	if( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) { break; } ?>
 <?php if($lw_show_categories == "false" || $lw_show_categories == "") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
@@ -280,7 +280,7 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 <?php endif; ?>
 
 <?php break; case 'exclude_categories':
-	if( $lw_use_wp_menus == 'false' || $lw_use_wp_menus == '' ) { break; } ?>
+	if( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) { break; } ?>
 <?php if($lw_show_categories == "true") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
@@ -289,7 +289,7 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 <?php endif; ?>
 
 <?php break; case "checkbox":
-	if( $value['id'] == 'lw_show_categories' && ( $lw_use_wp_menus == 'false' || $lw_use_wp_menus == '' ) ) { break; } ?>
+	if( $value['id'] == 'lw_show_categories' && ( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) ) { break; } ?>
 <tr>
 <td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
 <td width="75%"><?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = ""; } ?>
@@ -855,6 +855,10 @@ function lightword_has_been_updated() {
 	global $shortname;
 	# Do removal of cruft from previous versions
 	delete_option( 'lw_christmas_joy' );
+	# Database changes
+	## Renamed WP Menus option
+	add_option( 'lw_use_dumb_menu', get_option('lw_use_wp_menus') );
+	delete_option( 'lw_use_wp_menus' );
 	# Update database option so we don't keep running this code
 	update_option( 'lw_theme_version', LW_CURRENT_VERSION );
 }
