@@ -103,5 +103,8 @@ CHANGELOG | V2.0.0.6
 | Added an option to disable WP3 menus
 | Search form should no longer be placed too high when RSS badge is enabled (not removed)
 
+CHANGELOG | V2.0.0.7
+| No more invalid HTML with "Show only in posts" sidebox option and comments closed
+
 Best regards,
 Andrei Luca

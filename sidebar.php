@@ -4,7 +4,7 @@
 
 /* Widgetized sidebar, if you have the plugin installed. */
 
-if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Sidebar") ) : ?>
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar') ) : ?>
 
 
 <h3><?php _e('Pages','lightword'); ?></h3>

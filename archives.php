@@ -31,11 +31,11 @@ if(empty($output)){
 			if ($postresults) {
 				// The month year title things
 				$text = sprintf('%s %d', $month[zeroise($monthresult->month,2)], $monthresult->year);
-                $text_id = strtolower(str_replace(" ","",$text));
+                $text_id = strtolower(str_replace(' ','',$text));
 				$postcount = count($postresults);
-                if($postcount=="1") $postcount_text = "post"; else $postcount_text = "posts";
-				$output .= "<h2 class=\"archive_h2\"><a onclick=\"jQuery('#$text_id').toggle();\">" . $text . "<span> (" . count($postresults) . " ".$postcount_text." )</span></a></h2>";
-                $output .= "<ul id='$text_id' class='hide'>\n";
+                if($postcount=='1') $postcount_text = 'post'; else $postcount_text = 'posts';
+				$output .= '<h2 class="archive_h2"><a onclick="jQuery(\'#$text_id\').toggle();">' . $text . '<span> (' . count($postresults) . ' '.$postcount_text.' )</span></a></h2>';
+                $output .= "<ul id=\"$text_id\" class=\"hide\">\n";
 
 				foreach ($postresults as $postresult) {
 					if ($postresult->post_date != '0000-00-00 00:00:00') {
@@ -46,9 +46,9 @@ if(empty($output)){
 						else
 							$text = $postresult->ID;
 						$title_text = esc_html($text, 1);
-						$output .= '	<li>' . mysql2date('m/d', $postresult->post_date) . ':&nbsp;' . "<a href='$url' title='$title_text'>$text</a>";
+						$output .= '	<li>' . mysql2date('m/d', $postresult->post_date) . ':&nbsp;' . "<a href=\"$url\" title=\"$title_text\">$text</a>";
 					  	$output .= '&nbsp;(' . $postresult->comment_count . ' ';
-                        if($postresult->comment_count=="1") $output.= "comment"; else $output.= "comments";
+                        if($postresult->comment_count=='1') $output.= 'comment'; else $output.= 'comments';
 						$output .= ")</li>\n";
 					}
 				}
@@ -57,7 +57,7 @@ if(empty($output)){
 		}
 		update_option('hfy_archives_'.$lastpost,$output);
 	}else{
-		$output = '<strong>'. __('Not Found','lightword') .'</strong> '. __("Sorry, but you are looking for something that isn't here.","lightword") .'';
+		$output = '<strong>'. __('Not Found','lightword') .'</strong> '. __('Sorry, but you are looking for something that isn\'t here.','lightword') .'';
 	}
 
 }
@@ -68,7 +68,7 @@ echo $output;
 <?php endwhile; else: ?>
 
 <h2><?php _e('Not Found','lightword'); ?></h2>
-<p><?php  _e("Sorry, but you are looking for something that isn't here.","lightword"); ?></p>
+<p><?php  _e('Sorry, but you are looking for something that isn\'t here.','lightword'); ?></p>
 
 <?php endif; ?>
 

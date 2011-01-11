@@ -2,9 +2,9 @@
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER['SCRIPT_FILENAME']))
 die ('Please do not load this page directly. Thanks!');
 
-$themename = "LightWord";
+$themename = 'LightWord';
 define('LW_CURRENT_VERSION', '2.0.0.6');
-$top_header_image_path = get_template_directory_uri()."/images/header-image.png";
+$top_header_image_path = get_template_directory_uri().'/images/header-image.png';
 
 if ( ! isset( $content_width ) ) $content_width = 550;
 
@@ -181,12 +181,12 @@ if( isset( $_REQUEST[ @$value['id'] ] ) ) {
     delete_option( @$value['id'] );
     }
 }
-	header("Location: " . admin_url( 'themes.php?page=functions.php&saved=true' ));
+	header('Location: ' . admin_url( 'themes.php?page=functions.php&saved=true' ));
 
 } else if( 'reset' == nullit($_REQUEST['action']) ) {
 foreach ($options as $value) {
 delete_option( @$value['id'] ); }
-	header("Location: " . admin_url( 'themes.php?page=functions.php&reset=true' ));
+	header('Location: ' . admin_url( 'themes.php?page=functions.php&reset=true' ));
 }
 }
 add_theme_page(__('LightWord Settings','lightword'), __('LightWord Settings','lightword'), 'edit_themes', basename(__FILE__), 'lightword_admin_page');
@@ -227,73 +227,73 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 
 
 
-<?php foreach ($options as $value) { switch ( $value['type'] ) { case "open": ?>
+<?php foreach ($options as $value) { switch ( $value['type'] ) { case 'open': ?>
 <table width="100%" border="0" style="padding:10px;">
-<?php break; case "close": ?>
+<?php break; case 'close': ?>
 </table><br />
-<?php break;case 'text':?>
+<?php break; case 'text':?>
 
-<tr><td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-</tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td>
+<tr><td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td>
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 <?php break;case 'textarea':?>
 
 
-<tr><td width="20%" rowspan="2" valign="middle"><strong><?php echo _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="90%"><div class="toggle"><textarea name="<?php echo $value['id']; ?>" style="width:500px; height:150px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?></textarea></td></tr>
-<tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td>
+<tr><td width="20%" rowspan="2" valign="middle"><strong><?php echo _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="90%"><div class="toggle"><textarea name="<?php echo $value['id']; ?>" style="width:500px; height:150px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?></textarea></td></tr>
+<tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td>
 </tr><tr></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 
 <?php break; case 'select': ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="80%"><select style="width:200px;" name="<?php _e("".$value['id']."","lightword"); ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?> value="<?php echo $option; ?>"><?php _e("".$option."","lightword"); ?></option><?php } ?></select></td>
-</tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="80%"><select style="width:200px;" name="<?php _e(''.$value['id'].'','lightword'); ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?> value="<?php echo $option; ?>"><?php _e(''.$option.'','lightword'); ?></option><?php } ?></select></td>
+</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td>
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 <?php break; case 'header_image_height': ?>
-<?php if($lw_top_header_image == "Enabled") : ?>
+<?php if($lw_top_header_image == 'Enabled') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
 </tr><tr><td></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
 <?php break; case 'header_image_width': ?>
-<?php if($lw_top_header_image == "Enabled") : ?>
+<?php if($lw_top_header_image == 'Enabled') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
 </tr><tr><td></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
 <?php break; case 'exclude_pages':
 	if( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) { break; } ?>
-<?php if($lw_show_categories == "false" || $lw_show_categories == "") : ?>
+<?php if($lw_show_categories == 'false' || $lw_show_categories == '') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
 <td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-</tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
 <?php break; case 'exclude_categories':
 	if( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) { break; } ?>
-<?php if($lw_show_categories == "true") : ?>
+<?php if($lw_show_categories == 'true') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-</tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
-<?php break; case "checkbox":
+<?php break; case 'checkbox':
 	if( $value['id'] == 'lw_show_categories' && ( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) ) { break; } ?>
 <tr>
-<td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
-<td width="75%"><?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = ""; } ?>
-<input type="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />   <small><?php _e("".$value['desc']."","lightword"); ?></small>
+<td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="75%"><?php if(get_option($value['id'])){ $checked = 'checked="checked"'; }else{ $checked = ''; } ?>
+<input type="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />   <small><?php _e(''.$value['desc'].'','lightword'); ?></small>
 </td></tr><tr></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php break; } } ?>
 </div></div>
@@ -336,7 +336,7 @@ if (!is_wp_error( $rss ) ) : // Checks that the object is created correctly
 
 
     <?php
-    else: echo "Wordpress forums temporarily unavailable.";
+    else: echo 'Wordpress forums temporarily unavailable.';
 endif;
 ?>
 
@@ -404,7 +404,7 @@ $$id = get_option( $id );
 
 if ( !function_exists('lightword_fb_update_comment_type_cache') ) {
         function lightword_fb_update_comment_type_cache($queried_posts) {
-        $post_id_list = "";
+        $post_id_list = '';
                 global $cjd_comment_count_cache, $wpdb;
 
                 if ( !$queried_posts )
@@ -454,12 +454,12 @@ function lightword_stripslash_check($variable) {
 
 function lightword_wp_list_pages(){
 global $lw_show_categories, $lw_exclude_pages, $lw_exclude_categories;
-if ($lw_show_categories == "true") {
-$top_list = wp_list_categories("echo=0&depth=2&title_li=&hide_empty=0&exclude=".$lw_exclude_categories."");
+if ($lw_show_categories == 'true') {
+$top_list = wp_list_categories('echo=0&depth=2&title_li=&hide_empty=0&exclude='.$lw_exclude_categories);
 $top_list = str_replace(array('">','</a>','<span><a','current-cat"><a'),array('"><span>','</span></a>','<a','"><a class="s"'), $top_list);
 return $top_list;
 }else{
-$top_list = wp_list_pages("echo=0&depth=2&title_li=&exclude=".$lw_exclude_pages."");
+$top_list = wp_list_pages('echo=0&depth=2&title_li=&exclude='.$lw_exclude_pages);
 $top_list = str_replace(array('">','</a>','<span><a','current_page_item"><a'),array('"><span>','</span></a>','<a','"><a class="s"'), $top_list);
 return $top_list;
 }
@@ -471,7 +471,7 @@ return $top_list;
 function lightword_header_image(){
 global $lw_top_header_image, $lw_top_header_image_height, $lw_top_header_image_width, $top_header_image_path;
 
-if($lw_top_header_image == "Enabled") { ?>
+if($lw_top_header_image == 'Enabled') { ?>
 
 <a name="top" title="<?php bloginfo('name'); ?>" href="<?php if(function_exists('home_url')) echo home_url(); else bloginfo('url'); ?>"><span id="top" style="background:url('<?php header_image(); ?>') no-repeat;height:<?php echo HEADER_IMAGE_HEIGHT; ?>px;width:<?php echo HEADER_IMAGE_WIDTH; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
 
@@ -496,14 +496,14 @@ if(is_single()||is_page()){
 
 // CUFON SETTINGS
 
-if ($lw_cufon_settings == "Enabled") {$cufon_enabled = 1; $cufon_extra = 0; $fontface = 0;}
-if ($lw_cufon_settings == "Extra") {$cufon_extra = 1; $cufon_enabled = 1; $fontface = 0;}
-if ($lw_cufon_settings == "CSS3 Font-face (lightweight)") {$cufon_extra = 0; $cufon_enabled = 0; $fontface = 1;}
+if ($lw_cufon_settings == 'Enabled') {$cufon_enabled = 1; $cufon_extra = 0; $fontface = 0;}
+if ($lw_cufon_settings == 'Extra') {$cufon_extra = 1; $cufon_enabled = 1; $fontface = 0;}
+if ($lw_cufon_settings == 'CSS3 Font-face (lightweight)') {$cufon_extra = 0; $cufon_enabled = 0; $fontface = 1;}
 
 function lightword_cufon_header(){
 global $cufon_enabled, $cufon_extra, $fontface;
 $cufon_header_script = "\n<script src=\"".get_template_directory_uri()."/js/cufon-yui.js\" type=\"text/javascript\"></script>\n<script src=\"".get_template_directory_uri()."/js/vera.font.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\">/*<![CDATA[*/Cufon.replace(['h1','h2','h3#reply-title'], { fontFamily: 'Vera' });/*]]>*/</script>";
-if($cufon_extra == 1) $cufon_header_script = str_replace("vera.font.js", "vera_extra.font.js", $cufon_header_script);
+if($cufon_extra == 1) $cufon_header_script = str_replace('vera.font.js', 'vera_extra.font.js', $cufon_header_script);
 if($cufon_enabled == 1) echo $cufon_header_script;
 if($fontface == 1) echo "\n<style type=\"text/css\">@font-face { font-family: Vera; src: url(".get_template_directory_uri()."/alternatives/font-face/Vera-Bold.ttf);}</style>\n";
 }
@@ -518,9 +518,9 @@ if($cufon_enabled == 1) echo $cufon_footer_script;
 
 function lightword_homebtn($homebtn_value){
 global $lw_remove_homebtn;
-$selected = "";
-if($lw_remove_homebtn == "false") {
-    if(is_front_page()) $selected="s"; ?>
+$selected = '';
+if($lw_remove_homebtn == 'false') {
+    if(is_front_page()) $selected='s'; ?>
     <li><a class="<?php echo $selected; ?>" title="<?php echo $homebtn_value; ?>" href="<?php if(function_exists('home_url')) echo home_url(); else bloginfo('url'); ?>"><span><?php echo $homebtn_value ?></span></a></li>
 <?php
 }
@@ -532,9 +532,9 @@ function lightword_canonical_for_comments() {
 global $cpage, $post;
 if ( $cpage > 1 ) :
 echo "\n";
-echo "<link rel='canonical' href='";
+echo '<link rel="canonical" href="';
 echo get_permalink( $post->ID );
-echo "' />\n";
+echo "\" />\n";
 endif;
 }
 
@@ -542,8 +542,8 @@ endif;
 
 function lightword_searchbox(){
 global $lw_remove_searchbox, $lw_google_search_code;
-$lw_google_search_code = trim(str_replace(" ","",$lw_google_search_code));
-if($lw_remove_searchbox != "true")
+$lw_google_search_code = trim(str_replace(' ','',$lw_google_search_code));
+if($lw_remove_searchbox != 'true')
 if(!empty($lw_google_search_code)){
 ?>
 <form action="http://www.google.com/cse" method="get" id="searchform">
@@ -565,37 +565,37 @@ global $lw_sidebox_settings;
 
 switch ($lw_sidebox_settings)
 {
-case "Enabled":
+case 'Enabled':
 default:
-echo "<div class=\"comm_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
-echo "<a class=\"nr_comm_spot\" href=\"".get_permalink()."#comments\">";
+echo '<div class="comm_date"><span class="data"><span class="j">'.get_the_time('j').'</span>'.get_the_time('M/y').'</span><span class="nr_comm">';
+echo '<a class="nr_comm_spot" href="'.get_permalink().'#comments">';
 if(!comments_open()) _e('Off','lightword'); else echo lightword_fb_get_comment_type_count('comment');
 echo "</a></span></div>\n";
 break;
 
-case "Disabled":
+case 'Disabled':
 break;
 
-case "Show only in posts":
+case 'Show only in posts':
 if(is_single()){
-echo "<div class=\"comm_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
-echo "<a class=\"nr_comm_spot\" href=\"".get_permalink()."#comments\">";
-if(!comments_open()) _e('Off','lightword'); else echo fb_get_comment_type_count('comment')."</a>";
-echo "</span></div>\n";
+echo '<div class="comm_date"><span class="data"><span class="j">'.get_the_time('j').'</span>'.get_the_time('M/y').'</span><span class="nr_comm">';
+echo '<a class="nr_comm_spot" href="'.get_permalink().'#comments">';
+if(!comments_open()) _e('Off','lightword'); else echo fb_get_comment_type_count('comment');
+echo "</a></span></div>\n";
 }
 break;
 
-case "Show only date":
+case 'Show only date':
 /* START ONLY DATE */
-echo "<div class=\"comm_date only_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
+echo '<div class="comm_date only_date"><span class="data"><span class="j">'.get_the_time('j').'</span>'.get_the_time('M/y').'</span><span class="nr_comm">';
 echo "</span></div>\n";
 /* END ONLY DATE */
 break;
 
 case "Last two options together":
-/* START  LAST TWO */
+/* START LAST TWO */
 if(is_single()){
-echo "<div class=\"comm_date only_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
+echo '<div class="comm_date only_date"><span class="data"><span class="j">'.get_the_time('j').'</span>'.get_the_time('M/y').'</span><span class="nr_comm">';
 echo "</span></div>\n";
 }
 /* END LAST TWO */
@@ -606,14 +606,14 @@ break;
 
 function lightword_sidebar(){
 global $lw_sidebar_settings, $lw_layout_settings;
-if($lw_layout_settings=="Wider"){
+if($lw_layout_settings=='Wider'){
 switch ($lw_sidebar_settings)
 {
-case "One sidebar":
+case 'One sidebar':
 default:
 break;
 
-case "Two sidebars":
+case 'Two sidebars':
 include (TEMPLATEPATH . '/sidebar-child.php');
 break;
 
@@ -626,8 +626,10 @@ break;
 
 function lightword_simple_date(){
 global $lw_sidebox_settings;
-if($lw_sidebox_settings == "Disabled"){
-echo "<div class=\"simple_date\">".__('Posted on','lightword')." ".get_the_time(__('F j, Y','lightword'))."</div>";
+if($lw_sidebox_settings == 'Disabled'){
+# @TODO Does this actually localize the date? I don't think it does.
+#       Wouldn't the date output depend on the PHP language setting?
+echo '<div class="simple_date">'.__('Posted on','lightword').' '.get_the_time(__('F j, Y','lightword')).'</div>';
 }
 }
 
@@ -643,7 +645,7 @@ return $file;
 // SPAM PROTECT
 
 function check_referrer() {
-if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == "") {
+if (!isset($_SERVER['HTTP_REFERER']) || $_SERVER['HTTP_REFERER'] == '') {
 wp_die( __('Please enable referrers in your browser, or, if you\'re a spammer, bugger off!','lightword') );
 }
 }
@@ -655,7 +657,7 @@ echo "<style type=\"text/css\">\n#content-body,x:-moz-any-link{float:left;margin
 }
 function lightword_rss_feed_css_true(){
 global $lw_layout_settings;
-if($lw_layout_settings == "Wider"){
+if($lw_layout_settings == 'Wider'){
 echo "<style type=\"text/css\">\n#header{background:transparent url(".get_template_directory_uri()."/images/wider/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}\n</style>";
 }else{
 echo "<style type=\"text/css\">\n#header{background:transparent url(".get_template_directory_uri()."/images/content_top_no_rss.png) no-repeat; } #content-body,x:-moz-any-link{float:left;margin-right:28px;}#content-body, x:-moz-any-link, x:default{float:none;margin-right:25px;}\n</style>";
@@ -664,32 +666,32 @@ echo "<style type=\"text/css\">\n#header{background:transparent url(".get_templa
 
 function lightword_rss_feed(){
 global $lw_remove_rss;
-if($lw_remove_rss == "false"){ ?>
+if($lw_remove_rss == 'false'){ ?>
 <a id="rss-feed" title="<?php _e('Syndicate this site using RSS','lightword'); ?>" href="<?php bloginfo('rss2_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a>
-<?php } } if($lw_remove_rss == "false") add_action('wp_head','lightword_rss_feed_css_false'); else add_action('wp_head','lightword_rss_feed_css_true');
+<?php } } if($lw_remove_rss == 'false') add_action('wp_head','lightword_rss_feed_css_false'); else add_action('wp_head','lightword_rss_feed_css_true');
 
 // IE6 PNG CSS FIX
 
 function lightword_ie_png_transparency(){
 global $lw_remove_rss, $lw_layout_settings, $lw_sidebox_settings, $lw_sidebar_settings;
 
-$lw_layout_wider = "";
+$lw_layout_wider = '';
 
-if($lw_layout_settings == "Wider") $lw_layout_wider = "wider/";
-if($lw_layout_settings == "Wider" && $lw_sidebar_settings == "Two sidebars") $lw_layout_wider = "wider/two-sidebars/";
+if($lw_layout_settings == 'Wider') $lw_layout_wider = 'wider/';
+if($lw_layout_settings == 'Wider' && $lw_sidebar_settings == 'Two sidebars') $lw_layout_wider = 'wider/two-sidebars/';
 
 echo "\n<!--[if IE 6]><style type=\"text/css\">";
-if($lw_remove_rss == "false"){
-echo "#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".get_template_directory_uri()."/images/".$lw_layout_wider."content_top.png',sizingMethod='scale'); }";
+if($lw_remove_rss == 'false'){
+echo '#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\''.get_template_directory_uri().'/images/'.$lw_layout_wider.'content_top.png\',sizingMethod=\'scale\'); }';
 }else{
-echo "#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".get_template_directory_uri()."/images/".$lw_layout_wider."content_top_no_rss.png',sizingMethod='scale'); }";
+echo '#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\''.get_template_directory_uri().'/images/'.$lw_layout_wider.'content_top_no_rss.png\',sizingMethod=\'scale\'); }';
 }
-echo "#footer{background:transparent url(".get_template_directory_uri()."/images/".$lw_layout_wider."content_bottom.gif) no-repeat;height:8px;}";
+echo '#footer{background:transparent url('.get_template_directory_uri().'/images/'.$lw_layout_wider.'content_bottom.gif) no-repeat;height:8px;}';
 
-if($lw_sidebox_settings == "Show only date" || $lw_sidebox_settings == "Last two options together"){
-echo ".only_date{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".get_template_directory_uri()."/images/data_box.png',sizingMethod='scale'); }";
+if($lw_sidebox_settings == 'Show only date' || $lw_sidebox_settings == 'Last two options together'){
+echo '.only_date{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\''.get_template_directory_uri().'/images/data_box.png\',sizingMethod=\'scale\'); }';
 }else{
-echo ".comm_date{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='".get_template_directory_uri()."/images/date_comm_box.png',sizingMethod='scale'); }";
+echo '.comm_date{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\''.get_template_directory_uri().'/images/date_comm_box.png\',sizingMethod=\'scale\'); }';
 }
 
 echo "</style><![endif]-->\n";
@@ -721,9 +723,9 @@ echo "\n<style type=\"text/css\">\n/*<![CDATA[*/\n".$lw_custom_css."\n /*]]>*/\n
 function lightword_adsense_spot(){
 global $lw_adsense_spot;
 if($lw_adsense_spot){
-echo "<div align=\"center\" id=\"ad_spot\"> ";
+echo '<div align="center" id="ad_spot"> ';
 echo $lw_adsense_spot;
-echo "</div>";
+echo '</div>';
 }
 }
 
@@ -768,7 +770,7 @@ return ('');
 // SIDEBAR WIDGETS
 
 if ( function_exists('register_sidebar') ) { register_sidebar(array('name' =>'Sidebar','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
-if ( function_exists('register_sidebar') && $lw_sidebar_settings == "Two sidebars") { register_sidebar(array('name' =>'Sidebar Child','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
+if ( function_exists('register_sidebar') && $lw_sidebar_settings == 'Two sidebars') { register_sidebar(array('name' =>'Sidebar Child','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
 
 // WORDPRESS 2.9+ FEATURES
 
@@ -796,7 +798,7 @@ global $req; // TODO does this do anything?
 function lightword_comment_fields ($fields) {
   foreach ($fields as $name => $field) {
   $fields[$name] = preg_replace('/(<label(?:.*?)>(?:.*?)<\/label>)\s*(<span class="required">\*<\/span>)?\s*(<input(?:.*?)\/>)/', '\3\1\2',$field);
-  $fields[$name] = str_replace("*", "(required)", $fields[$name]);
+  $fields[$name] = str_replace('*', '(required)', $fields[$name]);
   }
 return $fields;
 }
@@ -804,7 +806,7 @@ return $fields;
 add_filter('comment_form_default_fields', 'lightword_comment_fields');
 
 // CUSTOM HEADER
-require_once(TEMPLATEPATH."/custom_header.php");
+require_once(TEMPLATEPATH.'/custom_header.php');
 
 // Include CSS in WP head
 
@@ -814,15 +816,15 @@ if ( !is_admin() ) {
     wp_register_style( 'lightword_stylesheet', get_bloginfo( 'stylesheet_url' ), false, $theme['Version'] );
     wp_enqueue_style( 'lightword_stylesheet' );
 
-if($lw_layout_settings == "Wider") :
-    wp_register_style( 'lightword_stylesheet_wider', get_template_directory_uri() . "/wider.css", false, $theme['Version'] );
+if($lw_layout_settings == 'Wider') :
+    wp_register_style( 'lightword_stylesheet_wider', get_template_directory_uri() . '/wider.css', false, $theme['Version'] );
     wp_enqueue_style( 'lightword_stylesheet_wider' );
-if($lw_sidebar_settings=="Two sidebars"):
-    wp_register_style( 'lightword_stylesheet_newsidebar', get_template_directory_uri() . "/new_sidebar.css", false, $theme['Version'] );
+if($lw_sidebar_settings=='Two sidebars'):
+    wp_register_style( 'lightword_stylesheet_newsidebar', get_template_directory_uri() . '/new_sidebar.css', false, $theme['Version'] );
     wp_enqueue_style( 'lightword_stylesheet_newsidebar' );
 endif;
 else:
-    wp_register_style( 'lightword_stylesheet_original', get_template_directory_uri() . "/original.css", false, $theme['Version'] );
+    wp_register_style( 'lightword_stylesheet_original', get_template_directory_uri() . '/original.css', false, $theme['Version'] );
     wp_enqueue_style( 'lightword_stylesheet_original' );
 endif;
 }
@@ -845,14 +847,12 @@ remove_filter('the_content', 'wptexturize');
 /* ACTIVATION / UPDATE */
 
 function lightword_has_been_activated() {
-	global $shortname;
 	# Add current version to options database, for update handler
 	add_option( 'lw_theme_version', LW_CURRENT_VERSION );
 }
 register_activation_hook( __FILE__, 'lightword_has_been_activated' );
 
 function lightword_has_been_updated() {
-	global $shortname;
 	# Do removal of cruft from previous versions
 	delete_option( 'lw_christmas_joy' );
 	# Database changes

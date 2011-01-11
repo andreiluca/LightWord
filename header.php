@@ -22,10 +22,10 @@
 
 <div id="top_bar">
 <div class="center_menu">
-<ul id="front_menu" <?php global $lw_remove_searchbox, $lw_use_dumb_menu; $lw_menu_width = ""; if($lw_remove_searchbox == "true") $lw_menu_width = " class=\"expand\" "; echo $lw_menu_width; ?>>
+<ul id="front_menu" <?php global $lw_remove_searchbox, $lw_use_dumb_menu; $lw_menu_width = ''; if($lw_remove_searchbox == 'true') $lw_menu_width = ' class="expand" '; echo $lw_menu_width; ?>>
 <?php echo lightword_homebtn(__('Home','lightword')); ?>
 <?php
-if ( function_exists('wp_nav_menu') && $lw_use_dumb_menu != "true") {
+if ( function_exists('wp_nav_menu') && $lw_use_dumb_menu != 'true') {
 $lightword_menu = wp_nav_menu( array( 'menu' => 'lightword_top_menu', 'echo' => false, 'menu_id' => 'front_menu', 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before' => '<span>', 'link_after' => '</span>' ) );
 $lightword_menu = preg_replace( array( '/^<ul id="front_menu" class="menu">/', '/\n<\/ul>$/' ), '', $lightword_menu);
 echo $lightword_menu;
