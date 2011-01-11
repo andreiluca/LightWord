@@ -29,12 +29,6 @@ $options = array (
             'std' => __('Enabled','lightword'),
             'type' => 'select'),
 
-/*    array(  "name" => __('Christmas Joy','lightword'),
-			"desc" => __('Because its Christmas! Happy Holidays and thanks for downloading LightWord theme','lightword'),
-            "id" => $shortname."_christmas_joy",
-            "type" => "checkbox",
-            "std" => "false"),*/
-
     array(  'name' => __('Disable comments on pages','lightword'),
 			'desc' => __('Check this box if you would like to DISABLE COMMENTS on pages','lightword'),
             'id' => 'lw_disable_comments',
@@ -166,7 +160,6 @@ $options = array (
             'std' => ''),
 
 	array(	'type' => 'close')
-
 
 );
 
@@ -738,13 +731,6 @@ echo "</div>";
 
 load_theme_textdomain('lightword', get_template_directory() . '/lang');
 
-// CHRISTMAS JOY
-
-function lightword_christmas_joy(){
-global $lw_christmas_joy, $lw_top_header_image;
-if($lw_christmas_joy == "true" && $lw_top_header_image == "Disabled") echo "\n<link rel=\"stylesheet\" href=\"".get_template_directory_uri()."/alternatives/christmas_joy.css\" type=\"text/css\" />\n";
-}
-
 // DASHBOARD
 
 add_action('wp_dashboard_setup', 'lightword_custom_dashboard_widgets');
@@ -848,7 +834,6 @@ add_action('admin_menu', 'lightword_admin');
 add_action('wp_head',    'lightword_cufon_header');
 add_action('wp_head',    'lightword_custom_css');
 add_action('wp_head',    'lightword_ie_png_transparency');
-add_action('wp_head',    'lightword_christmas_joy');
 add_action('wp_footer',  'lightword_cufon_footer');
 add_action('wp_footer',  'lightword_comment_tabs');
 add_action( 'wp_head', 'lightword_canonical_for_comments' );
