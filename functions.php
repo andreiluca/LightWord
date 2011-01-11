@@ -3,6 +3,7 @@ if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER[
 die ('Please do not load this page directly. Thanks!');
 
 $themename = "LightWord";
+define('LW_CURRENT_VERSION', '2.0.0.6');
 $top_header_image_path = get_template_directory_uri()."/images/header-image.png";
 
 if ( ! isset( $content_width ) ) $content_width = 550;
@@ -855,4 +856,24 @@ add_filter('comments_template', 'lightword_legacy_comments');
 
 remove_action('wp_head', 'wp_generator');
 remove_filter('the_content', 'wptexturize');
+
+/* ACTIVATION / UPDATE */
+
+function lightword_has_been_activated() {
+	global $shortname;
+	# Add current version to options database, for update handler
+	add_option( 'lw_theme_version', LW_CURRENT_VERSION );
+}
+register_activation_hook( __FILE__, 'lightword_has_been_activated' );
+
+function lightword_has_been_updated() {
+	global $shortname;
+	# Do removal of cruft from previous versions
+	delete_option( 'lw_christmas_joy' );
+	# Update database option so we don't keep running this code
+	update_option( 'lw_theme_version', LW_CURRENT_VERSION );
+}
+if( version_compare( get_option( 'lw_theme_version' ), LW_CURRENT_VERSION, '<' ) ) {
+	lightword_has_been_updated();
+}
 ?>
