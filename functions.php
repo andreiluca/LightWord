@@ -872,7 +872,7 @@ function lightword_has_been_updated() {
 	# Update database option so we don't keep running this code
 	update_option( $shortname . '_theme_version', LW_CURRENT_VERSION );
 }
-if( version_compare( get_option( $shortname . '_theme_version' ), LW_CURRENT_VERSION, '<' ) {
+if( version_compare( get_option( $shortname . '_theme_version' ), LW_CURRENT_VERSION, '<' ) ) {
 	lightword_has_been_updated();
 }
 ?>
