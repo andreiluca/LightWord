@@ -23,7 +23,7 @@ $options = array (
             "type" => "select"),
 
     array(  "name" => __('Cuf&oacute;n settings', 'lightword'),
-			"desc" => __('Show some texts in your blog using Cuf&oacute;n&sup1; (blog title, tagline, post titles, page titles, etc.).<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
+			"desc" => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
             "id" => $shortname."_cufon_settings",
             "options" => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Extra','lightword'), __('CSS3 Font-face (lightweight)')),
             "std" => __('Enabled','lightword'),
@@ -45,7 +45,7 @@ $options = array (
             "id" => $shortname."_top_header_image",
             "options" => array( __('Disabled','lightword'), __('Enabled','lightword') ),
             "std" => __('Disabled','lightword'),
-            "desc" => '',
+            "desc" => __('When <em>enabling</em> this feature, please save these settings and then set image height &amp; width below before going to <strong>Appearance &raquo; Background</strong> to upload your custom header image','lightword'),
             "type" => "select"),
 
     array(  "name" => __('Header image height in pixels','lightword'),
@@ -61,38 +61,38 @@ $options = array (
             "std" => "600"),
 
     array(  "name" => __('About author feature', 'lightword'),
-            "desc" => __('Add information about post author','lightword'),
+            "desc" => __('Display information about post author','lightword'),
             "id" => $shortname."_post_author",
             "options" => array(__('Disabled','lightword'), __('Main page','lightword'), __('Single page','lightword'), __('Both','lightword')),
             "std" => __('Disabled','lightword'),
             "type" => "select"),
 
     array(  "name" => __('Enjoy this post feature','lightword'),
-			"desc" => __('Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature','lightword'),
+			"desc" => __('Check this box to show a subscription plug banner below the content on post pages','lightword'),
             "id" => $shortname."_enjoy_post",
             "type" => "checkbox",
             "std" => "false"),
 
-    array(  "name" => __('Use basic wordpress pages/categories in front menu','lightword'),
-			"desc" => __('I don\'t want those awesome WP3 features.','lightword'),
+    array(  "name" => __('Use WordPress custom menus','lightword'),
+			"desc" => __('Show an automatically generated list of pages/categories instead of a custom navigation menu','lightword'),
             "id" => $shortname."_use_wp_menus",
             "type" => "checkbox",
-            "std" => ""),
+            "std" => "false"),
 
-    array(  "name" => __('Show categories on front menu','lightword'),
-			"desc" => __('Check this box if you would like to SHOW CATEGORIES instead pages on front menu','lightword'),
+    array(  "name" => __('Show categories in front menu','lightword'),
+			"desc" => __('List CATEGORIES instead of PAGES on front menu','lightword'),
             "id" => $shortname."_show_categories",
             "type" => "checkbox",
             "std" => "false"),
 
     array(  "name" => __('Exclude pages from front menu','lightword'),
-			"desc" => __('Type the pages id in the box below. Example input: <code>5,19,24</code>','lightword'),
+			"desc" => __('Type the page IDs in the box below. Example input: <code>5,19,24</code>','lightword'),
             "id" => $shortname."_exclude_pages",
             "type" => "exclude_pages",
             "std" => ""),
 
     array(  "name" => __('Exclude categories from front menu','lightword'),
-			"desc" => __('Type the categories id in the box below. Example input: <code>5,19,24</code>','lightword'),
+			"desc" => __('Type the category IDs in the box below. Example input: <code>5,19,24</code>','lightword'),
             "id" => $shortname."_exclude_categories",
             "type" => "exclude_categories",
             "std" => ""),
@@ -129,7 +129,7 @@ $options = array (
 
     array(  "name" => __('Sidebox settings', 'lightword'),
             "id" => $shortname."_sidebox_settings",
-            "options" => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Show only date','lightword'), __('Show only in posts','lightword'), __('Last two options together','lightword')),
+            "options" => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Show only date','lightword'), __('Show only in posts','lightword'), __('Last two options combined','lightword')),
             "std" => __('Enabled','lightword'),
             "desc" => '',
             "type" => "select"),
@@ -142,19 +142,19 @@ $options = array (
             "type" => "select"),
 
     array(  "name" => __('Custom CSS', 'lightword'),
-			"desc" => __('Put your custom css code here','lightword'),
+			"desc" => __('Put your custom CSS styles here','lightword'),
             "id" => $shortname."_custom_css",
             "type" => "textarea",
             "std" => ""),
 
     array(  "name" => __('AdSense', 'lightword'),
-			"desc" => __('Copy your AdSense code or any other ADS service and paste it here.<br/>Usually 468x60 text or image ad but you can use anything ad format you want.','lightword'),
+			"desc" => __('Copy your AdSense (or any other advertising service) code and paste it here.<br/>Usually 468x60 text or image ad works best, but you can use any ad format you want.','lightword'),
             "id" => $shortname."_adsense_spot",
             "type" => "textarea",
             "std" => ""),
 
     array(  "name" => __('Additional header content', 'lightword'),
-			"desc" => __('Additional header content, including scripts, etc','lightword'),
+			"desc" => __('Additional header content, including scripts, etc.','lightword'),
             "id" => $shortname."_header_content",
             "type" => "textarea",
             "std" => ""),
@@ -350,9 +350,9 @@ endif;
 <div class="stuffbox">
 <h3><label for="link_url"><?php _e('What is Cuf&oacute;n?','lightword'); ?> (<a href="http://cufon.shoqolate.com/generate/" target="_blank"><?php _e('website','lightword') ?></a>)</label></h3>
 <div class="inside">
-<p><?php _e('&sup1;Cuf&oacute;n is a Javascript Dynamic Text Replacement, like sIFR without flash plugin, just javascript.','lightword') ?><br/>
-<br/><?php _e('&sup2;Extra Cuf&oacute;n contains (~<b>300kb js file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>usefull for some accents and special characters</strong>.','lightword') ?>
-<br/><br/><?php _e('Korean characters are not supported (11000+ glyps is a bit too much - enormous file -> slow loading).','lightword') ?></p>
+<p><?php _e('&sup1;Cuf&oacute;n is dynamic text replacement, like sIFR but using JavaScript instead of Adobe Flash.','lightword') ?><br/>
+<br/><?php _e('&sup2;Extra Cuf&oacute;n contains (~<b>300kb JS file</b>): Basic latin, uppercase, lowercase, numerals, punctuation, Latin-1 Supplement, Latin Extended-A, Cyrillic Alphabet, Russian Alphabet, Greek and Coptic; <strong>useful for some accents and special characters</strong>.','lightword') ?>
+<br/><br/><?php _e('Korean characters are not supported (11,000+ glyphs is a bit too much&mdash;enormous file = slow loading).','lightword') ?></p>
 </div></div>
 <form method="post" style="float:right;">
 <input name="reset" type="submit" value="<?php _e('Click here to reset all settings','lightword'); ?>" style="cursor:pointer;" />
