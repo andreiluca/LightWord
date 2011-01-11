@@ -3,31 +3,30 @@ if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER[
 die ('Please do not load this page directly. Thanks!');
 
 $themename = "LightWord";
-$shortname = "lw";
 $top_header_image_path = get_template_directory_uri()."/images/header-image.png";
 
 if ( ! isset( $content_width ) ) $content_width = 550;
 
 $options = array (
 
-    array(	"name" => "Welcome",
-			"type" => "title"),
+    array(	'name' => 'Welcome',
+			'type' => 'title'),
 
-	array(	"type" => "open"),
+	array(	'type' => 'open'),
 
-    array(  "name" => __('Layout settings', 'lightword'),
-            "id" => $shortname."_layout_settings",
-            "options" => array(__('Original','lightword'), __('Wider','lightword')),
-            "std" => __('Original','lightword'),
-            "desc" => __('','lightword'),
-            "type" => "select"),
+    array(  'name' => __('Layout settings', 'lightword'),
+            'id' => 'lw_layout_settings',
+            'options' => array(__('Original','lightword'), __('Wider','lightword')),
+            'std' => __('Original','lightword'),
+            'desc' => __('','lightword'),
+            'type' => 'select'),
 
-    array(  "name" => __('Cuf&oacute;n settings', 'lightword'),
-			"desc" => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
-            "id" => $shortname."_cufon_settings",
-            "options" => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Extra','lightword'), __('CSS3 Font-face (lightweight)')),
-            "std" => __('Enabled','lightword'),
-            "type" => "select"),
+    array(  'name' => __('Cuf&oacute;n settings', 'lightword'),
+			'desc' => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
+            'id' => 'lw_cufon_settings',
+            'options' => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Extra','lightword'), __('CSS3 Font-face (lightweight)')),
+            'std' => __('Enabled','lightword'),
+            'type' => 'select'),
 
 /*    array(  "name" => __('Christmas Joy','lightword'),
 			"desc" => __('Because its Christmas! Happy Holidays and thanks for downloading LightWord theme','lightword'),
@@ -35,137 +34,137 @@ $options = array (
             "type" => "checkbox",
             "std" => "false"),*/
 
-    array(  "name" => __('Disable comments on pages','lightword'),
-			"desc" => __('Check this box if you would like to DISABLE COMMENTS on pages','lightword'),
-            "id" => $shortname."_disable_comments",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Disable comments on pages','lightword'),
+			'desc' => __('Check this box if you would like to DISABLE COMMENTS on pages','lightword'),
+            'id' => 'lw_disable_comments',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Custom image header', 'lightword'),
-            "id" => $shortname."_top_header_image",
-            "options" => array( __('Disabled','lightword'), __('Enabled','lightword') ),
-            "std" => __('Disabled','lightword'),
-            "desc" => __('When <em>enabling</em> this feature, please save these settings and then set image height &amp; width below before going to <strong>Appearance &raquo; Background</strong> to upload your custom header image','lightword'),
-            "type" => "select"),
+    array(  'name' => __('Custom image header', 'lightword'),
+            'id' => 'lw_top_header_image',
+            'options' => array( __('Disabled','lightword'), __('Enabled','lightword') ),
+            'std' => __('Disabled','lightword'),
+            'desc' => __('When <em>enabling</em> this feature, please save these settings and then set image height &amp; width below before going to <strong>Appearance &raquo; Background</strong> to upload your custom header image','lightword'),
+            'type' => 'select'),
 
-    array(  "name" => __('Header image height in pixels','lightword'),
-			"desc" => '',
-            "id" => $shortname."_top_header_image_height",
-            "type" => "header_image_height",
-            "std" => "56"),
+    array(  'name' => __('Header image height in pixels','lightword'),
+			'desc' => '',
+            'id' => 'lw_top_header_image_height',
+            'type' => 'header_image_height',
+            'std' => '56'),
 
-    array(  "name" => __('Header image width in pixels','lightword'),
-			"desc" => '',
-            "id" => $shortname."_top_header_image_width",
-            "type" => "header_image_width",
-            "std" => "600"),
+    array(  'name' => __('Header image width in pixels','lightword'),
+			'desc' => '',
+            'id' => 'lw_top_header_image_width',
+            'type' => 'header_image_width',
+            'std' => '600'),
 
-    array(  "name" => __('About author feature', 'lightword'),
-            "desc" => __('Display information about post author','lightword'),
-            "id" => $shortname."_post_author",
-            "options" => array(__('Disabled','lightword'), __('Main page','lightword'), __('Single page','lightword'), __('Both','lightword')),
-            "std" => __('Disabled','lightword'),
-            "type" => "select"),
+    array(  'name' => __('About author feature', 'lightword'),
+            'desc' => __('Display information about post author','lightword'),
+            'id' => 'lw_post_author',
+            'options' => array(__('Disabled','lightword'), __('Main page','lightword'), __('Single page','lightword'), __('Both','lightword')),
+            'std' => __('Disabled','lightword'),
+            'type' => 'select'),
 
-    array(  "name" => __('Enjoy this post feature','lightword'),
-			"desc" => __('Check this box to show a subscription plug banner below the content on post pages','lightword'),
-            "id" => $shortname."_enjoy_post",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Enjoy this post feature','lightword'),
+			'desc' => __('Check this box to show a subscription plug banner below the content on post pages','lightword'),
+            'id' => 'lw_enjoy_post',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Use WordPress custom menus','lightword'),
-			"desc" => __('Show an automatically generated list of pages/categories instead of a custom navigation menu','lightword'),
-            "id" => $shortname."_use_wp_menus",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Use WordPress custom menus','lightword'),
+			'desc' => __('Show an automatically generated list of pages/categories instead of a custom navigation menu','lightword'),
+            'id' => 'lw_use_wp_menus',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Show categories in front menu','lightword'),
-			"desc" => __('List CATEGORIES instead of PAGES on front menu','lightword'),
-            "id" => $shortname."_show_categories",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Show categories in front menu','lightword'),
+			'desc' => __('List CATEGORIES instead of PAGES on front menu','lightword'),
+            'id' => 'lw_show_categories',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Exclude pages from front menu','lightword'),
-			"desc" => __('Type the page IDs in the box below. Example input: <code>5,19,24</code>','lightword'),
-            "id" => $shortname."_exclude_pages",
-            "type" => "exclude_pages",
-            "std" => ""),
+    array(  'name' => __('Exclude pages from front menu','lightword'),
+			'desc' => __('Type the page IDs in the box below. Example input: <code>5,19,24</code>','lightword'),
+            'id' => 'lw_exclude_pages',
+            'type' => 'exclude_pages',
+            'std' => ''),
 
-    array(  "name" => __('Exclude categories from front menu','lightword'),
-			"desc" => __('Type the category IDs in the box below. Example input: <code>5,19,24</code>','lightword'),
-            "id" => $shortname."_exclude_categories",
-            "type" => "exclude_categories",
-            "std" => ""),
+    array(  'name' => __('Exclude categories from front menu','lightword'),
+			'desc' => __('Type the category IDs in the box below. Example input: <code>5,19,24</code>','lightword'),
+            'id' => 'lw_exclude_categories',
+            'type' => 'exclude_categories',
+            'std' => ''),
 
-    array(  "name" => __('Remove home button','lightword'),
-			"desc" => __('Remove home button from front menu','lightword'),
-            "id" => $shortname."_remove_homebtn",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Remove home button','lightword'),
+			'desc' => __('Remove home button from front menu','lightword'),
+            'id' => 'lw_remove_homebtn',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Remove search box','lightword'),
-			"desc" => __('Remove search box and expand space for front menu','lightword'),
-            "id" => $shortname."_remove_searchbox",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Remove search box','lightword'),
+			'desc' => __('Remove search box and expand space for front menu','lightword'),
+            'id' => 'lw_remove_searchbox',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Remove tags from posts','lightword'),
-			"desc" => __('Show only categories in post footer','lightword'),
-            "id" => $shortname."_disable_tags",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Remove tags from posts','lightword'),
+			'desc' => __('Show only categories in post footer','lightword'),
+            'id' => 'lw_disable_tags',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Remove RSS badge','lightword'),
-			"desc" => __('Remove RSS badge from blog header','lightword'),
-            "id" => $shortname."_remove_rss",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  'name' => __('Remove RSS badge','lightword'),
+			'desc' => __('Remove RSS badge from blog header','lightword'),
+            'id' => 'lw_remove_rss',
+            'type' => 'checkbox',
+            'std' => 'false'),
 
-    array(  "name" => __('Google Custom Search Engine','lightword'),
-			"desc" => __('Find <code>name="cx"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here.','lightword'),
-            "id" => $shortname."_google_search_code",
-            "type" => "text",
-            "std" => ""),
+    array(  'name' => __('Google Custom Search Engine','lightword'),
+			'desc' => __('Find <code>name="cx"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here.','lightword'),
+            'id' => 'lw_google_search_code',
+            'type' => 'text',
+            'std' => ''),
 
-    array(  "name" => __('Sidebox settings', 'lightword'),
-            "id" => $shortname."_sidebox_settings",
-            "options" => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Show only date','lightword'), __('Show only in posts','lightword'), __('Last two options combined','lightword')),
-            "std" => __('Enabled','lightword'),
-            "desc" => '',
-            "type" => "select"),
+    array(  'name' => __('Sidebox settings', 'lightword'),
+            'id' => 'lw_sidebox_settings',
+            'options' => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Show only date','lightword'), __('Show only in posts','lightword'), __('Last two options combined','lightword')),
+            'std' => __('Enabled','lightword'),
+            'desc' => '',
+            'type' => 'select'),
 
-    array(  "name" => __('Sidebar settings', 'lightword'),
-            "id" => $shortname."_sidebar_settings",
-            "desc" => __('Two sidebars option is available on Wider layout only','lightword'),
-            "options" => array(__('One sidebar','lightword'), __('Two sidebars','lightword')),
-            "std" => __('One sidebar','lightword'),
-            "type" => "select"),
+    array(  'name' => __('Sidebar settings', 'lightword'),
+            'id' => 'lw_sidebar_settings',
+            'desc' => __('Two sidebars option is available on Wider layout only','lightword'),
+            'options' => array(__('One sidebar','lightword'), __('Two sidebars','lightword')),
+            'std' => __('One sidebar','lightword'),
+            'type' => 'select'),
 
-    array(  "name" => __('Custom CSS', 'lightword'),
-			"desc" => __('Put your custom CSS styles here','lightword'),
-            "id" => $shortname."_custom_css",
-            "type" => "textarea",
-            "std" => ""),
+    array(  'name' => __('Custom CSS', 'lightword'),
+			'desc' => __('Put your custom CSS styles here','lightword'),
+            'id' => 'lw_custom_css',
+            'type' => 'textarea',
+            'std' => ''),
 
-    array(  "name" => __('AdSense', 'lightword'),
-			"desc" => __('Copy your AdSense (or any other advertising service) code and paste it here.<br/>Usually 468x60 text or image ad works best, but you can use any ad format you want.','lightword'),
-            "id" => $shortname."_adsense_spot",
-            "type" => "textarea",
-            "std" => ""),
+    array(  'name' => __('AdSense', 'lightword'),
+			'desc' => __('Copy your AdSense (or any other advertising service) code and paste it here.<br/>Usually 468x60 text or image ad works best, but you can use any ad format you want.','lightword'),
+            'id' => 'lw_adsense_spot',
+            'type' => 'textarea',
+            'std' => ''),
 
-    array(  "name" => __('Additional header content', 'lightword'),
-			"desc" => __('Additional header content, including scripts, etc.','lightword'),
-            "id" => $shortname."_header_content",
-            "type" => "textarea",
-            "std" => ""),
+    array(  'name' => __('Additional header content', 'lightword'),
+			'desc' => __('Additional header content, including scripts, etc.','lightword'),
+            'id' => 'lw_header_content',
+            'type' => 'textarea',
+            'std' => ''),
 
-    array(  "name" => __('Additional footer content', 'lightword'),
-			"desc" => __('Additional footer content for Google Analytics or any other service','lightword'),
-            "id" => $shortname."_footer_content",
-            "type" => "textarea",
-            "std" => ""),
+    array(  'name' => __('Additional footer content', 'lightword'),
+			'desc' => __('Additional footer content for Google Analytics or any other service','lightword'),
+            'id' => 'lw_footer_content',
+            'type' => 'textarea',
+            'std' => ''),
 
-	array(	"type" => "close")
+	array(	'type' => 'close')
 
 
 );
@@ -173,7 +172,7 @@ $options = array (
 // ADMIN PAGE FUNCTIONS
 
 function lightword_admin() {
-global $themename, $shortname, $options;
+global $themename, $options;
 
 if ( nullit($_GET['page']) == basename(__FILE__) ) {
 if ( 'save' == nullit($_REQUEST['action']) ) {
@@ -202,7 +201,7 @@ add_theme_page(__('LightWord Settings','lightword'), __('LightWord Settings','li
 // ADMIN PAGE LAYOUT
 
 function lightword_admin_page() {
-global $themename, $themeversion, $shortname, $options, $lw_top_header_image, $top_header_image_height, $lw_show_categories;
+global $themename, $themeversion, $options, $lw_top_header_image, $top_header_image_height, $lw_show_categories;
 if ( nullit($_REQUEST['saved']) ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings saved','lightword'); echo '.</strong></p></div>'; }
 if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings reset','lightword'); echo '.</strong></p></div>'; }
 ?>
