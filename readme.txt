@@ -104,6 +104,17 @@ CHANGELOG | V2.0.0.6
 | Search form should no longer be placed too high when RSS badge is enabled (not removed)
 
 CHANGELOG | V2.0.0.7
+| Custom menus are now completely defined within the menu; LightWord WILL NOT add
+  a "Home" button. Option now only available with auto-generated menus.
+  /***************************** UPGRADE NOTICE *********************************\
+  |*  If you currently use both a custom menu and the "Home" button, manually   *|
+  |*  add a "Home" link to your menu after upgrading LightWord to this version. *|
+  |*                                                                            *|
+  |*  To do so, add a custom link to your menu with a URL of "/"; that should   *|
+  |*  point visitors to your site's home page. (If your site is in a subdirec-  *|
+  |*  tory, use "/path/to/site/" as the URL.)                                   *|
+  \******************************************************************************/
+| Rewrite menu code to use fewer computationally expensive functions
 | No more invalid HTML with "Show only in posts" sidebox option and comments closed
 
 Best regards,

@@ -227,7 +227,12 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 
 
 
-<?php foreach ($options as $value) { switch ( $value['type'] ) { case 'open': ?>
+<?php
+foreach ($options as $value) {
+# Global variables used in conditionals within the switch block
+global $lw_use_dumb_menu, $lw_show_categories;
+switch ( $value['type'] ) {
+case 'open': ?>
 <table width="100%" border="0" style="padding:10px;">
 <?php break; case 'close': ?>
 </table><br />
@@ -289,7 +294,7 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 <?php endif; ?>
 
 <?php break; case 'checkbox':
-	if( $value['id'] == 'lw_show_categories' && ( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) ) { break; } ?>
+	if( ( $value['id'] == 'lw_show_categories' || $value['id'] == 'lw_remove_homebtn' ) && ( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) ) { break; } ?>
 <tr>
 <td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
 <td width="75%"><?php if(get_option($value['id'])){ $checked = 'checked="checked"'; }else{ $checked = ''; } ?>

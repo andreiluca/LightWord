@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-<?php global $lw_header_content, $lw_wp3_menus; echo "\n".$lw_header_content."\n"; ?>
+<?php global $lw_header_content; echo "\n".$lw_header_content."\n"; ?>
 <?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 </head>
@@ -22,18 +22,22 @@
 
 <div id="top_bar">
 <div class="center_menu">
-<ul id="front_menu" <?php global $lw_remove_searchbox, $lw_use_dumb_menu; $lw_menu_width = ''; if($lw_remove_searchbox == 'true') $lw_menu_width = ' class="expand" '; echo $lw_menu_width; ?>>
-<?php echo lightword_homebtn(__('Home','lightword')); ?>
-<?php
-if ( function_exists('wp_nav_menu') && $lw_use_dumb_menu != 'true') {
-$lightword_menu = wp_nav_menu( array( 'menu' => 'lightword_top_menu', 'echo' => false, 'menu_id' => 'front_menu', 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before' => '<span>', 'link_after' => '</span>' ) );
-$lightword_menu = preg_replace( array( '/^<ul id="front_menu" class="menu">/', '/\n<\/ul>$/' ), '', $lightword_menu);
-echo $lightword_menu;
-}else{
-echo lightword_wp_list_pages();
+<?php # Top menu logic
+global $lw_remove_searchbox, $lw_use_dumb_menu;
+if( $lw_use_dumb_menu == 'true' || !function_exists('wp_nav_menu') ) { # Don't use WP custom menu
+	$lw_menuclass_att = ( $lw_remove_searchbox == 'true' ) ? ' class="expand"' : '';
+	echo "<ul id=\"front_menu\"{$lw_menuclass_att}>\n";
+	echo lightword_homebtn(__('Home','lightword'));
+	echo lightword_wp_list_pages();
+	echo '</ul>';
+} else {
+	# Yay, we get to be fancy (and a bit lazy ;-)
+	# No home button is auto-inserted; custom menus should be completely
+	# defined by the menu and the menu only.
+	$lw_menuclass = ( $lw_remove_searchbox == 'true' ) ? 'menu expand' : 'menu';
+	wp_nav_menu( array( 'menu' => 'lightword_top_menu', 'echo' => true, 'menu_id' => 'front_menu', 'menu_class' => $lw_menuclass, 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before' => '<span>', 'link_after' => '</span>' ) );
 }
 ?>
-</ul>
 </div>
 <?php echo lightword_searchbox(); ?>
 </div>
