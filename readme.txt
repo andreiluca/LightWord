@@ -101,11 +101,13 @@ CHANGELOG | V2.0.0.5
 CHANGELOG | V2.0.0.6
 | Nested menus don't render properly issue fixed
 | Added an option to disable WP3 menus
-| Search form should no longer be placed too high when RSS badge is enabled (not removed)
+| Search form should no longer be placed too high when RSS badge is
+  enabled (not removed) [voyagerfan5761]
 
 CHANGELOG | V2.0.0.7
-| Custom menus are now completely defined within the menu; LightWord WILL NOT add
-  a "Home" button. Option now only available with auto-generated menus.
+| Custom menus are now completely defined within the menu; LightWord
+  WILL NOT add a "Home" button. Option now only available with
+  auto-generated menus. [voyagerfan5761]
   /***************************** UPGRADE NOTICE *********************************\
   |*  If you currently use both a custom menu and the "Home" button, manually   *|
   |*  add a "Home" link to your menu after upgrading LightWord to this version. *|
@@ -114,8 +116,12 @@ CHANGELOG | V2.0.0.7
   |*  point visitors to your site's home page. (If your site is in a subdirec-  *|
   |*  tory, use "/path/to/site/" as the URL.)                                   *|
   \******************************************************************************/
-| Rewrite menu code to use fewer computationally expensive functions
-| No more invalid HTML with "Show only in posts" sidebox option and comments closed
+| Rewrite menu code to use fewer computationally expensive functions [voyagerfan5761]
+| No more invalid HTML with "Show only in posts" sidebox option and
+  comments closed [voyagerfan5761]
+
 
 Best regards,
+
 Andrei Luca
+(and Voyagerfan5761, since sometime around v2.0.0.4)
