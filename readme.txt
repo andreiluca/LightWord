@@ -119,6 +119,8 @@ CHANGELOG | V2.0.0.7
 | Rewrite menu code to use fewer computationally expensive functions [voyagerfan5761]
 | No more invalid HTML with "Show only in posts" sidebox option and
   comments closed [voyagerfan5761]
+| Custom menu now falls back to the auto-generated menu if the former can't
+  be shown (not set up, menu location not assigned, etc.) [voyagerfan5761]
 
 
 Best regards,

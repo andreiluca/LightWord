@@ -25,17 +25,15 @@
 <?php # Top menu logic
 global $lw_remove_searchbox, $lw_use_dumb_menu;
 if( $lw_use_dumb_menu == 'true' || !function_exists('wp_nav_menu') ) { # Don't use WP custom menu
-	$lw_menuclass_att = ( $lw_remove_searchbox == 'true' ) ? ' class="expand"' : '';
-	echo "<ul id=\"front_menu\"{$lw_menuclass_att}>\n";
-	echo lightword_homebtn(__('Home','lightword'));
-	echo lightword_wp_list_pages();
-	echo '</ul>';
+	lightword_dumb_menu();
 } else {
 	# Yay, we get to be fancy (and a bit lazy ;-)
 	# No home button is auto-inserted; custom menus should be completely
 	# defined by the menu and the menu only.
+	#
+	# Falls back to LightWord's "dumb" menu if something's amiss.
 	$lw_menuclass = ( $lw_remove_searchbox == 'true' ) ? 'menu expand' : 'menu';
-	wp_nav_menu( array( 'menu' => 'lightword_top_menu', 'echo' => true, 'menu_id' => 'front_menu', 'menu_class' => $lw_menuclass, 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before' => '<span>', 'link_after' => '</span>' ) );
+	wp_nav_menu( array( 'menu' => 'lightword_top_menu', 'echo' => true, 'menu_id' => 'front_menu', 'menu_class' => $lw_menuclass, 'container' => '', 'theme_location' => 'lightword_top_menu', 'link_before' => '<span>', 'link_after' => '</span>', 'fallback_cb' => 'lightword_dumb_menu' ) );
 }
 ?>
 </div>
