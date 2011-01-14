@@ -147,6 +147,12 @@ $options = array (
             'type' => 'textarea',
             'std' => ''),
 
+    array(  'name' => __('Favicon', 'lightword'),
+			'desc' => __('The path to your site\'s favicon, relative to your WordPress installation.<br />Example: If WordPress is installed at <tt>http://mydoma.in/</tt> and your icon is located at <tt>http://mydoma.in/icons/favicon.ico</tt>, use <tt>/icons/favicon.ico</tt>'),
+            'id' => 'lw_favicon_path',
+            'type' => 'text',
+            'std' => ''),
+
     array(  'name' => __('Additional header content', 'lightword'),
 			'desc' => __('Additional header content, including scripts, etc.','lightword'),
             'id' => 'lw_header_content',
@@ -810,8 +816,6 @@ add_action('after_setup_theme', 'register_custom_menu');
 
 $commenter = wp_get_current_commenter();
 
-global $req; // TODO does this do anything?
-
 function lightword_comment_fields ($fields) {
   foreach ($fields as $name => $field) {
   $fields[$name] = preg_replace('/(<label(?:.*?)>(?:.*?)<\/label>)\s*(<span class="required">\*<\/span>)?\s*(<input(?:.*?)\/>)/', '\3\1\2',$field);
@@ -846,6 +850,10 @@ else:
 endif;
 }
 
+/* FAVICON SETTING HANDLER */
+
+$path_to_favicon = null;
+if($lw_favicon_path) $path_to_favicon = $lw_favicon_path;
 
 // ENABLE FUNCTIONS
 

@@ -6,7 +6,7 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
+<link rel="shortcut icon" href="<?php global $path_to_favicon; echo ($path_to_favicon !== null) ? bloginfo('wpurl') . $path_to_favicon : get_template_directory_uri() . '/favicon.ico'; ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php global $lw_header_content; echo "\n".$lw_header_content."\n"; ?>
