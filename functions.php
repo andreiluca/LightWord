@@ -19,11 +19,11 @@ $options = array (
             'id' => 'lw_layout_settings',
             'options' => array(__('Original','lightword'), __('Wider','lightword')),
             'std' => __('Original','lightword'),
-            'desc' => __('','lightword'),
+            'desc' => '',
             'type' => 'select'),
 
     array(  'name' => __('Cuf&oacute;n settings', 'lightword'),
-			'desc' => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />Select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
+			'desc' => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />If using Cuf&oacute;n, select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
             'id' => 'lw_cufon_settings',
             'options' => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Extra','lightword'), __('CSS3 Font-face (lightweight)')),
             'std' => __('Enabled','lightword'),
@@ -39,7 +39,7 @@ $options = array (
             'id' => 'lw_top_header_image',
             'options' => array( __('Disabled','lightword'), __('Enabled','lightword') ),
             'std' => __('Disabled','lightword'),
-            'desc' => __('When <em>enabling</em> this feature, please save these settings and then set image height &amp; width below before going to <strong>Appearance &raquo; Background</strong> to upload your custom header image','lightword'),
+            'desc' => __('When <em>enabling</em> this feature, please save this setting and then set image height &amp; width below before going to <strong>Appearance &raquo; Background</strong> to upload your custom header image','lightword'),
             'type' => 'select'),
 
     array(  'name' => __('Header image height in pixels','lightword'),
@@ -116,7 +116,7 @@ $options = array (
             'std' => 'false'),
 
     array(  'name' => __('Google Custom Search Engine','lightword'),
-			'desc' => __('Find <code>name="cx"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here.','lightword'),
+			'desc' => __('Find <code>name=&quot;cx&quot;</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here.','lightword'),
             'id' => 'lw_google_search_code',
             'type' => 'text',
             'std' => ''),
@@ -216,7 +216,7 @@ if ( nullit($_REQUEST['reset']) ) { echo '<div id="message" class="updated fade"
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="5545477">
-<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="<?php _e('PayPal - The safer, easier way to pay online!','lightword'); ?>">
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 </div></div>
@@ -244,31 +244,31 @@ case 'open': ?>
 </table><br />
 <?php break; case 'text':?>
 
-<tr><td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<tr><td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td>
+</tr><tr><td><small><?php _e("{$value['desc']}",'lightword'); ?></small></td>
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 <?php break;case 'textarea':?>
 
 
-<tr><td width="20%" rowspan="2" valign="middle"><strong><?php echo _e(''.$value['name'].'','lightword'); ?></strong></td>
+<tr><td width="20%" rowspan="2" valign="middle"><strong><?php echo _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="90%"><div class="toggle"><textarea name="<?php echo $value['id']; ?>" style="width:500px; height:150px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?></textarea></td></tr>
-<tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td>
+<tr><td><small><?php _e("{$value['desc']}",'lightword'); ?></small></td>
 </tr><tr></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 
 <?php break; case 'select': ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
-<td width="80%"><select style="width:200px;" name="<?php _e(''.$value['id'].'','lightword'); ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?> value="<?php echo $option; ?>"><?php _e(''.$option.'','lightword'); ?></option><?php } ?></select></td>
-</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
+<td width="80%"><select style="width:200px;" name="<?php _e("{$value['id']}",'lightword'); ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?> value="<?php echo $option; ?>"><?php _e("$option",'lightword'); ?></option><?php } ?></select></td>
+</tr><tr><td><small><?php _e("{$value['desc']}",'lightword'); ?></small></td>
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 <?php break; case 'header_image_height': ?>
 <?php if($lw_top_header_image == 'Enabled') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
 </tr><tr><td></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
@@ -276,7 +276,7 @@ case 'open': ?>
 <?php break; case 'header_image_width': ?>
 <?php if($lw_top_header_image == 'Enabled') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
 </tr><tr><td></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
@@ -285,26 +285,26 @@ case 'open': ?>
 	if( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) { break; } ?>
 <?php if($lw_show_categories == 'false' || $lw_show_categories == '') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+</tr><tr><td><small><?php _e("{$value['desc']}",'lightword'); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
 <?php break; case 'exclude_categories':
 	if( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) { break; } ?>
 <?php if($lw_show_categories == 'true') : ?>
 <tr>
-<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != '') { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-</tr><tr><td><small><?php _e(''.$value['desc'].'','lightword'); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+</tr><tr><td><small><?php _e("{$value['desc']}",'lightword'); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
 <?php break; case 'checkbox':
 	if( ( $value['id'] == 'lw_show_categories' || $value['id'] == 'lw_remove_homebtn' ) && ( $lw_use_dumb_menu == 'false' || $lw_use_dumb_menu == '' ) ) { break; } ?>
 <tr>
-<td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e(''.$value['name'].'','lightword'); ?></strong></td>
+<td width="25%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("{$value['name']}",'lightword'); ?></strong></td>
 <td width="75%"><?php if(get_option($value['id'])){ $checked = 'checked="checked"'; }else{ $checked = ''; } ?>
-<input type="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />   <small><?php _e(''.$value['desc'].'','lightword'); ?></small>
+<input type="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />   <small><?php _e("{$value['desc']}",'lightword'); ?></small>
 </td></tr><tr></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php break; } } ?>
 </div></div>
@@ -650,8 +650,7 @@ break;
 function lightword_simple_date(){
 global $lw_sidebox_settings;
 if($lw_sidebox_settings == 'Disabled'){
-# @TODO Does this actually localize the date? I don't think it does.
-#       Wouldn't the date output depend on the PHP language setting?
+# @TODO Rewrite get_the_time() call per WP i18n guidelines for date strings
 echo '<div class="simple_date">'.__('Posted on','lightword').' '.get_the_time(__('F j, Y','lightword')).'</div>';
 }
 }
@@ -725,7 +724,7 @@ echo "</style><![endif]-->\n";
 function lightword_nested_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comment; ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>"><div id="comment-<?php comment_ID(); ?>">
 <div class="comment_content"><div class="comment-meta commentmetadata"><div class="alignleft avatar"><?php echo get_avatar($comment,$size='36'); ?></div>
-<div class="alignleft" style="padding-top:5px;"><strong class="comment_author"><?php comment_author_link() ?></strong><br/><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date(__('F jS, Y - H:i','lightword')) ?></a></div><div class="clear"></div></div>
+<div class="alignleft" style="padding-top:5px;"><strong class="comment_author"><?php comment_author_link() ?></strong><br/><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date(__('F jS, Y - H:i','lightword')) /* @TODO Rewrite date function so it will properly localize */ ?></a></div><div class="clear"></div></div>
 <?php comment_text() ?>
 <div class="reply"><?php comment_reply_link(array_merge( $args, array('reply_text' => __('( REPLY )','lightword'), 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></div>
 <?php if ($comment->comment_approved == '0') : ?><span class="moderation"><?php _e('Your comment is awaiting moderation.','lightword'); ?></span><br /><?php endif; ?></div><div class="clear"></div></div>

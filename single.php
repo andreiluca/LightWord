@@ -8,7 +8,7 @@
 <?php edit_post_link(__('Edit this post','lightword'), '<span class="edit_content">', '</span>'); ?>
 <?php lightword_simple_date(); ?>
 <?php lightword_adsense_spot(); // you can add the adsense code via theme settings ?>
-<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { the_post_thumbnail(array( 200,200 ), array( 'class' => 'alignleft' )); } ?>
+<?php if( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) { the_post_thumbnail(array( 200,200 ), array( 'class' => 'alignleft' )); } ?>
 <?php the_content(''); ?>
 <?php if(function_exists('wp_print')) { print_link(); } ?>
 <?php wp_link_pages('before=<div class="nav_link">'.__('PAGES','lightword').': &after=</div>&next_or_number=number&pagelink=<span class="page_number">%</span>'); ?>
@@ -16,7 +16,7 @@
 <?php if ($lw_enjoy_post == 'true' && is_attachment() != TRUE) : ?>
 <div class="promote clear">
 <h3><?php _e('Enjoy this article?','lightword'); ?></h3>
-<p><a href="<?php bloginfo('rss2_url'); ?>"><?php  _e('Consider subscribing to our rss feed!','lightword'); ?></a></p>
+<p><a href="<?php bloginfo('rss2_url'); ?>"><?php _e('Consider subscribing to our RSS feed!','lightword'); ?></a></p>
 </div>
 <?php endif; ?>
 

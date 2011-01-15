@@ -30,8 +30,8 @@ if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Child') ) 
 <ul>
 <?php wp_register(); ?>
 <li><?php wp_loginout(); ?></li>
-<li><a href="<?php bloginfo('rss2_url'); ?>" title="<?php _e('Syndicate this site using RSS','lightword'); ?>"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr>','lightword'); ?></a></li>
-<li><a href="<?php bloginfo('comments_rss2_url'); ?>" title="<?php _e('The latest comments to all posts in RSS','lightword'); ?>"><?php _e('Comments <abbr title="Really Simple Syndication">RSS</abbr>','lightword'); ?></a></li>
+<li><a href="<?php bloginfo('rss2_url'); ?>" title="<?php _e('Syndicate this site using RSS','lightword'); ?>"><?php _e("<abbr title=\"Really Simple Syndication\">RSS</abbr>",'lightword'); ?></a></li>
+<li><a href="<?php bloginfo('comments_rss2_url'); ?>" title="<?php _e('The latest comments to all posts in RSS','lightword'); ?>"><?php _e("Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>",'lightword'); ?></a></li>
 <?php wp_meta(); ?>
 </ul>
 

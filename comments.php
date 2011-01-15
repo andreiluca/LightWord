@@ -65,7 +65,7 @@ comment_form(array(
 <h2 style="background:transparent;"><?php comment_form_title( __('Leave a comment', 'lightword'), 'Reply' ); ?></h2>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-<p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.','lightword'), get_option('siteurl').'/wp-login.php?redirect_to='.urlencode(get_permalink()));?></p>
+<p><?php printf(__("You must be <a href=\"%s\">logged in</a> to post a comment.",'lightword'), get_option('siteurl').'/wp-login.php?redirect_to='.urlencode(get_permalink()));?></p>
 <?php else : ?>
 
 <form action="<?php echo site_url(); ?>/wp-comments-post.php" method="post" id="commentform">
