@@ -881,8 +881,10 @@ function lightword_has_been_updated() {
 	delete_option( 'lw_christmas_joy' );
 	# Database changes
 	## Renamed WP Menus option
-	add_option( 'lw_use_dumb_menu', get_option('lw_use_wp_menus') );
-	delete_option( 'lw_use_wp_menus' );
+	if( get_option('lw_use_wp_menus') ) {
+		add_option( 'lw_use_dumb_menu', get_option('lw_use_wp_menus') );
+		delete_option( 'lw_use_wp_menus' );
+	}
 	# Update database option so we don't keep running this code
 	update_option( 'lw_theme_version', LW_CURRENT_VERSION );
 }
