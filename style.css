@@ -69,11 +69,12 @@ ul#front_menu{float:left;text-transform:uppercase;position:relative;top:-4px;}
 * html #front_menu li a,* html #front_menu li a span{width:1%;white-space:nowrap;cursor:pointer;}
 * html #front_menu li a span{position:relative;}
 #front_menu li {background:none;float:left; position:relative;}
-#front_menu ul {width:200px;position:absolute;display:none; background:#FFF;border-left:1px solid #ACACAB;border-right:1px solid #ACACAB;border-bottom:1px solid #ACACAB;-moz-border-radius-bottomleft: 5px;-moz-border-radius-bottomright: 5px;-webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius:5px;}
+#front_menu ul {width:200px;position:absolute;display:none; background:#FFF; border:1px solid #ACACAB;border-width:0 1px 1px 1px;-moz-border-radius: 0 0 5px 5px;-webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius:5px;}
 #front_menu ul li a, #front_menu ul li a span{margin:-3px -1px;height:auto;background:none;}
 #front_menu li ul a {width:200px; float:left; white-space:nowrap;}
 #front_menu li ul a:hover{text-decoration:underline;}
-#front_menu ul ul {top:auto;}
+#front_menu ul ul {top:auto; border-width: 1px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+#front_menu ul li:first-child>ul {margin-top: 5px;}
 #front_menu li ul ul {left:1em; }
 #front_menu li:hover ul ul, #front_menu li:hover ul ul ul, #front_menu li:hover ul ul ul ul {display:none;}
 
