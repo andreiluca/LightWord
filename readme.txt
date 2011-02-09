@@ -123,7 +123,7 @@ CHANGELOG | V2.0.0.7
   be shown (not set up, menu location not assigned, etc.) [voyagerfan5761]
 | New option: Path to favicon (if you don't want to store it in LightWord's
   directory, or already have one elsewhere, just set the path) [voyagerfan5761]
-
+| Single page template sidebar and front menu issues fixed
 
 Best regards,
 

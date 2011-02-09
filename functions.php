@@ -849,6 +849,14 @@ else:
 endif;
 }
 
+// Single page template embed push css
+
+function single_page_template_css(){
+    $theme  = get_theme( get_current_theme() );
+    wp_register_style( 'lightword_single_page_template', get_template_directory_uri() . '/single-page-template.css', array('lightword_stylesheet_original'), $theme['Version'] );
+    wp_enqueue_style(  'lightword_single_page_template' );
+}
+
 /* FAVICON SETTING HANDLER */
 
 $path_to_favicon = null;
