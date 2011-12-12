@@ -126,6 +126,7 @@ CHANGELOG | V2.0.0.7
 | Single page template sidebar and front menu issues fixed
 | Cufon update, fix IE9 font bug
 | Added Catalan translation ca.mo(props to Joan Juvanteny)
+| Fixed some js compatibility issues with WPaudio MP3 Player
 
 Best regards,
 Andrei Luca and Voyagerfan5761 (since sometime around v2.0.0.4)
