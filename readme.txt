@@ -130,3 +130,5 @@ CHANGELOG | V2.0.0.7
 
 Best regards,
 Andrei Luca and Voyagerfan5761 (since sometime around v2.0.0.4)
+
+PS. If you noticed a general/security problem please contact me at andrei(at)kis.ro
