@@ -125,6 +125,7 @@ CHANGELOG | V2.0.0.7
   directory, or already have one elsewhere, just set the path) [voyagerfan5761]
 | Single page template sidebar and front menu issues fixed
 | Cufon update, fix IE9 font bug
+| Added Catalan translation ca.mo(props to Joan Juvanteny)
 
 Best regards,
 Andrei Luca and Voyagerfan5761 (since sometime around v2.0.0.4)
