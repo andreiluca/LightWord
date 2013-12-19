@@ -603,7 +603,7 @@ case 'Show only in posts':
 if(is_single()){
 echo '<div class="comm_date"><span class="data"><span class="j">'.get_the_time('j').'</span>'.get_the_time('M/y').'</span><span class="nr_comm">';
 echo '<a class="nr_comm_spot" href="'.get_permalink().'#comments">';
-if(!comments_open()) _e('Off','lightword'); else echo fb_get_comment_type_count('comment');
+if(!comments_open()) _e('Off','lightword'); else echo lightword_fb_get_comment_type_count('comment');
 echo "</a></span></div>\n";
 }
 break;
