@@ -778,8 +778,8 @@ echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
 function nullit(&$varin) {
 //must pass by reference, so there is no explicit copying of var data
-//if undefined variable, then returns �� without doing an error, otherwise just returns the var.
-//this is done so we don�t get warning
+//if undefined variable, then returns '' without doing an error, otherwise just returns the var.
+//this is done so we don't get warning
 if (isset($varin)) {
 return ($varin);
 }
