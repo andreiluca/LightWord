@@ -415,7 +415,7 @@ $$id = get_option( $id );
 
 if ( !function_exists('lightword_fb_update_comment_type_cache') ) {
         function lightword_fb_update_comment_type_cache($queried_posts) {
-        $post_id_list = '';
+        $post_id_list = array();
                 global $cjd_comment_count_cache, $wpdb;
 
                 if ( !$queried_posts )
@@ -778,8 +778,8 @@ echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
 function nullit(&$varin) {
 //must pass by reference, so there is no explicit copying of var data
-//if undefined variable, then returns ’’ without doing an error, otherwise just returns the var.
-//this is done so we don’t get warning
+//if undefined variable, then returns ï¿½ï¿½ without doing an error, otherwise just returns the var.
+//this is done so we donï¿½t get warning
 if (isset($varin)) {
 return ($varin);
 }
