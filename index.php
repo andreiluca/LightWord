@@ -20,7 +20,18 @@
 
 <div class="cat_tags clear">
 <span class="category"><?php if($lw_disable_tags == 'true' || !get_the_tags()) { _e('Filed under:','lightword'); echo ' '; the_category(', ');} else if (get_the_tags() && $lw_disable_tags == 'false') { _e('Tagged as:','lightword'); echo ' '; the_tags(''); } ?></span>
-<span class="continue"><?php $pos = strpos($post->post_content, '<!--more-->'); if($pos==''){ ?><a class="nr_comm_spot" href="<?php the_permalink(); ?>#comments"><?php if(lightword_fb_get_comment_type_count('comment')==1) _e('1 Comment','lightword'); elseif('open' != $post->comment_status) _e('Comments Off','lightword'); elseif(lightword_fb_get_comment_type_count('comment') == 0) _e('No Comments','lightword'); else echo lightword_fb_get_comment_type_count('comment').' '.__('Comments','lightword'); ?></a><?php }else{ ?><a title="<?php _e('Read more about','lightword'); ?> <?php the_title(); ?>" href="<?php the_permalink() ?>#more-<?php echo $id; ?>"><?php _e('Continue reading','lightword'); ?></a><?php } ?></span><div class="clear"></div>
+<span class="continue"><?php $pos = strpos($post->post_content, '<!--more-->'); if($pos==''){ ?><a class="nr_comm_spot" href="<?php the_permalink(); ?>#comments"><?php 
+// var_dump(wp_count_comments($post->id)->approved); exit();
+if(wp_count_comments($post->id)->approved ==1 ) { _e('1 Comment','lightword');
+} elseif('open' != $post->comment_status) { _e('Comments Off','lightword'); 
+} elseif(wp_count_comments($post->id)->approved == 0) { _e('No Comments','lightword'); 
+} else { echo wp_count_comments($post->id)->approved." Comments"; } ?></a>
+ <?php } else { ?>
+	<a title="<?php _e('Read more about','lightword'); ?> 
+	<?php the_title(); ?>" href="<?php the_permalink() ?>#more-<?php echo $id; ?>">
+ 	<?php _e('Continue reading','lightword'); ?></a>
+ <?php } ?>
+</span><div class="clear"></div>
 </div>
 <div class="cat_tags_close"></div>
 </div>
