@@ -11,6 +11,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* RESET */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;vertical-align:baseline;background:transparent;margin:0;padding:0;}
 
+/* DESBEST EDIT */
+.content-sidebar #searchform { margin-bottom: 1em; }
+.content-sidebar #searchform input[type="text"] { margin-top: 2px; padding-left: 8px; width: 11em; height: 1.15em; background: none; border: 0px; }
+.content-sidebar #searchform input[type="submit"] { width: 2.5em; opacity: 0; }
+.screen-reader-text { display: none; }
+
 /* BASIC */
 *:focus{outline:none;}
 .clear{clear:both;}
@@ -126,7 +132,7 @@ img.wp-smiley{border:0px;vertical-align:middle;}
 /* SIDEBAR */
 .content-sidebar{width:191px;display:inline-block;overflow:hidden;vertical-align:top;}
 .content-sidebar input{padding:3px;border:1px solid #E5E2E0;margin-bottom:2px;}
-.content-sidebar h3{margin:8px 0 0 0 !important;display:block;background:#FFF url(images/sidebar_h3.png) no-repeat;height:22px;width:181px;font-weight:700;font-size:11px;padding:9px 0 0 10px;}
+.content-sidebar h3{margin:8px 0 0 0 !important;display:table;background:#FFF url(images/sidebar_h3.png) no-repeat;height:22px;width:181px;font-weight:700;font-size:11px;padding:9px 0 0 10px;} /* desbest edit */
 .content-sidebar h3 a{text-decoration:none;color:#2C2C29;line-height:13px;}
 .content-sidebar ul{list-style:none;width:191px;padding:2px;}
 .content-sidebar li{list-style:none;}
