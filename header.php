@@ -12,6 +12,23 @@
 <?php global $lw_header_content; echo "\n".$lw_header_content."\n"; ?>
 <?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
+<script type="text/javascript">
+	jQuery(window).on('load', function() { // web page has finished loading
+
+    function isMobile() {
+    var index = navigator.appVersion.indexOf("Mobile"); // detect chrome for android and ios safari
+    var index2 = navigator.appVersion.indexOf("Android"); // detect firefox for android
+    if (index2) { return (index2 > -1); }
+    return (index > -1);
+    }   
+
+    usingmobile = isMobile();
+    if (usingmobile || jQuery(window).width() < 800){
+        jQuery("#searchform #s").attr('placeholder', 'Search');
+    }
+
+	});
+ </script>
 </head>
 
 <body <?php body_class(); ?>>
