@@ -1,11 +1,13 @@
 /*
 Theme Name: LightWord
 Description: Simply clever theme with two or three columns, adsense support, fixed-width, widget-ready and threaded comments. Compatible with WordPress 2.9 and above, valid XHTML & CSS + WP3 ready.
-Author: Andrei Luca and <a href="http://technobabbl.es/">Voyagerfan5761</a>
+Author: Andrei Luca, <a href="http://technobabbl.es/">Voyagerfan5761</a> and <a href="http://desbest.com">desbest</a>
 Version: 2.0.0.7
 Tags: white, light, two-columns, right-sidebar, fixed-width, theme-options, translation-ready, threaded-comments, custom-background, custom-header, three-columns
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Author URI: http://desbest.com/
+Theme URI: https://desbest.com/projects/wordpress-themes
 */
 
 /* RESET */
@@ -266,3 +268,5 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 	}
 
 }
+
+#footer br { margin: 2em; }

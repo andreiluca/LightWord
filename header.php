@@ -7,10 +7,12 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
 <link rel="shortcut icon" href="<?php global $path_to_favicon; echo ($path_to_favicon !== null) ? bloginfo('wpurl') . $path_to_favicon : get_template_directory_uri() . '/favicon.ico'; ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<!-- outdated in newer versions of wordpress  -->
+<!-- <link rel="pingback" href="<?php //bloginfo('pingback_url'); ?>" /> -->
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php global $lw_header_content; echo "\n".$lw_header_content."\n"; ?>
 <?php wp_enqueue_script('jquery'); ?>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <?php wp_head(); ?>
 <script type="text/javascript">
 	jQuery(window).on('load', function() { // web page has finished loading
@@ -35,7 +37,7 @@
 <div id="wrapper">
 <?php lightword_header_image(); ?>
 <div id="header">
-<?php lightword_rss_feed(); ?>
+<?php //lightword_rss_feed(); ?>
 
 <div id="top_bar">
 <div class="center_menu">
