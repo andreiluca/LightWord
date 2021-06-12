@@ -37,7 +37,7 @@
 <div id="wrapper">
 <?php lightword_header_image(); ?>
 <div id="header">
-<?php //lightword_rss_feed(); ?>
+<?php lightword_rss_feed(); ?>
 
 <div id="top_bar">
 <div class="center_menu">

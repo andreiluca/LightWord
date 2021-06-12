@@ -691,7 +691,7 @@ echo "<style type=\"text/css\">\n#header{background:transparent url(".get_templa
 function lightword_rss_feed(){
 global $lw_remove_rss;
 if($lw_remove_rss == 'false'){ ?>
-<a id="rss-feed" title="<?php _e('Syndicate this site using RSS','lightword'); ?>" href="<?php bloginfo('rss2_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a>
+<a id="rss-feed" title="<?php _e('Syndicate this site using RSS','lightword'); ?>" href="<?php bloginfo('atom_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a>
 <?php } } if($lw_remove_rss == 'false') add_action('wp_head','lightword_rss_feed_css_false'); else add_action('wp_head','lightword_rss_feed_css_true');
 
 // IE6 PNG CSS FIX
