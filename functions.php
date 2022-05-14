@@ -404,11 +404,11 @@ $$id = get_option( $id );
                 }
                 ;
                 if ( $type == 'pingback' || $type == 'trackback' || $type == 'comment' )
-                        $count = $cjd_comment_count_cache[$post_id][$type];
+                        if (isset($cjd_comment_count_cache)) {$count = $cjd_comment_count_cache[$post_id][$type]; }
                 elseif ( $type == 'pings' )
                         $count = $cjd_comment_count_cache[$post_id]['pingback'] + $cjd_comment_count_cache[$post_id]['trackback'];
                 else
-                        $count = array_sum((array) $cjd_comment_count_cache[$post_id]);
+                        if (isset($cjd_comment_count_cache)) { $count = array_sum((array) $cjd_comment_count_cache[$post_id]); }
 
                 return apply_filters('lightword_fb_get_comment_type_count', $count);
         }

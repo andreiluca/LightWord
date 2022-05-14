@@ -252,7 +252,7 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 		border-radius: 3px;
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 650px) {
 		#wrapper, #footer .text, #content { width: 95%; box-sizing: border-box; }
 		#top_cufon small, ul#front_menu { max-width: 100%; }
 		#content-body, .hentry, .content-sidebar ul, .content-sidebar h3 { width: 100%; }
