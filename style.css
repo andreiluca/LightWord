@@ -234,6 +234,9 @@ ol.snap_nav li{display:inline; background-color:#F4F4F4;padding:3px;}
 ol.snap_nav .snap_selected{background-color:#DDD;}
 .simple_date{background:url(images/date.png) 5px 50% no-repeat;padding:8px 25px;background-color:#EEE;margin-bottom:1em;}
 
+/* desbest edit */
+#footer br { margin: 2em; }
+
 @media screen and (max-width: 800px) {
 	#rss-feed { left: -13px; width: 130px; }
 	#wrapper, #footer .text, #content { width: 100%; box-sizing: border-box; }
@@ -252,7 +255,22 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 		border-radius: 3px;
 	}
 
-	@media screen and (max-width: 650px) {
+	.post {
+		font-size: 1.15em;
+	 	line-height: 1.85em;
+	 	letter-spacing: 0.025em;
+	}
+
+	#front_menu li a { font-size: 1.15em; }
+	#top_bar { margin: 24px; }
+	#rss-feed { display: none; }
+	#searchform { width: 90%; }
+	#commentform .form-submit { margin-top: 1.35em; }
+	.mobiledate { border-bottom: 1px solid #DCDCDB; margin-bottom: 4px; }
+
+}
+
+@media screen and (max-width: 650px) {
 		#wrapper, #footer .text, #content { width: 95%; box-sizing: border-box; }
 		#top_cufon small, ul#front_menu { max-width: 100%; }
 		#content-body, .hentry, .content-sidebar ul, .content-sidebar h3 { width: 100%; }
@@ -266,7 +284,3 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 		.content-sidebar li { padding: 0.85em !important }
 
 	}
-
-}
-
-#footer br { margin: 2em; }

@@ -7,7 +7,10 @@
 <div <?php if (function_exists('post_class')) post_class(); else print 'class="post"'; ?> id="post-<?php the_ID(); ?>">
 <?php lightword_show_sidebox(); ?>
 <h2><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+
+<div class="mobiledate"><div class=""><?php echo get_the_time('F j, Y', $post); ?></div></div>
 <?php lightword_simple_date(); ?>
+
 <?php if ($lw_post_author == 'Main page' || $lw_post_author == 'Both') : ?>
 <div class="about_author">
 <h4><?php _e('Posted by','lightword'); ?> <a href="<?php the_author_meta('url'); ?>"><?php the_author(); ?></a></h4>
