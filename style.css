@@ -14,9 +14,9 @@ Theme URI: https://desbest.com/projects/wordpress-themes
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;vertical-align:baseline;background:transparent;margin:0;padding:0;}
 
 /* DESBEST EDIT */
-.content-sidebar #searchform { margin-bottom: 1em; }
-.content-sidebar #searchform input[type="text"] { margin-top: 2px; padding-left: 8px; width: 11em; height: 1.15em; background: none; border: 0px; }
-.content-sidebar #searchform input[type="submit"] { width: 2.5em; opacity: 0; }
+.content-sidebar #searchform, #content-body #searchform { margin-bottom: 1em; }
+.content-sidebar #searchform input[type="text"], #content-body #searchform input[type="text"] { margin-top: 2px; padding-left: 8px; width: 11em; height: 1.15em; background: none; border: 0px; }
+.content-sidebar #searchform input[type="submit"], #content-body #searchform input[type="submit"] { width: 2.5em; opacity: 0; }
 .screen-reader-text { display: none; }
 
 /* BASIC */
@@ -236,8 +236,10 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 
 /* desbest edit */
 #footer br { margin: 2em; }
+.mobile{ display: none; }
 
 @media screen and (max-width: 800px) {
+	.mobile { display: block; }
 	#rss-feed { left: -13px; width: 130px; }
 	#wrapper, #footer .text, #content { width: 100%; box-sizing: border-box; }
 	#content {
@@ -245,13 +247,20 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 		box-sizing: border-box !important;
 		overflow-x: clip;
 	}
-	.content-sidebar  { max-width: 163px; }
-	.content-sidebar #searchform input[type="submit"] { margin-left: -31px; }
-	.content-sidebar #searchform {
-		max-width: 160px;
-		background-image: none;
+	/*.content-sidebar  { max-width: 163px; }*/
+	.content-sidebar #searchform input[type="submit"],
+	#content-body #searchform input[type="submit"]{ 
+		margin-left: -31px; 
+	}
+
+	.content-sidebar #searchform,
+	#content-body #searchform {
+		/*max-width: 160px;*/
 		background-color: #fcfcfc;
-		border: 1px solid #dcdcdc;
+		/*background-image: none;*/
+		/*border: 1px solid #dcdcdc;*/
+		background-size: cover;
+		padding-left: 3px;
 		border-radius: 3px;
 	}
 
@@ -277,10 +286,18 @@ ol.snap_nav .snap_selected{background-color:#DDD;}
 		.content-sidebar { width:  75%; max-width: unset; }
 		.content-sidebar h3 { background-size: 100%; }
 		.content-sidebar #searchform { margin-bottom: 4em; }
-		#searchform { background-image: none !important; height: unset;}
-		.content-sidebar #searchform input[type="text"] { font-size: 2em; height: 1.85em; }
-		.content-sidebar #searchform input[type="submit"] { display: none; }
+		#searchform { /* background-image: none !important; */ height: unset; }
 		.content-sidebar { margin-top: 32px; }
 		.content-sidebar li { padding: 0.85em !important }
+		.comm_date { display: none; }
+
+		.content-sidebar #searchform input[type="text"],
+		#content-body #searchform input[type="text"] { 
+			font-size: 2em; height: 1.85em; 
+		}
+		.content-sidebar #searchform input[type="submit"],
+		#content-body #searchform input[type="submit"]{
+			display: none; 
+		}
 
 	}

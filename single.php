@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div id="content-body">
 <?php if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } ?>
+<div class="mobile"><?php get_search_form(); ?></div>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div <?php if (function_exists('post_class')) post_class(); else print 'class="post"'; ?> id="post-<?php the_ID(); ?>">
 <?php lightword_show_sidebox(); ?>
