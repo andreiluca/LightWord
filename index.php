@@ -27,7 +27,7 @@
 <div class="cat_tags clear">
 <span class="category mobile" style="text-align: right;"><?php echo wp_count_comments($post->id)->approved." comments"; ?></span>
 <span class="category"><?php if($lw_disable_tags == 'true' || !get_the_tags()) { _e('Filed under:','lightword'); echo ' '; the_category(', ');} else if (get_the_tags() && $lw_disable_tags == 'false') { _e('Tagged as:','lightword'); echo ' '; the_tags(''); } ?></span>
-<span class="continue"><?php $pos = strpos($post->post_content, '<!--more-->'); if($pos==''){ ?><a class="nr_comm_spot" href="<?php the_permalink(); ?>#comments"><?php 
+<span class="continue desktop"><?php $pos = strpos($post->post_content, '<!--more-->'); if($pos==''){ ?><a class="nr_comm_spot" href="<?php the_permalink(); ?>#comments"><?php 
 // var_dump(wp_count_comments($post->id)->approved); exit();
 if(wp_count_comments($post->id)->approved ==1 ) { _e('1 Comment','lightword');
 } elseif('open' != $post->comment_status) { _e('Comments Off','lightword'); 
