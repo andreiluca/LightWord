@@ -22,12 +22,14 @@ $options = array (
             'desc' => '',
             'type' => 'select'),
 
+    /*
     array(  'name' => __('Cuf&oacute;n settings', 'lightword'),
 			'desc' => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />If using Cuf&oacute;n, select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
             'id' => 'lw_cufon_settings',
             'options' => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Extra','lightword'), __('CSS3 Font-face (lightweight)')),
             'std' => __('Enabled','lightword'),
             'type' => 'select'),
+    */
 
     array(  'name' => __('Disable comments on pages','lightword'),
 			'desc' => __('Check this box if you would like to DISABLE COMMENTS on pages','lightword'),
@@ -519,8 +521,7 @@ if(is_single()||is_page()){
 }
 }
 
-// CUFON SETTINGS
-
+// CUFON SETTINGS/
 if ($lw_cufon_settings == 'Enabled') {$cufon_enabled = 1; $cufon_extra = 0; $fontface = 0;}
 if ($lw_cufon_settings == 'Extra') {$cufon_extra = 1; $cufon_enabled = 1; $fontface = 0;}
 if ($lw_cufon_settings == 'CSS3 Font-face (lightweight)') {$cufon_extra = 0; $cufon_enabled = 0; $fontface = 1;}
@@ -887,10 +888,10 @@ if($lw_favicon_path) $path_to_favicon = $lw_favicon_path;
 
 
 add_action('admin_menu', 'lightword_admin');
-add_action('wp_head',    'lightword_cufon_header');
+//add_action('wp_head',    'lightword_cufon_header');
 add_action('wp_head',    'lightword_custom_css');
 add_action('wp_head',    'lightword_ie_png_transparency');
-add_action('wp_footer',  'lightword_cufon_footer');
+//add_action('wp_footer',  'lightword_cufon_footer');
 add_action('wp_footer',  'lightword_comment_tabs');
 add_action( 'wp_head', 'lightword_canonical_for_comments' );
 
