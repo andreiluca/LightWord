@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div id="content-body">
 <?php if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb('<p id="breadcrumbs">','</p>'); } ?>
+<div class="mobile"><?php get_search_form(); ?></div>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div <?php if (function_exists('post_class')) post_class(); else print 'class="post"'; ?> id="post-<?php the_ID(); ?>">
 <?php lightword_show_sidebox(); ?>
@@ -28,7 +29,7 @@
 
 <div class="cat_tags clear">
 <span class="category"><?php if($lw_disable_tags == 'true' || !get_the_tags()) { _e('Filed under:','lightword'); echo ' '; the_category(', ');} else if (get_the_tags() && $lw_disable_tags == 'false') { _e('Tagged as:','lightword'); echo ' '; the_tags(''); } ?></span>
-<span class="continue"><a class="nr_comm_spot" href="<?php the_permalink(); ?>#respond"><?php if('open' != $post->comment_status) _e('Comments Off','lightword'); else _e('Leave a comment','lightword'); ?></a></span><div class="clear"></div>
+<span class="continue desktop"><a class="nr_comm_spot" href="<?php the_permalink(); ?>#respond"><?php if('open' != $post->comment_status) _e('Comments Off','lightword'); else _e('Leave a comment','lightword'); ?></a></span><div class="clear"></div>
 </div>
 <div class="cat_tags_close"></div>
 

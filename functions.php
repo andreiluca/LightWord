@@ -22,12 +22,14 @@ $options = array (
             'desc' => '',
             'type' => 'select'),
 
+    /*
     array(  'name' => __('Cuf&oacute;n settings', 'lightword'),
 			'desc' => __('Show certain text on your blog (blog title, tagline, post titles, page titles, etc.) using Cuf&oacute;n&sup1; or the lighter weight, more modern CSS3 <tt>font-face</tt> declaration.<br /><br />If using Cuf&oacute;n, select <em>Extra</em>&sup2; (or <em>Disabled</em>) for languages with accents and special characters.','lightword'),
             'id' => 'lw_cufon_settings',
             'options' => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Extra','lightword'), __('CSS3 Font-face (lightweight)')),
             'std' => __('Enabled','lightword'),
             'type' => 'select'),
+    */
 
     array(  'name' => __('Disable comments on pages','lightword'),
 			'desc' => __('Check this box if you would like to DISABLE COMMENTS on pages','lightword'),
@@ -400,22 +402,23 @@ $$id = get_option( $id );
                 if ( !isset($cjd_comment_count_cache[$post_id]) ) {
                         $p = get_post($post_id);
                         $p = array($p);
-                        lightword_fb_update_comment_type_cache($p);
+                        //lightword_fb_update_comment_type_cache($p);
                 }
                 ;
                 if ( $type == 'pingback' || $type == 'trackback' || $type == 'comment' )
-                        $count = $cjd_comment_count_cache[$post_id][$type];
+                        if (isset($cjd_comment_count_cache)) {$count = $cjd_comment_count_cache[$post_id][$type]; }
                 elseif ( $type == 'pings' )
                         $count = $cjd_comment_count_cache[$post_id]['pingback'] + $cjd_comment_count_cache[$post_id]['trackback'];
                 else
-                        $count = array_sum((array) $cjd_comment_count_cache[$post_id]);
+                        if (isset($cjd_comment_count_cache)) { $count = array_sum((array) $cjd_comment_count_cache[$post_id]); }
 
                 return apply_filters('lightword_fb_get_comment_type_count', $count);
         }
 
+/*
 if ( !function_exists('lightword_fb_update_comment_type_cache') ) {
         function lightword_fb_update_comment_type_cache($queried_posts) {
-        $post_id_list = '';
+        $post_id_list[] = '';
                 global $cjd_comment_count_cache, $wpdb;
 
                 if ( !$queried_posts )
@@ -449,6 +452,7 @@ if ( !function_exists('lightword_fb_update_comment_type_cache') ) {
 
         add_filter('the_posts', 'lightword_fb_update_comment_type_cache');
 }
+*/
 
 /** Added by Steven L from ISomehowHate.com and modifieed by Andrei on 07.4
 | Fixes an issue that can occur when a user has magic_quotes switched to on.
@@ -517,8 +521,7 @@ if(is_single()||is_page()){
 }
 }
 
-// CUFON SETTINGS
-
+// CUFON SETTINGS/
 if ($lw_cufon_settings == 'Enabled') {$cufon_enabled = 1; $cufon_extra = 0; $fontface = 0;}
 if ($lw_cufon_settings == 'Extra') {$cufon_extra = 1; $cufon_enabled = 1; $fontface = 0;}
 if ($lw_cufon_settings == 'CSS3 Font-face (lightweight)') {$cufon_extra = 0; $cufon_enabled = 0; $fontface = 1;}
@@ -689,7 +692,7 @@ echo "<style type=\"text/css\">\n#header{background:transparent url(".get_templa
 function lightword_rss_feed(){
 global $lw_remove_rss;
 if($lw_remove_rss == 'false'){ ?>
-<a id="rss-feed" title="<?php _e('Syndicate this site using RSS','lightword'); ?>" href="<?php bloginfo('rss2_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a>
+<a id="rss-feed" title="<?php _e('Syndicate this site using RSS','lightword'); ?>" href="<?php bloginfo('atom_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a>
 <?php } } if($lw_remove_rss == 'false') add_action('wp_head','lightword_rss_feed_css_false'); else add_action('wp_head','lightword_rss_feed_css_true');
 
 // IE6 PNG CSS FIX
@@ -778,8 +781,8 @@ echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
 function nullit(&$varin) {
 //must pass by reference, so there is no explicit copying of var data
-//if undefined variable, then returns ’’ without doing an error, otherwise just returns the var.
-//this is done so we don’t get warning
+//if undefined variable, then returns â€™â€™ without doing an error, otherwise just returns the var.
+//this is done so we donâ€™t get warning
 if (isset($varin)) {
 return ($varin);
 }
@@ -791,15 +794,15 @@ return ('');
 
 // SIDEBAR WIDGETS
 
-if ( function_exists('register_sidebar') ) { register_sidebar(array('name' =>'Sidebar','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
-if ( function_exists('register_sidebar') && $lw_sidebar_settings == 'Two sidebars') { register_sidebar(array('name' =>'Sidebar Child','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
+if ( function_exists('register_sidebar') ) { register_sidebar(array('id' => 'sidebar', 'name' =>'Sidebar','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
+if ( function_exists('register_sidebar') && $lw_sidebar_settings == 'Two sidebars') { register_sidebar(array('id' => 'sidebar-child', 'name' =>'Sidebar Child','before_widget' => '','after_widget' => '','before_title' => '<h3>','after_title' => '</h3>')); }
 
 // WORDPRESS 2.9+ FEATURES
 
 if ( function_exists( 'add_theme_support' ) ) add_theme_support( 'post-thumbnails' );
 if ( function_exists( 'add_theme_support' ) ) add_theme_support( 'menus' );
 if ( function_exists( 'add_theme_support' ) ) add_theme_support( 'automatic-feed-links' );
-if ( function_exists( 'add_custom_background' ) ) add_custom_background();
+if ( function_exists( 'add_theme_support' ) ) add_theme_support('custom-background');
 
 // WORDPRESS 3.0+ FEATURES
 
@@ -832,20 +835,36 @@ require_once(TEMPLATEPATH.'/custom_header.php');
 
 
 if ( !is_admin() ) {
-    $theme  = get_theme( get_current_theme() );
-    wp_register_style( 'lightword_stylesheet', get_bloginfo( 'stylesheet_url' ), false, $theme['Version'] );
-    wp_enqueue_style( 'lightword_stylesheet' );
+    function loadstyles(){
+        $theme  = get_theme( get_current_theme() );
+        wp_register_style( 'lightword_stylesheet', get_bloginfo( 'stylesheet_url' ), false, $theme['Version'] );
+        wp_enqueue_style( 'lightword_stylesheet' );   
+    }
+    
 
 if($lw_layout_settings == 'Wider') :
-    wp_register_style( 'lightword_stylesheet_wider', get_template_directory_uri() . '/wider.css', false, $theme['Version'] );
-    wp_enqueue_style( 'lightword_stylesheet_wider' );
+    function loadstyles5(){
+        $theme  = get_theme( get_current_theme() );
+         wp_register_style( 'lightword_stylesheet_wider', get_template_directory_uri() . '/wider.css', false, $theme['Version'] );
+        wp_enqueue_style( 'lightword_stylesheet_wider' );
+    }
+    add_action('wp_enqueue_scripts', 'loadstyles5');
 if($lw_sidebar_settings=='Two sidebars'):
-    wp_register_style( 'lightword_stylesheet_newsidebar', get_template_directory_uri() . '/new_sidebar.css', false, $theme['Version'] );
-    wp_enqueue_style( 'lightword_stylesheet_newsidebar' );
+    function loadstyles4(){
+        $theme  = get_theme( get_current_theme() );
+        wp_register_style( 'lightword_stylesheet_newsidebar', get_template_directory_uri() . '/new_sidebar.css', false, $theme['Version'] );
+        wp_enqueue_style( 'lightword_stylesheet_newsidebar' );
+    }
+    add_action( 'wp_enqueue_scripts', 'loadstyles4' );
 endif;
 else:
-    wp_register_style( 'lightword_stylesheet_original', get_template_directory_uri() . '/original.css', false, $theme['Version'] );
-    wp_enqueue_style( 'lightword_stylesheet_original' );
+    function loadstyles3(){
+        $theme  = get_theme( get_current_theme() );
+        wp_register_style( 'lightword_stylesheet_original', get_template_directory_uri() . '/original.css', false, $theme['Version'] );
+        wp_enqueue_style( 'lightword_stylesheet_original' );
+    }
+   
+    add_action( 'wp_enqueue_scripts', 'loadstyles3' );
 endif;
 }
 
@@ -853,8 +872,11 @@ endif;
 
 function single_page_template_css(){
     $theme  = get_theme( get_current_theme() );
-    wp_register_style( 'lightword_single_page_template', get_template_directory_uri() . '/single-page-template.css', array('lightword_stylesheet_original'), $theme['Version'] );
-    wp_enqueue_style(  'lightword_single_page_template' );
+    function loadstyles2(){
+        wp_register_style( 'lightword_single_page_template', get_template_directory_uri() . '/single-page-template.css', array('lightword_stylesheet_original'), $theme['Version'] );
+        wp_enqueue_style(  'lightword_single_page_template' );
+    }
+    add_action( 'wp_enqueue_scripts', 'loadstyles2' );
 }
 
 /* FAVICON SETTING HANDLER */
@@ -864,14 +886,17 @@ if($lw_favicon_path) $path_to_favicon = $lw_favicon_path;
 
 // ENABLE FUNCTIONS
 
+
 add_action('admin_menu', 'lightword_admin');
-add_action('wp_head',    'lightword_cufon_header');
+//add_action('wp_head',    'lightword_cufon_header');
 add_action('wp_head',    'lightword_custom_css');
 add_action('wp_head',    'lightword_ie_png_transparency');
-add_action('wp_footer',  'lightword_cufon_footer');
+//add_action('wp_footer',  'lightword_cufon_footer');
 add_action('wp_footer',  'lightword_comment_tabs');
 add_action( 'wp_head', 'lightword_canonical_for_comments' );
+
 add_filter('comments_template', 'lightword_legacy_comments');
+add_action( 'wp_enqueue_scripts', 'loadstyles' );
 
 remove_action('wp_head', 'wp_generator');
 remove_filter('the_content', 'wptexturize');

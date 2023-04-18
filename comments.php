@@ -7,12 +7,12 @@ echo _e('This post is password protected. Enter the password to view comments.',
 echo '</p>';
 return;
 }
-$comments_nr = lightword_fb_get_comment_type_count('comment');
-$trackbacks_nr = lightword_fb_get_comment_type_count('pings');
+// $comments_nr = lightword_fb_get_comment_type_count('comment');
+// $trackbacks_nr = lightword_fb_get_comment_type_count('pings');
 $oddcomment = 'alt ';
 ?>
 <div id="tabsContainer">
-<a href="#" class="tabs selected"><span><?php _e('Comments','lightword'); ?> (<?php echo $comments_nr; ?>)</span></a>
+<a href="#" class="tabs selected"><span><?php _e('Comments','lightword'); ?> (<?php echo get_comments_number($post->ID); ?>)</span></a>
 <a href="#" class="tabs"><span><?php _e('Trackbacks','lightword'); ?> (<?php echo $trackbacks_nr; ?>)</span></a>
 <span class="subscribe_comments"><?php post_comments_feed_link(__('( subscribe to comments on this post )','lightword')); ?></span>
 <div class="clear_tab"></div>
